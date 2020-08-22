@@ -1,0 +1,10 @@
+target/
+.idea/
+.sass-cache/
+*.iml
+.DS_Store
+node_modules/
+tacit.min.css
+tacit.min.css.map
+package-lock.json
+

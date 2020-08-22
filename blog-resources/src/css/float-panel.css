@@ -1,0 +1,65 @@
+/* ---------------- For sticky header: class="float-panel"  ------------------*/
+.float-panel {
+  width: 100%;
+  z-index: 300;
+}
+
+.float-panel .fa-gg {
+  transition: all 1s;
+}
+/* when class="float-panel fixed" */
+.float-panel.fixed {
+  animation: slide-header 0.7s;
+}
+.float-panel.fixed .fa-gg {
+  transform: rotate(360deg);
+}
+@keyframes slide-down {
+  0% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  100% {
+    opacity: 0.9;
+    transform: translateY(0);
+  }
+}
+
+/* b:comment: */
+@keyframes slide-header {
+  0% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ---------------- For Animation on Scroll ---------------- */
+.slideanim {
+  visibility: hidden;
+  visibility: visible\9; /*For old IE browsers IE6-8 */
+}
+.slideanim.slide {
+  visibility: visible;
+  animation: slide 1s;
+}
+.slideanim::after {
+  /* useful when its child elements are float:left; */
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@keyframes slide-bottom {
+  0% {
+    opacity: 0;
+    transform: translateY(50%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

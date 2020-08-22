@@ -1,0 +1,221 @@
+/* http://www.menucool.com */
+
+[id$="_thumbnail-slider"] {
+  -webkit-transform: scale(0.7);
+  transform: scale(0.7);
+  transition: transform 0.25s;
+  opacity: 0.8;
+  margin: 0px auto;
+  width: 100%;
+  max-width: 780px;
+  padding: 0px 40px; /*Gives room for arrow buttons*/
+  box-sizing: border-box;
+  position: relative;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+[id$="_ninja-slider"].carousel-slider [id$="_thumbnail-slider"] {
+  padding: 0px;
+}
+
+[id$="_thumbnail-slider"]:hover {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  opacity: 1;
+}
+
+[id$="_ninja-slider"] [id$="_thumbnail-slider"] li {
+  margin: 0 4px !important;
+  padding: 0px !important;
+}
+
+[id$="_ninja-slider"].fullscreen [id$="_thumbnail-slider"] {
+  width: 90%;
+  max-width: 1120px;
+}
+
+[id$="_thumbnail-slider"] div.inner {
+  /*the followings should not be changed */
+  position: relative;
+  overflow: hidden;
+  padding: 0px;
+  margin: 0;
+}
+
+[id$="_thumbnail-slider"] div.inner ul {
+  /*the followings should not be changed */
+  white-space: nowrap;
+  position: relative;
+  left: 0;
+  top: 0;
+  list-style: none;
+  font-size: 0;
+  padding: 0;
+  margin: 0;
+  float: left !important;
+  width: auto !important;
+  height: auto !important;
+}
+
+[id$="_thumbnail-slider"] ul li {
+  opacity: 1;
+  overflow: visible;
+  display: inline-block;
+  *display: inline !important; /*IE7 hack*/
+  border: 2px solid #222;
+  box-sizing: content-box;
+  text-align: center;
+  vertical-align: middle;
+  position: relative;
+  list-style: none;
+  backface-visibility: hidden;
+  transition: all 0.2s;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+[id$="_thumbnail-slider"] ul li.active {
+  border-color: white;
+}
+
+[id$="_thumbnail-slider"] li:hover {
+  border-color: rgba(255, 255, 255, 0.7);
+}
+
+[id$="_thumbnail-slider"] .thumb {
+  width: 100%;
+  height: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: block;
+  position: absolute;
+  font-size: 0;
+}
+
+/* --------- Captions ------- */
+[id$="_thumbnail-slider"] li span {
+  position: absolute;
+  color: rgba(255, 255, 255, 0.7);
+  bottom: 0px;
+  left: 0px;
+  font-size: 2.5em;
+  width: 100%;
+  text-align: center;
+}
+
+/* --------- navigation controls ------- */
+/* The nav id should be: slider id + ("-prev", "-next", and "-pause-play") */
+
+[id$="_thumbnail-slider-pause-play"] {
+  display: none;
+} /*.pause*/
+
+[id$="_thumbnail-slider-prev"],
+[id$="_thumbnail-slider-next"] {
+  position: absolute;
+  background-color: none;
+  width: 40px;
+  height: 50px;
+  line-height: 50px;
+  top: 50%;
+  margin: 0;
+  margin-top: -25px;
+  color: white;
+  z-index: 10;
+  cursor: pointer;
+  opacity: 1;
+  *background-color: #ccc; /*IE7 hack*/
+}
+
+[id$="_thumbnail-slider-prev"] {
+  left: 0px;
+  right: auto;
+}
+
+[id$="_thumbnail-slider-next"] {
+  left: auto;
+  right: 0px;
+}
+[id$="_thumbnail-slider-next"].disabled,
+[id$="_thumbnail-slider-prev"].disabled {
+  opacity: 0.3;
+  cursor: default;
+}
+
+/* arrows */
+[id$="_thumbnail-slider-prev"]::before,
+[id$="_thumbnail-slider-next"]::before {
+  position: absolute;
+  top: 15px;
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-left: 3px solid #ddd;
+  border-top: 3px solid #ddd;
+}
+
+[id$="_thumbnail-slider-prev"]::before {
+  left: 14px;
+  -ms-transform: rotate(-45deg); /*IE9*/
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+[id$="_thumbnail-slider-next"]::before {
+  right: 14px;
+  -ms-transform: rotate(135deg); /*IE9*/
+  -webkit-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+
+/*Responsive settings*/
+@media only screen and (max-width: 736px) {
+  [id$="_thumbnail-slider"] {
+    padding: 0;
+  }
+
+  [id$="_thumbnail-slider-prev"],
+  [id$="_thumbnail-slider-next"] {
+    display: none;
+  }
+}
+
+[id$="_thumbnail-video"] {
+  text-align: center;
+  padding: 40px 0;
+}
+
+[id$="_thumbnail-video"] > span {
+  width: 80px;
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: border 0.8s;
+  font-size: 0;
+}
+
+[id$="_thumbnail-video"] > span:hover {
+  border: 2px solid #ddd;
+}
+
+[id$="_thumbnail-video"] img {
+  width: 100%;
+}
+
+[id$="_thumbnail-video"] .playvideo {
+  position: absolute;
+  background: transparent url(../images/playvideo.png) no-repeat center center;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  opacity: 0.8;
+  filter: alpha(opacity=40);
+  text-align: center;
+  color: white;
+  font-size: 0.7em;
+}

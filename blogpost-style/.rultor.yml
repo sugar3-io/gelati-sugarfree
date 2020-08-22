@@ -1,0 +1,78 @@
+assets:
+  s3cfg: yegor256/home#assets/s3cfg
+  npmrc: yegor256/home#assets/npmrc
+install: |
+  sudo gem install --no-document pdd
+  npm install --no-color
+architect:
+  - yegor256
+  - filfreire
+merge:
+  script: |
+    npm run rultor --no-color
+    pdd --source=$(pwd) --verbose --file=/dev/null
+  commanders:
+    - yegor256
+    - filfreire
+deploy:
+  script: |
+    npm test
+    pdd --source=$(pwd) --verbose --file=tacit.xml
+    s3cmd --no-progress put tacit.xml --config=../s3cfg s3://pdd.teamed.io/tacit.xml
+  commanders:
+    - yegor256
+release:
+  commanders:
+    - yegor256
+  script: |-
+    # Change proper version for all necessary filers
+    npm version "${tag}"
+    sed -i "s|VERSION|${tag}|g" bower.json
+    sed -i "s|VERSION|${tag}|g" index.html
+
+    # Perform build
+    git rm -rf dist/ --ignore-unmatch
+    npm run rultor --no-color
+
+    # Current branch is __rultor
+
+    # Add built files to git and commit
+    git add -f dist/tacit-css-${tag}.min.css
+    git add -f dist/tacit-css-${tag}.min.css.map
+    git add -f dist/tacit-css-${tag}.css
+    git commit -am "Added CSS files for ${tag}"
+
+    # We'll gonna need these files later...
+    mv dist/tacit-css-${tag}.min.css /tmp
+    mv index.html /tmp
+    mv tacit_logo.png /tmp
+    mv tacit_logo.svg /tmp
+
+    # Checkout to gh-pages and reset any modifications
+    branch=$(git rev-parse --abbrev-ref HEAD)
+    git checkout gh-pages
+    git reset --hard
+    sudo /bin/bash -c "cd '$(pwd)'; git clean -fd"
+
+    # Add the current, minified css file to the gh-pages branch
+    mv /tmp/tacit-css-${tag}.min.css .
+    cp tacit-css-${tag}.min.css tacit-css.min.css
+    cp tacit-css-${tag}.min.css tacit.min.css
+    mv /tmp/index.html .
+    mv /tmp/tacit_logo.png .
+    mv /tmp/tacit_logo.svg .
+
+    git add tacit-css-${tag}.min.css
+    git add tacit-css.min.css
+    git add tacit.min.css
+    git add index.html
+    git add tacit_logo.png
+    git add tacit_logo.svg
+
+    # Commit and change the branch to master
+    git commit --allow-empty -am "${tag}"
+    git checkout "${branch}"
+
+    # Deploy to NPMJS
+    chmod 600 ../npmrc
+    npm publish --no-color --userconfig=../npmrc

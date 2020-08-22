@@ -1,0 +1,358 @@
+/* Visit http://www.menucool.com/responsive-slider for instructions */
+
+[id$="_ninja-slider"] {
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+[id$="_ninja-slider"]:not([class~="fullscreen"])
+  > div
+  > div.slider-inner:first-of-type:not(:only-of-type) {
+  padding-bottom: 54px;
+  background: rgba(0,0,0,0.85);
+}
+[id$="_ninja-slider"]:not([class~="fullscreen"])
+  > div
+  > div:last-of-type:not(:only-of-type) {
+  margin-top: -54px;
+}
+[id$="_ninja-slider"].clean-slider:not([class~="fullscreen"])
+  > div
+  > div:first-of-type:not(:only-of-type) {
+  padding-bottom: inherit;
+}
+[id$="_ninja-slider"].carousel-slider {
+  background: transparent;
+  box-shadow: none;
+  height: inherit !important;
+}
+[id$="_ninja-slider"].carousel-slider .slider-inner {
+  display: none;
+  margin-top: inherit !important;
+  transform: inherit !important;
+}
+[id$="_ninja-slider"].clean-slider:not([class~="fullscreen"])
+  [id$="_thumbnail-slider"] {
+  display: none;
+}
+[id$="_ninja-slider"].carousel-slider [id$="_thumbnail-slider"] {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  opacity: 1;
+  margin-top: inherit !important;
+  max-width: inherit;
+}
+[id$="_ninja-slider"].carousel-slider [id$="_thumbnail-slider"] li {
+  margin: inherit !important;
+  border: inherit;
+}
+[id$="_ninja-slider"] li {
+  margin: 0px !important;
+  padding: 0px !important;
+  /* b:comment: prevents flickering of sliding-in empty captions */
+  transition: none !important;
+}
+
+[id$="_ninja-slider"].fullscreen {
+  background: black;
+  height: inherit !important;
+  display: flex;
+  overflow: hidden;
+}
+[id$="_ninja-slider"].fullscreen {
+  /* b:comment: ie render fix */
+  /* justify-content: center; */
+  align-items: center;
+}
+[id$="_ninja-slider"]:not([class~="clean-slider"]).fullscreen {
+  /* b:comment: ie render fix */
+  justify-content: center;
+}
+[id$="_ninja-slider"].fullscreen > div {
+  justify-content: center;
+  align-items: center;
+}
+[id$="_ninja-slider"].fullscreen > div {
+  display: flex !important;
+  flex-direction: column;
+}
+[id$="_ninja-slider"].fullscreen .slider-inner,
+[id$="_ninja-slider"].fullscreen .slider-inner ul {
+  width: 100%;
+}
+
+/* b:comment: ninja-sliders style attribute is set when aspect ratio was defined */
+[id$="_ninja-slider"][style] > div {
+  /* b:comment: defines height of image sliding area in responsive aspect ratio mode */
+  height: 100%;
+}
+[id$="_ninja-slider"][style].fullscreen > div {
+  height: calc(100% - 108px);
+}
+
+/* b:comment: space for captions */
+[id$="_ninja-slider"].fullscreen [id$="_ninja-slider-prev"] {
+  left: -50px;
+}
+[id$="_ninja-slider"].fullscreen [id$="_ninja-slider-next"] {
+  right: -50px;
+}
+
+[id$="_ninja-slider"] .fs-icon {
+  top: 6px;
+  right: 6px;
+  width: 60px;
+  height: 26px;
+  background: rgba(0, 0, 0, 0.2);
+  z-index: 2;
+  color: white;
+  text-align: center;
+  font: bold 11px/26px arial;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 2px;
+  opacity: 0;
+  -webkit-transition: opacity 0.8s;
+  transition: opacity 0.8s;
+}
+[id$="_ninja-slider"] .slider-inner:hover .fs-icon,
+[id$="_ninja-slider"].fullscreen .fs-icon {
+  opacity: 1;
+}
+[id$="_ninja-slider"].fullscreen div.fs-icon {
+  right: 30px;
+}
+
+[id$="_ninja-slider"] .fs-icon::before {
+  content: "EXPAND";
+  display: block;
+}
+
+[id$="_ninja-slider"].fullscreen .fs-icon::before {
+  content: "CLOSE";
+}
+
+[id$="_ninja-slider"] .slider-inner {
+  max-width: 700px;
+  margin: 0 auto; /*center-aligned*/
+  font-size: 0px;
+  position: relative;
+  box-sizing: border-box;
+}
+
+[id$="_ninja-slider"]:not([class~="fullscreen"]) .slider-inner,
+[id$="_ninja-slider"].carousel-slider .inner {
+  box-shadow: 10px 10px 22px 0px rgba(0, 0, 0, 0.75);
+  overflow: hidden;
+}
+
+[id$="_ninja-slider"] ul {
+  /*overflow:hidden;*/
+  position: relative;
+  list-style: none;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+[id$="_ninja-slider"] li {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  font-size: 1rem;
+  list-style: none;
+  opacity: 0;
+  /* overflow:hidden; */ /*Comment it out to show the caption*/
+  box-sizing: border-box;
+}
+
+[id$="_ninja-slider"] li.ns-show {
+  opacity: 1;
+}
+
+/* --------- slider image ------- */
+[id$="_ninja-slider"]:not([class~="hero-item"]) .ns-img {
+  background-color: rgba(0, 0, 0, 1);
+  background-size: contain; /*Note: If transitionType is zoom, it will be overridden to cover.*/
+  border-radius: 3px;
+  cursor: default;
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+/* ---------Arrow buttons ------- */
+/* The arrow button id should be: slider id + ("-prev", "-next", and "-pause-play") */
+[id$="_ninja-slider-pause-play"] {
+  display: none;
+}
+
+[id$="_ninja-slider-prev"],
+[id$="_ninja-slider-next"] {
+  position: absolute;
+  display: inline-block;
+  width: 42px;
+  height: 56px;
+  line-height: 56px;
+  top: 50%;
+  margin-top: -28px;
+  backface-visibility: hidden;
+  color: white;
+  overflow: hidden;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  user-select: none;
+  border-radius: 2px;
+  z-index: 10;
+  opacity: 0.3;
+  font-family: sans-serif;
+  font-size: 13px;
+  cursor: pointer;
+  -webkit-transition: all 0.7s;
+  transition: all 0.7s;
+  background-color: rgba(0, 0, 0, 0.4);
+  background-color: #ccc\9; /*IE8 hack*/
+}
+
+.slider-inner:hover [id$="_ninja-slider-prev"],
+.slider-inner:hover [id$="_ninja-slider-next"] {
+  opacity: 1;
+}
+
+[id$="_ninja-slider-prev"] {
+  left: 0;
+}
+[id$="_ninja-slider-next"] {
+  right: 0;
+}
+
+/* arrows */
+[id$="_ninja-slider-prev"]::before,
+[id$="_ninja-slider-next"]::before {
+  position: absolute;
+  top: 17px;
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-left: 2px solid white;
+  border-top: 2px solid white;
+}
+
+[id$="_ninja-slider-prev"]::before {
+  -ms-transform: rotate(-45deg); /*IE 9*/
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  backface-visibility: hidden;
+  right: 4px;
+}
+
+[id$="_ninja-slider-next"]::before {
+  -ms-transform: rotate(135deg); /*IE 9*/
+  -webkit-transform: rotate(135deg);
+  transform: rotate(135deg);
+  backface-visibility: hidden;
+  left: 4px;
+}
+
+/*pagination num within the arrow buttons*/
+[id$="_ninja-slider-prev"] div,
+[id$="_ninja-slider-next"] div {
+  display: none;
+}
+
+/*------ pager(nav bullets) ------*/
+/* The pager id should be: slider id + "-pager" */
+[id$="_ninja-slider-pager"] {
+  display: none;
+}
+
+[id$="_ninja-slider-pager"],
+[id$="_ninja-slider-prev"],
+[id$="_ninja-slider-next"],
+[id$="_ninja-slider-pause-play"] {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+/*Responsive settings*/
+@media only screen and (max-width: 800px) {
+  [id$="_ninja-slider-prev"],
+  [id$="_ninja-slider-next"] {
+    display: none;
+  }
+  [id$="_ninja-slider"] .fs-icon {
+    display: none;
+  }
+}
+
+/*---------- Captions -------------------*/
+[id$="_ninja-slider"] .caption {
+  position: absolute;
+  bottom: 0px;
+  padding: 5px;
+  margin: auto;
+  width: 100%;
+  text-align: center;
+  box-sizing: border-box;
+  font-size: 1em;
+}
+[id$="_ninja-slider"] .caption {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+[id$="_ninja-slider"].fullscreen .caption {
+  color: white;
+}
+[id$="_ninja-slider"].clean-slider:not([class~="fullscreen"]) .caption {
+  display: none;
+}
+[id$="_ninja-slider"] .caption:empty {
+  display: none;
+}
+
+/* ---------If there are videos ------- */
+[id$="_ninja-slider"] .video,
+.video-playbutton-layer {
+  top: 0;
+  left: 0;
+  border: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background: black;
+  position: absolute;
+}
+
+/* And if you have added the HTML: <div class="video-playbutton-layer"></div> */
+.video-playbutton-layer {
+  background: transparent url(../images/video-btn.png) no-repeat center center;
+  cursor: pointer;
+}
+
+/* And if you have YouTube or Vimeo */
+[id$="_ninja-slider"] div.stopVideoIcon {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 0;
+  right: 0px;
+  margin: 0 0 6px 6px;
+  background: rgba(0, 0, 0, 0.7);
+  border-bottom-left-radius: 4px;
+  cursor: pointer;
+}
+[id$="_ninja-slider"] div.stopVideoIcon::before {
+  content: "+";
+  color: white;
+  font: bold 30px/30px arial;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  display: block;
+}

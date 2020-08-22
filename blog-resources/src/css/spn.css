@@ -1,0 +1,73 @@
+.spn-direction-sign {
+  position: fixed;
+  display: inline-block;
+  border: 0;
+  width: 66px;
+  height: 68px;
+  top: 50%;
+  margin-top: -34px;
+  z-index: 306;
+  color: white;
+  font-size: 32px;
+  text-align: center;
+  line-height: 68px;
+  background-color: #00a4e4;
+  opacity: 0;
+  -moz-opacity: 0;
+  -webkit-transition: opacity 0.3s linear, -webkit-transform 0.3s linear;
+  -moz-transition: opacity 0.3s linear, -mox-transform 0.3s linear;
+  -ms-transition: opacity 0.3s linear, -ms-transform 0.3s linear;
+  -o-transition: opacity 0.3s linear, -o-transform 0.3s linear;
+  transition: opacity 0.3s linear, transform 0.3s linear;
+}
+
+.spn-direction-sign.next {
+  right: 0;
+  -webkit-transform: translate(100%);
+  -moz-transform: translate(100%);
+  -ms-transform: translate(100%);
+  -o-transform: translate(100%);
+  transform: translate(100%);
+}
+.spn-direction-sign.next::after {
+  content: "\25b6";
+}
+.spn-direction-sign.prev {
+  left: 0;
+  -webkit-transform: translate(-100%);
+  -moz-transform: translate(-100%);
+  -ms-transform: translate(-100%);
+  -o-transform: translate(-100%);
+  transform: translate(-100%);
+}
+.spn-direction-sign.prev::after {
+  content: "\25c0";
+}
+.spn-direction-sign.visible {
+  opacity: 1;
+  -webkit-transform: translate(0);
+  -moz-transform: translate(0);
+  -ms-transform: translate(0);
+  -o-transform: translate(0);
+  transform: translate(0);
+}
+
+.spn-freezing-overlay {
+  z-index: 306;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.spn-freezing-overlay::after {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  font-size: 32px;
+  text-align: center;
+  color: white;
+  content: "Loading...";
+}

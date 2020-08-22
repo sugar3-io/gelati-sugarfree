@@ -1,0 +1,6 @@
+#blog-pager .showpage a:hover,
+#blog-pager .pagenumber a:hover,
+#blog-pager .current span {
+  background: #333333;
+  color: #ffffff;
+}
