@@ -15,11 +15,18 @@
   <b:comment>
     configure blogtemplate - hosting/development (optional)
   </b:comment>
-  <b:with value='data:view:isPreview or not data:blog.hasCustomDomain ? &quot;//gelatistatic.sugar3.io&quot; : &quot;//cdn-devel.glitch.at&quot;' var='resourcesUrl'>
+  <b:with value='data:view:isPreview or not data:blog.hasCustomDomain ? &quot;//gelatistatic.sugar3.io&quot; : &quot;//gelatistatic-dev.sugar3.io&quot;' var='resourcesUrl'>
   <b:with value='&quot;v1&quot;' var='resourcesVersion'>
   <b:comment>
     <!-- <b:with value='data:view:isPreview or not data:blog.hasCustomDomain ? &quot;//gelatistatic-dev.sugar3.io&quot; : &quot;//cdn-devel.glitch.at&quot;' var='resourcesUrl'> -->
     <!-- <b:with value='&quot;v1_dev&quot;' var='resourcesVersion'> -->
+  </b:comment>
+  <b:comment>
+    configure blogtemplate - blog settings (optional)
+  </b:comment>
+  <b:with value='{ url: &quot;https://1.bp.blogspot.com/-soIs8485b1I/X0Nn3yvLYzI/AAAAAAAAW58/T-KdLsYu3RY5h0oYZeGCj91PMPZ7LdCTQCLcBGAsYHQ&quot;, name: &quot;icon.png&quot;, width: 256, height: 256 }' var='snippetCover'>
+  <b:comment>
+    define alternate blog logo for snippet scrapers. otherwise set to same as blogCover
   </b:comment>
 
   <head>
@@ -4684,6 +4691,11 @@
       cookieChoices = {};
     </script>
 
+    <b:if cond='data:blog.url == data:blog.homepageUrl'>
+      <meta expr:content='data:snippetCover.url + &quot;/s1600/&quot; + data:snippetCover.name' property='og:image'/>
+    </b:if>
+    <meta content='website' property='og:type'/>
+
   </head>
 
   <b:comment>
@@ -4726,6 +4738,7 @@
       blogTemplate.postsNumberedPagination = <b:eval expr='data:postsNumberedPagination'/>;
       blogTemplate.postsPerPage = <b:eval expr='data:postsPerPage'/>;
       blogTemplate.blogCover = JSON.parse(&#39;{&quot;blogCover&quot;: { &quot;url&quot;: &quot;<data:blogCover.url/>&quot;, &quot;name&quot;: &quot;<data:blogCover.name/>&quot;, &quot;width&quot;: &quot;<data:blogCover.width/>&quot;, &quot;height&quot;: &quot;<data:blogCover.height/>&quot; }}&#39;).blogCover;
+      blogTemplate.snippetCover = JSON.parse(&#39;{&quot;snippetCover&quot;: { &quot;url&quot;: &quot;<data:snippetCover.url/>&quot;, &quot;name&quot;: &quot;<data:snippetCover.name/>&quot;, &quot;width&quot;: &quot;<data:snippetCover.width/>&quot;, &quot;height&quot;: &quot;<data:snippetCover.height/>&quot; }}&#39;).snippetCover;
       blogTemplate.widgetCover = JSON.parse(&#39;{&quot;widgetCover&quot;: { &quot;url&quot;: &quot;<data:widgetCover.url/>&quot;, &quot;name&quot;: &quot;<data:widgetCover.name/>&quot;, &quot;width&quot;: &quot;<data:widgetCover.width/>&quot;, &quot;height&quot;: &quot;<data:widgetCover.height/>&quot; }}&#39;).widgetCover;
       blogTemplate.transparentCover = JSON.parse(&#39;{&quot;transparentCover&quot;: { &quot;url&quot;: &quot;<data:transparentCover.url/>&quot;, &quot;name&quot;: &quot;<data:transparentCover.name/>&quot;, &quot;width&quot;: &quot;<data:transparentCover.width/>&quot;, &quot;height&quot;: &quot;<data:transparentCover.height/>&quot; }}&#39;).transparentCover;
       blogTemplate.labelsTop = JSON.parse(&#39;{&quot;labelsTop&quot;: <b:eval expr='data:labelsTop'/>}&#39;).labelsTop;
@@ -4762,7 +4775,7 @@
             gapi.load(&quot;gapi.iframes:gapi.iframes.style.bubble&quot;, function() {
               if (gapi.iframes &amp;&amp; gapi.iframes.getContext) {
                 gapi.iframes.getContext().openChild({
-                    url: &#39;https://www.blogger.com/navbar.g?targetBlogID\x3d9121374278566321470\x26blogName\x3dGelati+Sugarfree\x26publishMode\x3dPUBLISH_MODE_BLOGSPOT\x26navbarType\x3dDISABLED\x26layoutType\x3dLAYOUTS\x26searchRoot\x3dhttps://gelatisugar3.blogspot.com/search\x26blogLocale\x3dde\x26v\x3d2\x26homepageUrl\x3dhttps://gelatisugar3.blogspot.com/\x26vt\x3d-2869955033309774750&#39;,
+                    url: &#39;https://www.blogger.com/navbar.g?targetBlogID\x3d6263380266463058697\x26blogName\x3dGelati+Sugarfree+B+DEV\x26publishMode\x3dPUBLISH_MODE_BLOGSPOT\x26navbarType\x3dDISABLED\x26layoutType\x3dLAYOUTS\x26searchRoot\x3dhttps://gelatisugar3-dev.blogspot.com/search\x26blogLocale\x3dde\x26v\x3d2\x26homepageUrl\x3dhttps://gelatisugar3-dev.blogspot.com/\x26vt\x3d6112628720698100681&#39;,
                     where: document.getElementById(&quot;navbar-iframe-container&quot;),
                     id: &quot;navbar-iframe&quot;
                 });
@@ -4800,6 +4813,12 @@
         <b:if cond='data:blog.metaDescription'>
           <meta expr:content='data:blog.metaDescription' itemprop='description'/>
         </b:if>
+        <div itemprop='image' itemscope='itemscope' itemtype='https://schema.org/ImageObject'>
+          <meta expr:content='data:snippetCover.url + &quot;/s1600/&quot; + data:snippetCover.name' itemprop='url'/>
+          <meta expr:content='data:snippetCover.width' itemprop='width'/>
+          <meta expr:content='data:snippetCover.height' itemprop='height'/>
+        </div>
+        <meta expr:content='data:blog.blogId'/>
       </div>
     </b:if>
 
@@ -5125,7 +5144,7 @@
             </b:widget>
             <b:widget id='PageList1' locked='false' mobile='yes' title='Pages' type='PageList' version='1'>
               <b:widget-settings>
-                <b:widget-setting name='pageListJson'><![CDATA[{'325951980605545349': {'href': 'https://gelatisugar3.blogspot.com/p/docs.html', 'title': 'Documentation', 'position': 0}, '4265769072350727577': {'href': 'https://gelatisugar3.blogspot.com/p/about.html', 'title': 'About', 'position': 1}}]]></b:widget-setting>
+                <b:widget-setting name='pageListJson'><![CDATA[{'6590218136463857356': {'href': 'https://gelatisugar3-dev.blogspot.com/p/docs.html', 'title': 'Docs', 'position': 0}, '4951543842723154992': {'href': 'https://gelatisugar3-dev.blogspot.com/p/about.html', 'title': 'About', 'position': 1}}]]></b:widget-setting>
                 <b:widget-setting name='homeTitle'>Startseite</b:widget-setting>
               </b:widget-settings>
               <b:includable id='main'>
@@ -6462,7 +6481,7 @@
                     <b:includable id='post' var='post'>
                       <div class='post post-inner hentry uncustomized-post-template section-container' itemprop='blogPost' itemscope='itemscope' itemtype='http://schema.org/BlogPosting'>
                         <meta content='data:post.link : data:post.url' expr:itemid='data:post.link' itemType='https://schema.org/WebPage' itemprop='mainEntityOfPage' itemscope='itemscope'/>
-                        <meta expr:content='data:post.timestamp' itemprop='datePublished'/>
+                        <meta expr:content='data:post.timestampISO8601' itemprop='datePublished'/>
                         <meta expr:content='data:post.lastUpdatedISO8601' itemprop='dateModified'/>
                         <div itemprop='image' itemscope='itemscope' itemtype='https://schema.org/ImageObject'>
                           <b:if cond='data:post.firstImageUrl'>
@@ -6471,18 +6490,18 @@
                             <meta content='800' itemprop='width'/>
                             <meta content='800' itemprop='height'/>
                           <b:else/>
-                            <meta expr:content='data:blogCover.url + &quot;/s1600/&quot; + data:blogCover.name' itemprop='url'/>
-                            <meta expr:content='data:blogCover.width' itemprop='width'/>
-                            <meta expr:content='data:blogCover.height' itemprop='height'/>
+                            <meta expr:content='data:snippetCover.url + &quot;/s1600/&quot; + data:snippetCover.name' itemprop='url'/>
+                            <meta expr:content='data:snippetCover.width' itemprop='width'/>
+                            <meta expr:content='data:snippetCover.height' itemprop='height'/>
                           </b:if>
                         </div>
                         <meta expr:content='data:blog.blogId'/>
                         <meta expr:content='data:post.id'/>
                         <div itemprop='publisher' itemscope='itemscope' itemtype='https://schema.org/Organization'>
                           <div itemprop='logo' itemscope='itemscope' itemtype='https://schema.org/ImageObject'>
-                            <meta expr:content='data:blogCover.url + &quot;/s1600/&quot; + data:blogCover.name' itemprop='url'/>
-                            <meta expr:content='data:blogCover.width' itemprop='width'/>
-                            <meta expr:content='data:blogCover.height' itemprop='height'/>
+                            <meta expr:content='data:snippetCover.url + &quot;/s1600/&quot; + data:snippetCover.name' itemprop='url'/>
+                            <meta expr:content='data:snippetCover.width' itemprop='width'/>
+                            <meta expr:content='data:snippetCover.height' itemprop='height'/>
                           </div>
                           <meta expr:content='data:blog.title' itemprop='name'/>
                         </div>
@@ -6748,7 +6767,7 @@
                                             <meta expr:content='data:post.url.canonical' itemprop='url'/>
                                             <a class='timestamp-link date-item' expr:href='data:post.url' rel='bookmark' title='permanent link'>
                                               <i class='font-icon fa-fw fas fa-calendar-alt'/>
-                                              <abbr class='published' expr:title='data:post.timestampISO8601' itemprop='datePublished'><data:post.timestamp/></abbr>
+                                              <abbr class='published' expr:title='data:post.timestampISO8601'><data:post.timestamp/></abbr>
                                             </a>
                                           </b:if>
                                         </b:if></span>
@@ -7382,7 +7401,7 @@
                     <b:widget-settings>
                       <b:widget-setting name='showSnippet'>true</b:widget-setting>
                       <b:widget-setting name='showPostTitle'>true</b:widget-setting>
-                      <b:widget-setting name='postId'>1114876952384777201</b:widget-setting>
+                      <b:widget-setting name='postId'>1768127211288865474</b:widget-setting>
                       <b:widget-setting name='showFirstImage'>true</b:widget-setting>
                       <b:widget-setting name='useMostRecentPost'>false</b:widget-setting>
                     </b:widget-settings>
@@ -7539,7 +7558,7 @@
             <b:section class='foot widget-container' id='footer-3' name='Footer' showaddelement='yes'>
               <b:widget id='PageList2' locked='false' mobile='yes' title='Pages' type='PageList' version='1'>
                 <b:widget-settings>
-                  <b:widget-setting name='pageListJson'><![CDATA[{'325951980605545349': {'href': 'https://gelatisugar3.blogspot.com/p/docs.html', 'title': 'Documentation', 'position': 0}, '4265769072350727577': {'href': 'https://gelatisugar3.blogspot.com/p/about.html', 'title': 'About', 'position': 1}}]]></b:widget-setting>
+                  <b:widget-setting name='pageListJson'><![CDATA[{'6590218136463857356': {'href': 'https://gelatisugar3-dev.blogspot.com/p/docs.html', 'title': 'Docs', 'position': 0}, '4951543842723154992': {'href': 'https://gelatisugar3-dev.blogspot.com/p/about.html', 'title': 'About', 'position': 1}}]]></b:widget-setting>
                   <b:widget-setting name='homeTitle'>Startseite</b:widget-setting>
                 </b:widget-settings>
                 <b:includable id='main'>
@@ -7723,6 +7742,7 @@
     </macro:if>
   </macro:includable>
 
+  </b:with>
   </b:with>
   </b:with>
   </b:with>
