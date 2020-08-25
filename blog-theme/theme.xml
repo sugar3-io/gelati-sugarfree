@@ -26,7 +26,8 @@
   </b:comment>
   <b:with value='{ url: &quot;https://1.bp.blogspot.com/-soIs8485b1I/X0Nn3yvLYzI/AAAAAAAAW58/T-KdLsYu3RY5h0oYZeGCj91PMPZ7LdCTQCLcBGAsYHQ&quot;, name: &quot;icon.png&quot;, width: 256, height: 256 }' var='snippetCover'>
   <b:comment>
-    define alternate blog logo for snippet scrapers. otherwise set to same as blogCover
+    alternate blog logo for snippet scrapers
+    <!-- <b:with value='{ url: &quot;&quot;, name: &quot;&quot;, width: 0, height: 0 }' var='snippetCover'> -->
   </b:comment>
 
   <head>
@@ -4691,10 +4692,10 @@
       cookieChoices = {};
     </script>
 
-    <b:if cond='data:blog.url == data:blog.homepageUrl'>
+    <b:if cond='data:snippetCover.url != &quot;&quot; and data:blog.url == data:blog.homepageUrl'>
       <meta expr:content='data:snippetCover.url + &quot;/s1600/&quot; + data:snippetCover.name' property='og:image'/>
+      <meta content='website' property='og:type'/>
     </b:if>
-    <meta content='website' property='og:type'/>
 
   </head>
 
@@ -4713,9 +4714,10 @@
   <b:with value='4' var='featuredItemsNum'>
   <b:with value='{data:messages.newer, data:messages.older}' var='pagerTitleNames'>
   <b:comment>
+    <!-- <b:with value='{ url: &quot;&quot;, name: &quot;&quot;, width: 0, height: 0 }' var='blogCover'> -->
+    <!-- <b:with value='{&quot;&quot;}' var='labelsTop'> -->
     <!-- <b:with value='{&quot;&quot;}' var='labelsTop'> -->
     <!-- <b:with value='&quot;&quot;' var='featuredSliderLabel'> -->
-    <!-- <b:with value='&quot;Layout&quot;' var='featuredSliderLabel'> -->
     <!-- <b:with value='{&quot;Newer&quot;, &quot;Older&quot;}' var='pagerTitleNames'> -->
   </b:comment>
   <b:with value='{&quot;Jan&quot;, &quot;Feb&quot;, &quot;Mar&quot;, &quot;Apr&quot;, &quot;May&quot;, &quot;Jun&quot;, &quot;Jul&quot;, &quot;Aug&quot;, &quot;Sep&quot;, &quot;Oct&quot;, &quot;Nov&quot;, &quot;Dec&quot;}' var='monthsAbbreviation'>
@@ -4813,11 +4815,13 @@
         <b:if cond='data:blog.metaDescription'>
           <meta expr:content='data:blog.metaDescription' itemprop='description'/>
         </b:if>
-        <div itemprop='image' itemscope='itemscope' itemtype='https://schema.org/ImageObject'>
-          <meta expr:content='data:snippetCover.url + &quot;/s1600/&quot; + data:snippetCover.name' itemprop='url'/>
-          <meta expr:content='data:snippetCover.width' itemprop='width'/>
-          <meta expr:content='data:snippetCover.height' itemprop='height'/>
-        </div>
+        <b:if cond='data:snippetCover.url != &quot;&quot;'>
+          <div itemprop='image' itemscope='itemscope' itemtype='https://schema.org/ImageObject'>
+            <meta expr:content='data:snippetCover.url + &quot;/s1600/&quot; + data:snippetCover.name' itemprop='url'/>
+            <meta expr:content='data:snippetCover.width' itemprop='width'/>
+            <meta expr:content='data:snippetCover.height' itemprop='height'/>
+          </div>
+        </b:if>
         <meta expr:content='data:blog.blogId'/>
       </div>
     </b:if>
@@ -4830,7 +4834,7 @@
         <div class='region-inner header-inner'>
 
           <b:section class='header widget-container' id='header' name='Header'>
-            <b:widget id='Header1' locked='false' title='Gelati Sugarfree (Header)' type='Header' version='1'>
+            <b:widget id='Header1' locked='false' title='Gelati Sugarfree B DEV (Header)' type='Header' version='1'>
               <b:widget-settings>
                 <b:widget-setting name='displayUrl'>https://4.bp.blogspot.com/-nmpCuPN_tec/Xxda9IrG3xI/AAAAAAAAWpc/hI49Un4WlLMTyUCdOZ8DBctkziPGVRI0gCLcBGAsYHQ/s1600/logo.png</b:widget-setting>
                 <b:widget-setting name='displayHeight'>72</b:widget-setting>
@@ -5144,7 +5148,7 @@
             </b:widget>
             <b:widget id='PageList1' locked='false' mobile='yes' title='Pages' type='PageList' version='1'>
               <b:widget-settings>
-                <b:widget-setting name='pageListJson'><![CDATA[{'6590218136463857356': {'href': 'https://gelatisugar3-dev.blogspot.com/p/docs.html', 'title': 'Docs', 'position': 0}, '4951543842723154992': {'href': 'https://gelatisugar3-dev.blogspot.com/p/about.html', 'title': 'About', 'position': 1}}]]></b:widget-setting>
+                <b:widget-setting name='pageListJson'><![CDATA[{'6590218136463857356': {'href': 'https://gelatisugar3-dev.blogspot.com/p/docs.html', 'title': 'Documentation', 'position': 0}, '4951543842723154992': {'href': 'https://gelatisugar3-dev.blogspot.com/p/about.html', 'title': 'About', 'position': 1}}]]></b:widget-setting>
                 <b:widget-setting name='homeTitle'>Startseite</b:widget-setting>
               </b:widget-settings>
               <b:includable id='main'>
@@ -6483,26 +6487,30 @@
                         <meta content='data:post.link : data:post.url' expr:itemid='data:post.link' itemType='https://schema.org/WebPage' itemprop='mainEntityOfPage' itemscope='itemscope'/>
                         <meta expr:content='data:post.timestampISO8601' itemprop='datePublished'/>
                         <meta expr:content='data:post.lastUpdatedISO8601' itemprop='dateModified'/>
-                        <div itemprop='image' itemscope='itemscope' itemtype='https://schema.org/ImageObject'>
-                          <b:if cond='data:post.firstImageUrl'>
-                            <img alt='Textual description of firstImageUrl' expr:src='data:post.firstImageUrl' style='display:none;'/>
-                            <meta expr:content='data:post.firstImageUrl' itemprop='url'/>
-                            <meta content='800' itemprop='width'/>
-                            <meta content='800' itemprop='height'/>
-                          <b:else/>
-                            <meta expr:content='data:snippetCover.url + &quot;/s1600/&quot; + data:snippetCover.name' itemprop='url'/>
-                            <meta expr:content='data:snippetCover.width' itemprop='width'/>
-                            <meta expr:content='data:snippetCover.height' itemprop='height'/>
-                          </b:if>
-                        </div>
+                        <b:if cond='data:post.firstImageUrl or data:snippetCover.url != &quot;&quot;'>
+                          <div itemprop='image' itemscope='itemscope' itemtype='https://schema.org/ImageObject'>
+                            <b:if cond='data:post.firstImageUrl'>
+                              <img alt='Textual description of firstImageUrl' expr:src='data:post.firstImageUrl' style='display:none;'/>
+                              <meta expr:content='data:post.firstImageUrl' itemprop='url'/>
+                              <meta content='800' itemprop='width'/>
+                              <meta content='800' itemprop='height'/>
+                            <b:else/>
+                              <meta expr:content='data:snippetCover.url + &quot;/s1600/&quot; + data:snippetCover.name' itemprop='url'/>
+                              <meta expr:content='data:snippetCover.width' itemprop='width'/>
+                              <meta expr:content='data:snippetCover.height' itemprop='height'/>
+                            </b:if>
+                          </div>
+                        </b:if>
                         <meta expr:content='data:blog.blogId'/>
                         <meta expr:content='data:post.id'/>
                         <div itemprop='publisher' itemscope='itemscope' itemtype='https://schema.org/Organization'>
-                          <div itemprop='logo' itemscope='itemscope' itemtype='https://schema.org/ImageObject'>
-                            <meta expr:content='data:snippetCover.url + &quot;/s1600/&quot; + data:snippetCover.name' itemprop='url'/>
-                            <meta expr:content='data:snippetCover.width' itemprop='width'/>
-                            <meta expr:content='data:snippetCover.height' itemprop='height'/>
-                          </div>
+                          <b:if cond='data:snippetCover.url != &quot;&quot;'>
+                            <div itemprop='logo' itemscope='itemscope' itemtype='https://schema.org/ImageObject'>
+                              <meta expr:content='data:snippetCover.url + &quot;/s1600/&quot; + data:snippetCover.name' itemprop='url'/>
+                              <meta expr:content='data:snippetCover.width' itemprop='width'/>
+                              <meta expr:content='data:snippetCover.height' itemprop='height'/>
+                            </div>
+                          </b:if>
                           <meta expr:content='data:blog.title' itemprop='name'/>
                         </div>
                         <div class='post-header post-title section-item'>
@@ -7558,7 +7566,7 @@
             <b:section class='foot widget-container' id='footer-3' name='Footer' showaddelement='yes'>
               <b:widget id='PageList2' locked='false' mobile='yes' title='Pages' type='PageList' version='1'>
                 <b:widget-settings>
-                  <b:widget-setting name='pageListJson'><![CDATA[{'6590218136463857356': {'href': 'https://gelatisugar3-dev.blogspot.com/p/docs.html', 'title': 'Docs', 'position': 0}, '4951543842723154992': {'href': 'https://gelatisugar3-dev.blogspot.com/p/about.html', 'title': 'About', 'position': 1}}]]></b:widget-setting>
+                  <b:widget-setting name='pageListJson'><![CDATA[{'6590218136463857356': {'href': 'https://gelatisugar3-dev.blogspot.com/p/docs.html', 'title': 'Documentation', 'position': 0}, '4951543842723154992': {'href': 'https://gelatisugar3-dev.blogspot.com/p/about.html', 'title': 'About', 'position': 1}}]]></b:widget-setting>
                   <b:widget-setting name='homeTitle'>Startseite</b:widget-setting>
                 </b:widget-settings>
                 <b:includable id='main'>
