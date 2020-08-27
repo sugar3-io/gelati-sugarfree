@@ -24,7 +24,7 @@
   <b:comment>
     configure blogtemplate - blog settings (optional)
   </b:comment>
-  <b:with value='{ url: &quot;https://1.bp.blogspot.com/-soIs8485b1I/X0Nn3yvLYzI/AAAAAAAAW58/T-KdLsYu3RY5h0oYZeGCj91PMPZ7LdCTQCLcBGAsYHQ&quot;, name: &quot;icon.png&quot;, width: 256, height: 256 }' var='snippetCover'>
+  <b:with value='{ url: &quot;https://1.bp.blogspot.com/-94GT-dZX98s/X0ZymIlygGI/AAAAAAAAW78/CAk1lkbxRnoJCHb0np0YOJKhzGPq-TJ2ACLcBGAsYHQ&quot;, name: &quot;icon.png&quot;, width: 256, height: 256 }' var='snippetCover'>
   <b:comment>
     alternate blog logo for snippet scrapers
     <!-- <b:with value='{ url: &quot;&quot;, name: &quot;&quot;, width: 0, height: 0 }' var='snippetCover'> -->
@@ -4693,7 +4693,7 @@
     </script>
 
     <b:if cond='data:snippetCover.url != &quot;&quot; and data:blog.url == data:blog.homepageUrl'>
-      <meta expr:content='data:snippetCover.url + &quot;/s1600/&quot; + data:snippetCover.name' property='og:image'/>
+      <meta expr:content='data:snippetCover.url + &quot;/s&quot; + data:snippetCover.width + &quot;/&quot; + data:snippetCover.name' property='og:image'/>
       <meta content='website' property='og:type'/>
     </b:if>
 
@@ -4817,7 +4817,7 @@
         </b:if>
         <b:if cond='data:snippetCover.url != &quot;&quot;'>
           <div itemprop='image' itemscope='itemscope' itemtype='https://schema.org/ImageObject'>
-            <meta expr:content='data:snippetCover.url + &quot;/s1600/&quot; + data:snippetCover.name' itemprop='url'/>
+            <meta expr:content='data:snippetCover.url + &quot;/s&quot; + data:snippetCover.width + &quot;/&quot; + data:snippetCover.name' itemprop='url'/>
             <meta expr:content='data:snippetCover.width' itemprop='width'/>
             <meta expr:content='data:snippetCover.height' itemprop='height'/>
           </div>
@@ -6495,7 +6495,7 @@
                               <meta content='800' itemprop='width'/>
                               <meta content='800' itemprop='height'/>
                             <b:else/>
-                              <meta expr:content='data:snippetCover.url + &quot;/s1600/&quot; + data:snippetCover.name' itemprop='url'/>
+                              <meta expr:content='data:snippetCover.url + &quot;/s&quot; + data:snippetCover.width + &quot;/&quot; + data:snippetCover.name' itemprop='url'/>
                               <meta expr:content='data:snippetCover.width' itemprop='width'/>
                               <meta expr:content='data:snippetCover.height' itemprop='height'/>
                             </b:if>
@@ -6506,7 +6506,7 @@
                         <div itemprop='publisher' itemscope='itemscope' itemtype='https://schema.org/Organization'>
                           <b:if cond='data:snippetCover.url != &quot;&quot;'>
                             <div itemprop='logo' itemscope='itemscope' itemtype='https://schema.org/ImageObject'>
-                              <meta expr:content='data:snippetCover.url + &quot;/s1600/&quot; + data:snippetCover.name' itemprop='url'/>
+                              <meta expr:content='data:snippetCover.url + &quot;/s&quot; + data:snippetCover.width + &quot;/&quot; + data:snippetCover.name' itemprop='url'/>
                               <meta expr:content='data:snippetCover.width' itemprop='width'/>
                               <meta expr:content='data:snippetCover.height' itemprop='height'/>
                             </div>
