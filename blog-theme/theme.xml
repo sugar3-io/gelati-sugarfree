@@ -419,6 +419,24 @@
           <Variable name="shadow3.color" description="Shadow3 Color" type="color" default="rgba(0, 0, 0, 0.75)" value="rgba(0, 0, 0, 0.75)"/>
         </Group>
 
+        <!-- b:comment: customize blogtemplate - label css (start) -->
+        <Variable hideEditor='true' name="label.cover.Image" description="Label Cover Image" type="string" default="https://4.bp.blogspot.com/-ViZyoQpb4Uw/XvRhwF6EsxI/AAAAAAAAWYw/2qNMlotAUAYCFcCiDJ5nxKxKsxrjCKxwACPcBGAYYCw/w800-h400-c/image.png" value="https://4.bp.blogspot.com/-ViZyoQpb4Uw/XvRhwF6EsxI/AAAAAAAAWYw/2qNMlotAUAYCFcCiDJ5nxKxKsxrjCKxwACPcBGAYYCw"/>
+
+        <Variable hideEditor='true' name="label.cover.Markup" description="Label Cover Markup" type="string" default="https://3.bp.blogspot.com/--4UlF2Ce7Ck/XvRhwK9AGaI/AAAAAAAAWZE/HDpuwn3RVYEas7SJvyF_JVopZlPrQsdyACPcBGAYYCw/w800-h400-c/markup.png" value="https://3.bp.blogspot.com/--4UlF2Ce7Ck/XvRhwK9AGaI/AAAAAAAAWZE/HDpuwn3RVYEas7SJvyF_JVopZlPrQsdyACPcBGAYYCw"/>
+
+        <Variable hideEditor='true' name="label.cover.Embedded" description="Label Cover Embedded" type="string" default="https://1.bp.blogspot.com/-EWLNCxAlI0M/XvRhwvxcNcI/AAAAAAAAWZE/ZCdizQon2zM8yk0xbNac_PSNSb1Dstt-gCPcBGAYYCw/w800-h400-c/embedded.png" value="https://1.bp.blogspot.com/-EWLNCxAlI0M/XvRhwvxcNcI/AAAAAAAAWZE/ZCdizQon2zM8yk0xbNac_PSNSb1Dstt-gCPcBGAYYCw"/>
+
+        <Variable hideEditor='true' name="label.cover.Layout" description="Label Cover Layout" type="string" default="https://1.bp.blogspot.com/-88oRQKNxl3Q/XvRhwzn6kiI/AAAAAAAAWZE/KfLxoT7gcRodNkPGCkeZOxGSpC_pveIjgCPcBGAYYCw/w800-h400-c/layout.png" value="https://1.bp.blogspot.com/-88oRQKNxl3Q/XvRhwzn6kiI/AAAAAAAAWZE/KfLxoT7gcRodNkPGCkeZOxGSpC_pveIjgCPcBGAYYCw"/>
+
+        <Variable hideEditor='true' name="label.cover.Video" description="Label Cover Video" type="string" default="https://2.bp.blogspot.com/-MLLsEuI-UPE/XvRhxIvq7wI/AAAAAAAAWY4/J06vU7MqSgEouOkJrc41d8RfbJpGUwCGACPcBGAYYCw/w800-h400-c/video.png" value="https://2.bp.blogspot.com/-MLLsEuI-UPE/XvRhxIvq7wI/AAAAAAAAWY4/J06vU7MqSgEouOkJrc41d8RfbJpGUwCGACPcBGAYYCw"/>
+
+        <Variable hideEditor='true' name="label.cover.Test_Case" description="Label Cover Test_Case" type="string" default="https://3.bp.blogspot.com/-kTDwRQlRJfY/XvRhxZdL7mI/AAAAAAAAWY8/ZW6lxWrdMbkN3N0W-ZBSCz3Kgfvb_vwKQCPcBGAYYCw/w800-h400-c/test_case.png" value="https://3.bp.blogspot.com/-kTDwRQlRJfY/XvRhxZdL7mI/AAAAAAAAWY8/ZW6lxWrdMbkN3N0W-ZBSCz3Kgfvb_vwKQCPcBGAYYCw"/>
+
+        <Variable hideEditor='true' name="label.cover.Media" description="Label Cover Media" type="string" default="https://4.bp.blogspot.com/-N9Ql9x_xX9c/XvRhxSqBSfI/AAAAAAAAWZA/pswTNS4o27c8V84roQx1kUG9mFxqzZxGQCPcBGAYYCw/w800-h400-c/media.png" value="https://4.bp.blogspot.com/-N9Ql9x_xX9c/XvRhxSqBSfI/AAAAAAAAWZA/pswTNS4o27c8V84roQx1kUG9mFxqzZxGQCPcBGAYYCw"/>
+
+        <Variable hideEditor='true' name="label.cover.Gallery" description="Label Cover Gallery" type="string" default="https://3.bp.blogspot.com/-bW-mckNpYj4/XvRhx9r0mcI/AAAAAAAAWZE/Ps8Wnj--s68KuW9CN5VIA-Vb8nTrm8CFACPcBGAYYCw/w800-h400-c/gallery.png" value="https://3.bp.blogspot.com/-bW-mckNpYj4/XvRhx9r0mcI/AAAAAAAAWZE/Ps8Wnj--s68KuW9CN5VIA-Vb8nTrm8CFACPcBGAYYCw"/>
+        <!-- b:comment: customize blogtemplate - label css (end) -->
+
         <Variable hideEditor='true' name="comments.color" description="Comments Color" type="color" default="#bbbbbb" value="#bbbbbb"/>
         <!-- b:comment: legacy, use if necessary -->
         <Variable hideEditor='true' name="post.border.bevel.color" description="Bevel Color post3" type="color" default="#8e7cc3" value="#8e7cc3"/>
@@ -1143,6 +1161,83 @@
       }
 
 
+      body .label-item-Image {
+        background-image: url("$(label.cover.Image)/w400-h200-c/image.png");
+      }
+      body .label-item-Markup {
+        background-image: url("$(label.cover.Markup)/w400-h200-c/markup.png");
+      }
+      body .label-item-Embedded {
+        background-image: url("$(label.cover.Embedded)/w400-h200-c/embedded.png");
+      }
+      body .label-item-Layout {
+        background-image: url("$(label.cover.Layout)/w400-h200-c/layout.png");
+      }
+      body .label-item-Video {
+        background-image: url("$(label.cover.Video)/w400-h200-c/video.png");
+      }
+      body .label-item-Test_Case {
+        background-image: url("$(label.cover.Test_Case)/w400-h200-c/test_case.png");
+      }
+      body .label-item-Media {
+        background-image: url("$(label.cover.Media)/w400-h200-c/media.png");
+      }
+      body .label-item-Gallery {
+        background-image: url("$(label.cover.Gallery)/w400-h200-c/gallery.png");
+      }
+      body .full-width.label-item-Image {
+        background-image: url("$(label.cover.Image)/w800-h400-c/image.png");
+      }
+      body .full-width.label-item-Markup {
+        background-image: url("$(label.cover.Markup)/w800-h400-c/markup.png");
+      }
+      body .full-width.label-item-Embedded {
+        background-image: url("$(label.cover.Embedded)/w800-h400-c/embedded.png");
+      }
+      body .full-width.label-item-Layout {
+        background-image: url("$(label.cover.Layout)/w800-h400-c/layout.png");
+      }
+      body .full-width.label-item-Video {
+        background-image: url("$(label.cover.Video)/w800-h400-c/video.png");
+      }
+      body .full-width.label-item-Test_Case {
+        background-image: url("$(label.cover.Test_Case)/w800-h400-c/test_case.png");
+      }
+      body .full-width.label-item-Media {
+        background-image: url("$(label.cover.Media)/w800-h400-c/media.png");
+      }
+      body .full-width.label-item-Gallery {
+        background-image: url("$(label.cover.Gallery)/w800-h400-c/gallery.png");
+      }
+      body .ratio-square.label-item-Image {
+        background-image: url("$(label.cover.Image)/w400-h400-c/image.png");
+      }
+      body .ratio-square.label-item-Markup {
+        background-image: url("$(label.cover.Markup)/w400-h400-c/markup.png");
+      }
+      body .ratio-square.label-item-Embedded {
+        background-image: url("$(label.cover.Embedded)/w400-h400-c/embedded.png");
+      }
+      body .ratio-square.label-item-Layout {
+        background-image: url("$(label.cover.Layout)/w400-h400-c/layout.png");
+      }
+      body .ratio-square.label-item-Video {
+        background-image: url("$(label.cover.Video)/w400-h400-c/video.png");
+      }
+      body .ratio-square.label-item-Test_Case {
+        background-image: url("$(label.cover.Test_Case)/w400-h400-c/test_case.png");
+      }
+      body .ratio-square.label-item-Media {
+        background-image: url("$(label.cover.Media)/w400-h400-c/media.png");
+      }
+      body .ratio-square.label-item-Gallery {
+        background-image: url("$(label.cover.Gallery)/w400-h400-c/gallery.png");
+      }
+
+      body .label-item-FEATUREDSLIDER {
+        display: none !important;
+      }
+
       body .label-item {
         /* b:comment: set background-size to 0px to hide label cover */
         background-size: 0px 0px;
@@ -1438,39 +1533,6 @@
         header button i.fas, header .menu-icon.font-icon {
           font-size: 1.5em;
         }
-
-
-        /* b:comment: customize blogtemplate - label css (start) */
-
-        body .label-item-Image {
-          background-image: url("https://4.bp.blogspot.com/-ViZyoQpb4Uw/XvRhwF6EsxI/AAAAAAAAWYw/2qNMlotAUAYCFcCiDJ5nxKxKsxrjCKxwACPcBGAYYCw/w800-h400-c/image.png");
-        }
-        body .label-item-Markup {
-          background-image: url("https://3.bp.blogspot.com/--4UlF2Ce7Ck/XvRhwK9AGaI/AAAAAAAAWZE/HDpuwn3RVYEas7SJvyF_JVopZlPrQsdyACPcBGAYYCw/w800-h400-c/markup.png");
-        }
-        body .label-item-Embedded {
-          background-image: url("https://1.bp.blogspot.com/-EWLNCxAlI0M/XvRhwvxcNcI/AAAAAAAAWZE/ZCdizQon2zM8yk0xbNac_PSNSb1Dstt-gCPcBGAYYCw/w800-h400-c/embedded.png");
-        }
-        body .label-item-Layout {
-          background-image: url("https://1.bp.blogspot.com/-88oRQKNxl3Q/XvRhwzn6kiI/AAAAAAAAWZE/KfLxoT7gcRodNkPGCkeZOxGSpC_pveIjgCPcBGAYYCw/w800-h400-c/layout.png");
-        }
-        body .label-item-Video {
-          background-image: url("https://2.bp.blogspot.com/-MLLsEuI-UPE/XvRhxIvq7wI/AAAAAAAAWY4/J06vU7MqSgEouOkJrc41d8RfbJpGUwCGACPcBGAYYCw/w800-h400-c/video.png");
-        }
-        body .label-item-Test_Case {
-          background-image: url("https://3.bp.blogspot.com/-kTDwRQlRJfY/XvRhxZdL7mI/AAAAAAAAWY8/ZW6lxWrdMbkN3N0W-ZBSCz3Kgfvb_vwKQCPcBGAYYCw/w800-h400-c/test_case.png");
-        }
-        body .label-item-Media {
-          background-image: url("https://4.bp.blogspot.com/-N9Ql9x_xX9c/XvRhxSqBSfI/AAAAAAAAWZA/pswTNS4o27c8V84roQx1kUG9mFxqzZxGQCPcBGAYYCw/w800-h400-c/media.png");
-        }
-        body .label-item-Gallery {
-          background-image: url("https://3.bp.blogspot.com/-bW-mckNpYj4/XvRhx9r0mcI/AAAAAAAAWZE/Ps8Wnj--s68KuW9CN5VIA-Vb8nTrm8CFACPcBGAYYCw/w800-h400-c/gallery.png");
-        }
-        body .label-item-FEATUREDSLIDER {
-          display: none !important;
-        }
-
-        /* b:comment: customize blogtemplate - label css (end) */
 
 
         header:not([class~="fixed"]) #Label1 nav ul li.label-item {
@@ -1772,39 +1834,6 @@
         body .teaser-container .label-container .label-item:not(:only-of-type)::after {
           content: "\002026"; 
         }
-
-
-        /* b:comment: customize blogtemplate - label css (start) */
-
-        body .label-item-Image {
-          background-image: url("https://4.bp.blogspot.com/-ViZyoQpb4Uw/XvRhwF6EsxI/AAAAAAAAWYw/2qNMlotAUAYCFcCiDJ5nxKxKsxrjCKxwACPcBGAYYCw/w400-h200-c/image.png");
-        }
-        body .label-item-Markup {
-          background-image: url("https://3.bp.blogspot.com/--4UlF2Ce7Ck/XvRhwK9AGaI/AAAAAAAAWZE/HDpuwn3RVYEas7SJvyF_JVopZlPrQsdyACPcBGAYYCw/w400-h200-c/markup.png");
-        }
-        body .label-item-Embedded {
-          background-image: url("https://1.bp.blogspot.com/-EWLNCxAlI0M/XvRhwvxcNcI/AAAAAAAAWZE/ZCdizQon2zM8yk0xbNac_PSNSb1Dstt-gCPcBGAYYCw/w400-h200-c/embedded.png");
-        }
-        body .label-item-Layout {
-          background-image: url("https://1.bp.blogspot.com/-88oRQKNxl3Q/XvRhwzn6kiI/AAAAAAAAWZE/KfLxoT7gcRodNkPGCkeZOxGSpC_pveIjgCPcBGAYYCw/w400-h200-c/layout.png");
-        }
-        body .label-item-Video {
-          background-image: url("https://2.bp.blogspot.com/-MLLsEuI-UPE/XvRhxIvq7wI/AAAAAAAAWY4/J06vU7MqSgEouOkJrc41d8RfbJpGUwCGACPcBGAYYCw/w400-h200-c/video.png");
-        }
-        body .label-item-Test_Case {
-          background-image: url("https://3.bp.blogspot.com/-kTDwRQlRJfY/XvRhxZdL7mI/AAAAAAAAWY8/ZW6lxWrdMbkN3N0W-ZBSCz3Kgfvb_vwKQCPcBGAYYCw/w400-h200-c/test_case.png");
-        }
-        body .label-item-Media {
-          background-image: url("https://4.bp.blogspot.com/-N9Ql9x_xX9c/XvRhxSqBSfI/AAAAAAAAWZA/pswTNS4o27c8V84roQx1kUG9mFxqzZxGQCPcBGAYYCw/w400-h200-c/media.png");
-        }
-        body .label-item-Gallery {
-          background-image: url("https://3.bp.blogspot.com/-bW-mckNpYj4/XvRhx9r0mcI/AAAAAAAAWZE/Ps8Wnj--s68KuW9CN5VIA-Vb8nTrm8CFACPcBGAYYCw/w400-h200-c/gallery.png");
-        }
-        body .label-item-FEATUREDSLIDER {
-          display: none !important;
-        }
-
-        /* b:comment: customize blogtemplate - label css (end) */
 
 
         #Label1.is-active {
@@ -4721,6 +4750,7 @@
     <!-- <b:with value='{&quot;Newer&quot;, &quot;Older&quot;}' var='pagerTitleNames'> -->
   </b:comment>
   <b:with value='{&quot;Jan&quot;, &quot;Feb&quot;, &quot;Mar&quot;, &quot;Apr&quot;, &quot;May&quot;, &quot;Jun&quot;, &quot;Jul&quot;, &quot;Aug&quot;, &quot;Sep&quot;, &quot;Oct&quot;, &quot;Nov&quot;, &quot;Dec&quot;}' var='monthsAbbreviation'>
+  <b:with value='data:blog.isMobileRequest' var='mobileRequest'>
 
   <b:comment>
     deploys an operator only processes custom domain urls. use of fragment url is a workaround for that strange behavior
@@ -4749,6 +4779,7 @@
       blogTemplate.featuredItemsNum = <b:eval expr='data:featuredItemsNum'/>;
       blogTemplate.pagerTitleNames = JSON.parse(&#39;{&quot;pagerTitleNames&quot;: <b:eval expr='data:pagerTitleNames'/>}&#39;).pagerTitleNames;
       blogTemplate.monthsAbbreviation = JSON.parse(&#39;{&quot;monthsAbbreviation&quot;: <b:eval expr='data:monthsAbbreviation'/>}&#39;).monthsAbbreviation;
+      blogTemplate.mobileRequest = <b:eval expr='data:mobileRequest'/>;
     </script>
 
     <b:comment>
@@ -5061,15 +5092,17 @@
                   numbered pagination fix: set max-results as first queryparameter
                 </b:comment>
                 <b:with value='&quot;/search/label/&quot; + data:label.name + &quot;?&amp;max-results=&quot; + data:postsPerPage' var='href'>
-                  <b:comment>
-                    surpress transition effects when leaving page
-                  </b:comment>
-                  <b:with value='&quot;event.stopPropagation(); return true;&quot;' var='eventstop'>
-                    <li expr:class='&quot;label-item label-item-&quot; + data:label.name'>
-                      <b:tag expr:class='&quot;&quot;' expr:href='data:href' expr:onclick='data:eventstop' name='a'>
-                        <span><data:label.name/></span>
-                      </b:tag>
-                    </li>
+                  <b:with value='!data:blog.isMobileRequest ? &quot;ratio-square &quot; : &quot;&quot;' var='ratio'>
+                    <b:comment>
+                      surpress transition effects when leaving page
+                    </b:comment>
+                    <b:with value='&quot;event.stopPropagation(); return true;&quot;' var='eventstop'>
+                      <li expr:class='data:ratio + &quot;label-item label-item-&quot; + data:label.name'>
+                        <b:tag expr:class='&quot;&quot;' expr:href='data:href' expr:onclick='data:eventstop' name='a'>
+                          <span><data:label.name/></span>
+                        </b:tag>
+                      </li>
+                    </b:with>
                   </b:with>
                 </b:with>
               </b:includable>
@@ -5078,18 +5111,20 @@
                   numbered pagination fix: set max-results as first queryparameter
                 </b:comment>
                 <b:with value='&quot;/search/label/&quot; + data:label.name + &quot;?&amp;max-results=&quot; + data:postsPerPage' var='href'>
-                  <b:comment>
-                    surpress transition effects when leaving page
-                  </b:comment>
-                  <b:with value='&quot;event.stopPropagation(); return true;&quot;' var='eventstop'>
-                    <li expr:class='&quot;label-item label-item-&quot; + data:label.name'>
-                      <b:tag expr:class='&quot;top-heading&quot;' expr:href='data:href' expr:onclick='data:eventstop' name='a'>
-                        <span><data:label.name/></span>
-                      </b:tag>
-                      <b:if cond='data:labelsTop.size &gt; 0 and data:labelsTop[0] != &quot;&quot;'>
-                        <b:class cond='data:view.isPreview and data:label.name == data:labelsTop.first' name='selected-item'/>
-                      </b:if>
-                    </li>
+                  <b:with value='!data:blog.isMobileRequest ? &quot;ratio-square &quot; : &quot;&quot;' var='ratio'>
+                    <b:comment>
+                      surpress transition effects when leaving page
+                    </b:comment>
+                    <b:with value='&quot;event.stopPropagation(); return true;&quot;' var='eventstop'>
+                      <li expr:class='data:ratio + &quot;label-item label-item-&quot; + data:label.name'>
+                        <b:tag expr:class='&quot;top-heading&quot;' expr:href='data:href' expr:onclick='data:eventstop' name='a'>
+                          <span><data:label.name/></span>
+                        </b:tag>
+                        <b:if cond='data:labelsTop.size &gt; 0 and data:labelsTop[0] != &quot;&quot;'>
+                          <b:class cond='data:view.isPreview and data:label.name == data:labelsTop.first' name='selected-item'/>
+                        </b:if>
+                      </li>
+                    </b:with>
                   </b:with>
                 </b:with>
               </b:includable>
@@ -6490,10 +6525,12 @@
                         <b:if cond='data:post.firstImageUrl or data:snippetCover.url != &quot;&quot;'>
                           <div itemprop='image' itemscope='itemscope' itemtype='https://schema.org/ImageObject'>
                             <b:if cond='data:post.firstImageUrl'>
-                              <img alt='Textual description of firstImageUrl' expr:src='data:post.firstImageUrl' style='display:none;'/>
+                              <b:comment>
+                                <img alt='Textual description of firstImageUrl' expr:src='resizeImage(data:post.firstImageUrl, 400, &quot;2:1&quot;)' style='display:none;'/>
+                              </b:comment>
                               <meta expr:content='data:post.firstImageUrl' itemprop='url'/>
                               <meta content='800' itemprop='width'/>
-                              <meta content='800' itemprop='height'/>
+                              <meta content='400' itemprop='height'/>
                             <b:else/>
                               <meta expr:content='data:snippetCover.url + &quot;/s&quot; + data:snippetCover.width + &quot;/&quot; + data:snippetCover.name' itemprop='url'/>
                               <meta expr:content='data:snippetCover.width' itemprop='width'/>
@@ -7073,7 +7110,8 @@
                         <b:else/>
                           <div>
                             <b:class name='widget-item-outer status-header status-item'/>
-                            <b:class cond='data:view.search.label' expr:name='&quot;label-item label-item-&quot; + data:view.search.label'/>
+                            <b:class cond='data:view.search.label and !data:blog.isMobileRequest' expr:name='&quot;label-item full-width label-item-&quot; + data:view.search.label'/>
+                            <b:class cond='data:view.search.label and data:blog.isMobileRequest' expr:name='&quot;label-item label-item-&quot; + data:view.search.label'/>
                             <b:class cond='data:view.search.query' expr:name='&quot;search-item&quot;'/>
                             <div>
                             </div>
@@ -7700,6 +7738,7 @@
   </b:with>
   </b:with>
 
+  </b:with>
   </b:with>
   </b:with>
   </b:with>
