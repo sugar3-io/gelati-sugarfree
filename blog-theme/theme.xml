@@ -5707,7 +5707,7 @@
                       <b:widget-setting name='showTimestamp'>true</b:widget-setting>
                       <b:widget-setting name='postsPerAd'>1</b:widget-setting>
                       <b:widget-setting name='showBacklinks'>false</b:widget-setting>
-                      <b:widget-setting name='style.bordercolor'>#1b1d1e</b:widget-setting>
+                      <b:widget-setting name='style.bordercolor'>#d52a33</b:widget-setting>
                       <b:widget-setting name='showInlineAds'>false</b:widget-setting>
                       <b:widget-setting name='showReactions'>false</b:widget-setting>
                     </b:widget-settings>
@@ -6012,26 +6012,28 @@
                       <section class='widget-item-outer blog-item'>
                         <div class='widget widget-item-inner'>
                           <b:if cond='data:blog.pageType == &quot;item&quot; and data:post.labels and not(data:post.labels.size == 1 and data:post.labels.first.name == data:featuredSliderLabel)'>
-                            <div class='title widget-title'><data:messages.youMayLikeThesePosts/></div>
-                            <div class='widget-content'>
-                              <div class='teaser-container swipeable-item' id='mbtrelated'>
-                                <b:if cond='not data:view.isPreview'>
-                                  <script id='feedRecent1_script' type='text/javascript'>
-                                    var dragScroll1 = new DragScroll(&#39;#mbtrelated .mbtlist&#39;, blogTemplate.featuredItemsNum);
-                                    var feedRecent1 = new FeedRecent(&quot;feedRecent1&quot;, dragScroll1.init, [&quot;<b:eval expr='data:post.labels[0].name'/>&quot;], blogTemplate.postsPerPage, [blogTemplate.widgetCover.url, blogTemplate.widgetCover.name], blogTemplate.featuredItemsNum, blogTemplate.monthsAbbreviation, &quot;<data:messages.labels/>&quot;, blogTemplate.featuredSliderLabel);
-                                    window.addEventListener(&#39;DOMContentLoaded&#39;, function(e) {
-                                      feedRecent1.init();
-                                    });
-                                  </script>
-                                <b:else/>
-                                  <div>
-                                    <ul class='mbtlist widget-item-list'><b:class name='widget-item-slider has-right'/><b:loop values='1 to data:featuredItemsNum' var='i'>
-                                    <li class='teaser-item node0'><div class='iFeatured teaser-header none-cover'><a href=''><img alt='' expr:src='data:widgetCover.url + &quot;/w350-h150-c/&quot; + data:widgetCover.name'/></a></div><div class='label-container itag'><b:loop values='data:labelsTop' var='label'><a class='label-item' href=''><span><data:label/></span></a> </b:loop></div><div class='icontainer teaser-body section-container'><div class='mbttitle section-item title-item'><a href=''>title</a></div><div class='iline section-item meta-container'><span class='idate date-item meta-item'><i class='font-icon fa-fw fas fa-calendar-alt'/> date</span> <a class='icomments comment-item meta-item' href=''><i class='font-icon fa-fw fas fa-comments'/> <span class='counter-item'>0</span></a> <span class='iauthor author-item meta-item'><i class='font-icon fa-fw fab fa-blogger'/> author</span></div><div class='icontent section-item content-item'><span>content</span></div></div></li></b:loop></ul>
-                                    <div class='itotal teaser-footer button-item is-link'><a class='caption-item' href=''><span class='label-item label-item-Gallery'><data:labelsTop.first/></span></a></div>
-                                  </div>
-                                </b:if>
+                            <b:with value='data:post.labels[0].name == data:featuredSliderLabel ? data:post.labels[1].name : data:post.labels[0].name' var='postlabel'>
+                              <div class='title widget-title'><data:messages.youMayLikeThesePosts/></div>
+                              <div class='widget-content'>
+                                <div class='teaser-container swipeable-item' id='mbtrelated'>
+                                  <b:if cond='not data:view.isPreview'>
+                                    <script id='feedRecent1_script' type='text/javascript'>
+                                      var dragScroll1 = new DragScroll(&#39;#mbtrelated .mbtlist&#39;, blogTemplate.featuredItemsNum);
+                                      var feedRecent1 = new FeedRecent(&quot;feedRecent1&quot;, dragScroll1.init, [&quot;<data:postlabel/>&quot;], blogTemplate.postsPerPage, [blogTemplate.widgetCover.url, blogTemplate.widgetCover.name], blogTemplate.featuredItemsNum, blogTemplate.monthsAbbreviation, &quot;<data:messages.labels/>&quot;, blogTemplate.featuredSliderLabel);
+                                      window.addEventListener(&#39;DOMContentLoaded&#39;, function(e) {
+                                        feedRecent1.init();
+                                      });
+                                    </script>
+                                  <b:else/>
+                                    <div>
+                                      <ul class='mbtlist widget-item-list'><b:class name='widget-item-slider has-right'/><b:loop values='1 to data:featuredItemsNum' var='i'>
+                                      <li class='teaser-item node0'><div class='iFeatured teaser-header none-cover'><a href=''><img alt='' expr:src='data:widgetCover.url + &quot;/w350-h150-c/&quot; + data:widgetCover.name'/></a></div><div class='label-container itag'><b:loop values='data:labelsTop' var='label'><a class='label-item' href=''><span><data:label/></span></a> </b:loop></div><div class='icontainer teaser-body section-container'><div class='mbttitle section-item title-item'><a href=''>title</a></div><div class='iline section-item meta-container'><span class='idate date-item meta-item'><i class='font-icon fa-fw fas fa-calendar-alt'/> date</span> <a class='icomments comment-item meta-item' href=''><i class='font-icon fa-fw fas fa-comments'/> <span class='counter-item'>0</span></a> <span class='iauthor author-item meta-item'><i class='font-icon fa-fw fab fa-blogger'/> author</span></div><div class='icontent section-item content-item'><span>content</span></div></div></li></b:loop></ul>
+                                      <div class='itotal teaser-footer button-item is-link'><a class='caption-item' href=''><span class='label-item label-item-Gallery'><data:labelsTop.first/></span></a></div>
+                                    </div>
+                                  </b:if>
+                                </div>
                               </div>
-                            </div>
+                            </b:with>
                           <b:else/>
                             <div class='title widget-title'><data:messages.recentPosts/></div>
                             <div class='widget-content'>
