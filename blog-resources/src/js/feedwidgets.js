@@ -86,7 +86,8 @@ function FeedSlider(
   var ImageH = 400;
   var ImageAltW = 400;
   var ImageAltH = 200;
-  var FeaturedImageMatch = "/w800-h400-p-k-no-nu/";
+  // var FeaturedImageMatch = "/w800-h400-p-k-no-nu/";
+  var FeaturedImageMatch = "/s72-w800-h400-c-p-k-no-nu/";
 
   var thatName = mbtObjName;
   var where = document.getElementById(thatName + "_script");
@@ -212,7 +213,12 @@ function FeedSlider(
       // Thumbnail Check
       if (json.feed.entry[i].media$thumbnail) {
         thumbUrl = json.feed.entry[i].media$thumbnail.url;
-        sk = thumbUrl.replace("/s72-c/", "/w" + ImageW + "-h" + ImageH + "-c/");
+        if (thumbUrl.replace("/s72-c/", "/w" + ImageW + "-h" + ImageH + "-c/")) {
+          sk = thumbUrl.replace("/s72-c/", "/w" + ImageW + "-h" + ImageH + "-c/");
+        }
+        if (thumbUrl.replace("/s72-w800-h400-c-p-k-no-nu/", "/w" + ImageW + "-h" + ImageH + "-c/")) {
+          sk = thumbUrl.replace("/s72-w800-h400-c-p-k-no-nu/", "/w" + ImageW + "-h" + ImageH + "-c/");
+        }
         ListImage = "'" + sk.replace("?imgmax=800", "") + "'";
 
         /* b:comment: */
@@ -410,7 +416,8 @@ function FeedRecent(
   var TitleCount = 66;
   var ImageW = 300;
   var ImageH = 150;
-  var FeaturedImageMatch = "/w800-h400-p-k-no-nu/";
+  // var FeaturedImageMatch = "/w800-h400-p-k-no-nu/";
+  var FeaturedImageMatch = "/s72-w800-h400-c-p-k-no-nu/";
   var showcomments = "on";
   var showdate = "on";
   var showauthor = "on";
@@ -589,7 +596,12 @@ function FeedRecent(
       */
       if (json.feed.entry[i].media$thumbnail) {
         thumbUrl = json.feed.entry[i].media$thumbnail.url;
-        sk = thumbUrl.replace("/s72-c/", "/w" + ImageW + "-h" + ImageH + "-c/");
+        if (thumbUrl.replace("/s72-c/", "/w" + ImageW + "-h" + ImageH + "-c/")) {
+          sk = thumbUrl.replace("/s72-c/", "/w" + ImageW + "-h" + ImageH + "-c/");
+        }
+        if (thumbUrl.replace("/s72-w800-h400-c-p-k-no-nu/", "/w" + ImageW + "-h" + ImageH + "-c/")) {
+          sk = thumbUrl.replace("/s72-w800-h400-c-p-k-no-nu/", "/w" + ImageW + "-h" + ImageH + "-c/");
+        }
         ListImage = "'" + sk.replace("?imgmax=800", "") + "'";
 
         /* b:comment: */
@@ -768,7 +780,8 @@ function FeedRandom(
   var TitleCount = 70;
   var ImageW = 200;
   var ImageH = 100;
-  var FeaturedImageMatch = "/w800-h400-p-k-no-nu/";
+  // var FeaturedImageMatch = "/w800-h400-p-k-no-nu/";
+  var FeaturedImageMatch = "/s72-w800-h400-c-p-k-no-nu/";
   var showcomments = "on";
   var showdate = "on";
   var showauthor = "on";
@@ -964,7 +977,12 @@ function FeedRandom(
     */
     if (json.feed.entry[i].media$thumbnail) {
       thumbUrl = json.feed.entry[i].media$thumbnail.url;
-      sk = thumbUrl.replace("/s72-c/", "/w" + ImageW + "-h" + ImageH + "-c/");
+      if (thumbUrl.replace("/s72-c/", "/w" + ImageW + "-h" + ImageH + "-c/")) {
+        sk = thumbUrl.replace("/s72-c/", "/w" + ImageW + "-h" + ImageH + "-c/");
+      }
+      if (thumbUrl.replace("/s72-w800-h400-c-p-k-no-nu/", "/w" + ImageW + "-h" + ImageH + "-c/")) {
+        sk = thumbUrl.replace("/s72-w800-h400-c-p-k-no-nu/", "/w" + ImageW + "-h" + ImageH + "-c/");
+      }
       ListImage = "'" + sk.replace("?imgmax=800", "") + "'";
 
       /* b:comment: */
