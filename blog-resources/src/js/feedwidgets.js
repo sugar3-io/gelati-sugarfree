@@ -213,11 +213,10 @@ function FeedSlider(
       // Thumbnail Check
       if (json.feed.entry[i].media$thumbnail) {
         thumbUrl = json.feed.entry[i].media$thumbnail.url;
-        if (thumbUrl.replace("/s72-c/", "/w" + ImageW + "-h" + ImageH + "-c/")) {
-          sk = thumbUrl.replace("/s72-c/", "/w" + ImageW + "-h" + ImageH + "-c/");
-        }
-        if (thumbUrl.replace("/s72-w800-h400-c-p-k-no-nu/", "/w" + ImageW + "-h" + ImageH + "-c/")) {
+        if (thumbUrl.indexOf("/s72-w800-h400-c-p-k-no-nu/") != -1) {
           sk = thumbUrl.replace("/s72-w800-h400-c-p-k-no-nu/", "/w" + ImageW + "-h" + ImageH + "-c/");
+        } else {
+          sk = thumbUrl.replace("/s72-c/", "/w" + ImageW + "-h" + ImageH + "-c/");
         }
         ListImage = "'" + sk.replace("?imgmax=800", "") + "'";
 
@@ -596,11 +595,10 @@ function FeedRecent(
       */
       if (json.feed.entry[i].media$thumbnail) {
         thumbUrl = json.feed.entry[i].media$thumbnail.url;
-        if (thumbUrl.replace("/s72-c/", "/w" + ImageW + "-h" + ImageH + "-c/")) {
-          sk = thumbUrl.replace("/s72-c/", "/w" + ImageW + "-h" + ImageH + "-c/");
-        }
-        if (thumbUrl.replace("/s72-w800-h400-c-p-k-no-nu/", "/w" + ImageW + "-h" + ImageH + "-c/")) {
+        if (thumbUrl.indexOf("/s72-w800-h400-c-p-k-no-nu/") != -1) {
           sk = thumbUrl.replace("/s72-w800-h400-c-p-k-no-nu/", "/w" + ImageW + "-h" + ImageH + "-c/");
+        } else {
+          sk = thumbUrl.replace("/s72-c/", "/w" + ImageW + "-h" + ImageH + "-c/");
         }
         ListImage = "'" + sk.replace("?imgmax=800", "") + "'";
 
@@ -977,11 +975,10 @@ function FeedRandom(
     */
     if (json.feed.entry[i].media$thumbnail) {
       thumbUrl = json.feed.entry[i].media$thumbnail.url;
-      if (thumbUrl.replace("/s72-c/", "/w" + ImageW + "-h" + ImageH + "-c/")) {
-        sk = thumbUrl.replace("/s72-c/", "/w" + ImageW + "-h" + ImageH + "-c/");
-      }
-      if (thumbUrl.replace("/s72-w800-h400-c-p-k-no-nu/", "/w" + ImageW + "-h" + ImageH + "-c/")) {
+      if (thumbUrl.indexOf("/s72-w800-h400-c-p-k-no-nu/") != -1) {
         sk = thumbUrl.replace("/s72-w800-h400-c-p-k-no-nu/", "/w" + ImageW + "-h" + ImageH + "-c/");
+      } else {
+        sk = thumbUrl.replace("/s72-c/", "/w" + ImageW + "-h" + ImageH + "-c/");
       }
       ListImage = "'" + sk.replace("?imgmax=800", "") + "'";
 
