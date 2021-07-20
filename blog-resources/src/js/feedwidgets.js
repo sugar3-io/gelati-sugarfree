@@ -713,6 +713,15 @@ function FeedRecent(
     }
     if (FeedLabel != undefined) {
       writeHtml(content, FeedLabel);
+    } else {
+      /* b:comment: */
+      /* edge case, when provided labels from the currently published blogposts do not match labelsTop or featuredItemsNum */
+      if (ListCountSub == 0 && ListCount > 0 && where) {
+        // var sliderElm = where.parentElement;
+        // sliderElm.classList.add("widget-item-slider");
+        // sliderElm.classList.add("has-right");
+        that.render();
+      }
     }
   };
 
