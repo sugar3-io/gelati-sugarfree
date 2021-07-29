@@ -484,12 +484,21 @@
           color: $(feed.link.hover.color);
         }
 
-        .inline-ad {
-          border-top: 1px solid $(post.border.bevel.color);
-          margin: 0 -$(separator.outdent);
-          padding: 15px $(separator.outdent);
-        }
       */
+        .inline-ad {
+          width: 100%;
+          height: 100%;
+          overflow: hidden;
+          text-align: center;
+          /* border-top: 1px solid $(post.border.bevel.color); */
+          /* margin: 0 -$(separator.outdent); */
+          /* padding: 15px $(separator.outdent); */
+        }
+
+        .widget.ads-item {
+          padding-top: 48px;
+          padding-bottom: 24px;
+        }
 
       /*---*/
 
@@ -5643,6 +5652,24 @@
           </b:section>
 
           <b:section class='tabs' id='crosscol-overflow' name='Cross-Column 2' showaddelement='no'>
+            <b:widget id='AdSense1' locked='false' title='' type='AdSense' version='1'>
+              <b:widget-settings>
+                <b:widget-setting name='style.bgcolor'>#1b1d1e</b:widget-setting>
+                <b:widget-setting name='style.textcolor'>#000000</b:widget-setting>
+                <b:widget-setting name='style.layout'>1x1</b:widget-setting>
+                <b:widget-setting name='style.bordercolor'>#1b1d1e</b:widget-setting>
+                <b:widget-setting name='style.urlcolor'>#8e7cc3</b:widget-setting>
+                <b:widget-setting name='style.linkcolor'>#d52a33</b:widget-setting>
+                <b:widget-setting name='style.unittype'>TextAndImage</b:widget-setting>
+              </b:widget-settings>
+              <b:includable id='main'>
+                <b:class name='ads-item'/>
+                <div class='widget-content'>
+                  <data:adCode/>
+                  <b:include name='quickedit'/>
+                </div>
+              </b:includable>
+            </b:widget>
             <b:widget id='HTML3' locked='false' mobile='yes' title='Service Message' type='HTML' version='1'>
               <b:widget-settings>
                 <b:widget-setting name='content'/>
@@ -5705,10 +5732,10 @@
                       <b:widget-setting name='showLabels'>true</b:widget-setting>
                       <b:widget-setting name='showLocation'>true</b:widget-setting>
                       <b:widget-setting name='showTimestamp'>true</b:widget-setting>
-                      <b:widget-setting name='postsPerAd'>1</b:widget-setting>
+                      <b:widget-setting name='postsPerAd'>3</b:widget-setting>
                       <b:widget-setting name='showBacklinks'>false</b:widget-setting>
                       <b:widget-setting name='style.bordercolor'>#d52a33</b:widget-setting>
-                      <b:widget-setting name='showInlineAds'>false</b:widget-setting>
+                      <b:widget-setting name='showInlineAds'>true</b:widget-setting>
                       <b:widget-setting name='showReactions'>false</b:widget-setting>
                     </b:widget-settings>
                     <b:includable id='main' var='top'>
@@ -5762,9 +5789,24 @@
                                   <b:include cond='data:posts.size &gt; 2 and data:postIndexNum == 2' data='data:post' name='mbtList'/>
                                   <b:include cond='data:blog.pageType in {&quot;item&quot;,&quot;static_page&quot;}' data='data:post' name='mbtList'/>
                                   <b:if cond='data:post.includeAd'>
-                                    <div class='inline-ad'>
-                                      <data:adCode/>
-                                    </div>
+                                    <b:if cond='data:isEvenItem == 1 and data:blog.pageType not in {&quot;static_page&quot;,&quot;item&quot;}'>
+                                      <section class='widget-item-outer blog-item ads-item'>
+                                        <div class='widget widget-item-inner'>
+                                          <div class='inline-ad'>
+                                            <data:adCode/>
+                                          </div>
+                                        </div>
+                                      </section>
+                                    </b:if>
+                                    <b:if cond='data:blog.pageType in {&quot;static_page&quot;,&quot;item&quot;}'>
+                                      <section class='widget-item-outer blog-item ads-item'>
+                                        <div class='widget widget-item-inner'>
+                                          <div class='inline-ad'>
+                                            <data:adCode/>
+                                          </div>
+                                        </div>
+                                      </section>
+                                    </b:if>
                                   </b:if>
                                 </b:with>
                               </b:with>
