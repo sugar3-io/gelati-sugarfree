@@ -484,21 +484,29 @@
           color: $(feed.link.hover.color);
         }
 
-      */
         .inline-ad {
-          width: 100%;
-          height: 100%;
-          overflow: hidden;
-          text-align: center;
-          /* border-top: 1px solid $(post.border.bevel.color); */
-          /* margin: 0 -$(separator.outdent); */
-          /* padding: 15px $(separator.outdent); */
+          border-top: 1px solid $(post.border.bevel.color);
+          margin: 0 -$(separator.outdent);
+          padding: 15px $(separator.outdent);
         }
+        */
 
-        .widget.ads-item {
-          padding-top: 48px;
-          padding-bottom: 24px;
-        }
+      ins.adsbygoogle[data-ad-status="unfilled"] {
+        display: none !important;
+      }
+
+      section.ads-item .widget-item-inner {
+        padding: 0px !important;
+      }
+
+      section.ads-item .widget-item-inner .inline-ad ins.adsbygoogle[data-ad-status="filled"] {
+        overflow: hidden;
+      }
+
+      .widget.ads-item ins.adsbygoogle[data-ad-status="filled"] {
+        margin-top: 48px;
+        margin-bottom: 24px;
+      }
 
       /*---*/
 
@@ -5193,7 +5201,7 @@
             <b:widget id='PageList1' locked='false' mobile='yes' title='Pages' type='PageList' version='1'>
               <b:widget-settings>
                 <b:widget-setting name='pageListJson'><![CDATA[{'6590218136463857356': {'href': 'https://gelatisugar3-dev.blogspot.com/p/docs.html', 'title': 'Documentation', 'position': 0}, '4951543842723154992': {'href': 'https://gelatisugar3-dev.blogspot.com/p/about.html', 'title': 'About', 'position': 1}}]]></b:widget-setting>
-                <b:widget-setting name='homeTitle'>Startseite</b:widget-setting>
+                <b:widget-setting name='homeTitle'>Home</b:widget-setting>
               </b:widget-settings>
               <b:includable id='main'>
                 <b:attr cond='not data:view.isLayoutMode' name='style' value='display:none;'/>
@@ -5727,6 +5735,7 @@
                       <b:widget-setting name='style.linkcolor'>#d52a33</b:widget-setting>
                       <b:widget-setting name='style.unittype'>TextAndImage</b:widget-setting>
                       <b:widget-setting name='style.bgcolor'>#1b1d1e</b:widget-setting>
+                      <b:widget-setting name='reactionsLabel'/>
                       <b:widget-setting name='showAuthorProfile'>false</b:widget-setting>
                       <b:widget-setting name='style.layout'>1x1</b:widget-setting>
                       <b:widget-setting name='showLabels'>true</b:widget-setting>
@@ -7649,7 +7658,7 @@
               <b:widget id='PageList2' locked='false' mobile='yes' title='Pages' type='PageList' version='1'>
                 <b:widget-settings>
                   <b:widget-setting name='pageListJson'><![CDATA[{'6590218136463857356': {'href': 'https://gelatisugar3-dev.blogspot.com/p/docs.html', 'title': 'Documentation', 'position': 0}, '4951543842723154992': {'href': 'https://gelatisugar3-dev.blogspot.com/p/about.html', 'title': 'About', 'position': 1}}]]></b:widget-setting>
-                  <b:widget-setting name='homeTitle'>Startseite</b:widget-setting>
+                  <b:widget-setting name='homeTitle'>Home</b:widget-setting>
                 </b:widget-settings>
                 <b:includable id='main'>
                   <b:class name='widget-item-outer'/>
