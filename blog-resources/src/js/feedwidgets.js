@@ -352,7 +352,7 @@ function FeedSlider(
         "</div>" +
         "<div class='mbttitle teaser-title'><a href=" +
         ListUrl +
-        "class='section-item title-item' target='_blank'><span>" +
+        "class='section-item title-item'><span>" +
         ListTitle +
         "</span></a></div>" +
         "</div>" +
