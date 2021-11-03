@@ -430,7 +430,7 @@
 
         <Variable hideEditor='true' name="label.cover.Video" description="Label Cover Video" type="string" default="https://2.bp.blogspot.com/-MLLsEuI-UPE/XvRhxIvq7wI/AAAAAAAAWY4/J06vU7MqSgEouOkJrc41d8RfbJpGUwCGACPcBGAYYCw/w800-h400-c/video.png" value="https://2.bp.blogspot.com/-MLLsEuI-UPE/XvRhxIvq7wI/AAAAAAAAWY4/J06vU7MqSgEouOkJrc41d8RfbJpGUwCGACPcBGAYYCw"/>
 
-        <Variable hideEditor='true' name="label.cover.Test_Case" description="Label Cover Test_Case" type="string" default="https://3.bp.blogspot.com/-kTDwRQlRJfY/XvRhxZdL7mI/AAAAAAAAWY8/ZW6lxWrdMbkN3N0W-ZBSCz3Kgfvb_vwKQCPcBGAYYCw/w800-h400-c/test_case.png" value="https://3.bp.blogspot.com/-kTDwRQlRJfY/XvRhxZdL7mI/AAAAAAAAWY8/ZW6lxWrdMbkN3N0W-ZBSCz3Kgfvb_vwKQCPcBGAYYCw"/>
+        <Variable hideEditor='true' name="label.cover.TestCase" description="Label Cover TestCase" type="string" default="https://3.bp.blogspot.com/-kTDwRQlRJfY/XvRhxZdL7mI/AAAAAAAAWY8/ZW6lxWrdMbkN3N0W-ZBSCz3Kgfvb_vwKQCPcBGAYYCw/w800-h400-c/test_case.png" value="https://3.bp.blogspot.com/-kTDwRQlRJfY/XvRhxZdL7mI/AAAAAAAAWY8/ZW6lxWrdMbkN3N0W-ZBSCz3Kgfvb_vwKQCPcBGAYYCw"/>
 
         <Variable hideEditor='true' name="label.cover.Media" description="Label Cover Media" type="string" default="https://4.bp.blogspot.com/-N9Ql9x_xX9c/XvRhxSqBSfI/AAAAAAAAWZA/pswTNS4o27c8V84roQx1kUG9mFxqzZxGQCPcBGAYYCw/w800-h400-c/media.png" value="https://4.bp.blogspot.com/-N9Ql9x_xX9c/XvRhxSqBSfI/AAAAAAAAWZA/pswTNS4o27c8V84roQx1kUG9mFxqzZxGQCPcBGAYYCw"/>
 
@@ -1177,7 +1177,7 @@
         background-image: url("$(label.cover.Video)/w400-h200-c/video.png");
       }
       body .label-item-Test_Case {
-        background-image: url("$(label.cover.Test_Case)/w400-h200-c/test_case.png");
+        background-image: url("$(label.cover.TestCase)/w400-h200-c/test_case.png");
       }
       body .label-item-Media {
         background-image: url("$(label.cover.Media)/w400-h200-c/media.png");
@@ -1201,7 +1201,7 @@
         background-image: url("$(label.cover.Video)/w800-h400-c/video.png");
       }
       body .full-width.label-item-Test_Case {
-        background-image: url("$(label.cover.Test_Case)/w800-h400-c/test_case.png");
+        background-image: url("$(label.cover.TestCase)/w800-h400-c/test_case.png");
       }
       body .full-width.label-item-Media {
         background-image: url("$(label.cover.Media)/w800-h400-c/media.png");
@@ -1225,7 +1225,7 @@
         background-image: url("$(label.cover.Video)/w400-h400-c/video.png");
       }
       body .ratio-square.label-item-Test_Case {
-        background-image: url("$(label.cover.Test_Case)/w400-h400-c/test_case.png");
+        background-image: url("$(label.cover.TestCase)/w400-h400-c/test_case.png");
       }
       body .ratio-square.label-item-Media {
         background-image: url("$(label.cover.Media)/w400-h400-c/media.png");
@@ -7711,7 +7711,7 @@
                   </script>
                 </b:includable>
               </b:widget>
-              <b:widget id='Attribution1' locked='false' title='' type='Attribution' version='1'>
+              <b:widget id='Attribution1' locked='false' title='' type='Attribution'>
                 <b:widget-settings>
                   <b:widget-setting name='copyright'><![CDATA[<a href="//gelati.sugar3.io">Gelati Sugarfree</a> / <a href="//www.sugar3.io">sugar3.io</a>]]></b:widget-setting>
                 </b:widget-settings>
