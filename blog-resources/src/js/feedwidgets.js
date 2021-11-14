@@ -211,98 +211,108 @@ function FeedSlider(
       TT = ListUpdate.substring(11, 16);
       MM = ListMonth[parseInt(mm - 1)];
       // Thumbnail Check
-      if (json.feed.entry[i].media$thumbnail) {
+      if (json.feed.entry[i].media$thumbnail && json.feed.entry[i].media$thumbnail.url.indexOf(".googleusercontent.com/") != -1) {
         thumbUrl = json.feed.entry[i].media$thumbnail.url;
-        if (thumbUrl.indexOf("/s72-w800-h400-c-p-k-no-nu/") != -1) {
-          sk = thumbUrl.replace("/s72-w800-h400-c-p-k-no-nu/", "/w" + ImageW + "-h" + ImageH + "-c/");
+        if (thumbUrl.indexOf("=s72-w800-h400-c-p-k-no-nu") != -1) {
+          sk = thumbUrl.replace("=s72-w800-h400-c-p-k-no-nu", "=w" + ImageW + "-h" + ImageH + "-c");
         } else {
-          sk = thumbUrl.replace("/s72-c/", "/w" + ImageW + "-h" + ImageH + "-c/");
+          sk = thumbUrl.replace("=s72-c", "=w" + ImageW + "-h" + ImageH + "-c");
         }
         ListImage = "'" + sk.replace("?imgmax=800", "") + "'";
+      } else {
+        if (json.feed.entry[i].media$thumbnail) {
+          thumbUrl = json.feed.entry[i].media$thumbnail.url;
+          if (thumbUrl.indexOf("/s72-w800-h400-c-p-k-no-nu/") != -1) {
+            sk = thumbUrl.replace("/s72-w800-h400-c-p-k-no-nu/", "/w" + ImageW + "-h" + ImageH + "-c/");
+          } else {
+            sk = thumbUrl.replace("/s72-c/", "/w" + ImageW + "-h" + ImageH + "-c/");
+          }
+          ListImage = "'" + sk.replace("?imgmax=800", "") + "'";
 
+          /* b:comment: */
+          if (
+            json.feed.entry[i].content.$t.match(
+              /youtube\.com.*(\?v=|\/embed\/)(.{11})/
+            ) != null
+          ) {
+            var youtube_id = json.feed.entry[i].content.$t
+              .match(/youtube\.com.*(\?v=|\/embed\/)(.{11})/)
+              .pop();
+            if (youtube_id.length == 11) {
+              ListImage =
+                "'//img.youtube.com/vi/" + youtube_id + "/hqdefault.jpg'";
+
+              var ListImageAltYTUrl =
+                "//img.youtube.com/vi/" + youtube_id + "/maxresdefault.jpg";
+              var ListImageAltYT = new Image();
+              ListImageAltYT.onload = (function (i, id, url) {
+                return function (e) {
+                  if (e.target.height != 90 && e.target.width != 120) {
+                    document.getElementById(mbtObjName + "-yt-" + i).src = url;
+                  }
+                };
+              })(i, youtube_id, ListImageAltYTUrl);
+              ListImageAltYT.src = ListImageAltYTUrl;
+            }
+          }
+        }
         /* b:comment: */
-        if (
+        // YouTube scan
+        /*
+        else if (json.feed.entry[i].content.$t.match(/youtube\.com.*(\?v=|\/embed\/)(.{11})/) != null) 
+        { 
+        var youtube_id = json.feed.entry[i].content.$t.match(/youtube\.com.*(\?v=|\/embed\/)(.{11})/).pop(); 
+        
+        if (youtube_id.length == 11) { 
+        var ListImage = "'//img.youtube.com/vi/"+youtube_id+"/0.jpg'"; 
+        } 
+        }
+        */
+        else if (
           json.feed.entry[i].content.$t.match(
-            /youtube\.com.*(\?v=|\/embed\/)(.{11})/
+            /src=(.+?[\.jpg|\.gif|\.png|\.webp]")/
           ) != null
         ) {
-          var youtube_id = json.feed.entry[i].content.$t
-            .match(/youtube\.com.*(\?v=|\/embed\/)(.{11})/)
-            .pop();
-          if (youtube_id.length == 11) {
-            ListImage =
-              "'//img.youtube.com/vi/" + youtube_id + "/hqdefault.jpg'";
-
-            var ListImageAltYTUrl =
-              "//img.youtube.com/vi/" + youtube_id + "/maxresdefault.jpg";
-            var ListImageAltYT = new Image();
-            ListImageAltYT.onload = (function (i, id, url) {
-              return function (e) {
-                if (e.target.height != 90 && e.target.width != 120) {
-                  document.getElementById(mbtObjName + "-yt-" + i).src = url;
-                }
-              };
-            })(i, youtube_id, ListImageAltYTUrl);
-            ListImageAltYT.src = ListImageAltYTUrl;
-          }
-        }
-      }
-      /* b:comment: */
-      // YouTube scan
-      /*
-      else if (json.feed.entry[i].content.$t.match(/youtube\.com.*(\?v=|\/embed\/)(.{11})/) != null) 
-      { 
-      var youtube_id = json.feed.entry[i].content.$t.match(/youtube\.com.*(\?v=|\/embed\/)(.{11})/).pop(); 
-      
-      if (youtube_id.length == 11) { 
-      var ListImage = "'//img.youtube.com/vi/"+youtube_id+"/0.jpg'"; 
-      } 
-      }
-      */
-      else if (
-        json.feed.entry[i].content.$t.match(
-          /src=(.+?[\.jpg|\.gif|\.png|\.webp]")/
-        ) != null
-      ) {
-        // Support For 3rd Party Images
-        ListImage = json.feed.entry[i].content.$t.match(
-          /src=(.+?[\.jpg|\.gif|\.png|\.webp]")/
-        )[1];
-        /* b:comment: */
-        if (FeaturedImageMatch) {
-          if (ListImage.indexOf(FeaturedImageMatch) != -1) {
-            ListImageAltSQ = ListImage.replace(
+          // Support For 3rd Party Images
+          ListImage = json.feed.entry[i].content.$t.match(
+            /src=(.+?[\.jpg|\.gif|\.png|\.webp]")/
+          )[1];
+          /* b:comment: */
+          if (FeaturedImageMatch) {
+            if (ListImage.indexOf(FeaturedImageMatch) != -1) {
+              ListImageAltSQ = ListImage.replace(
+                FeaturedImageMatch,
+                "/w" + ImageAltW + "-h" + ImageAltH + "-c/"
+              );
+            }
+            ListImage = ListImage.replace(
               FeaturedImageMatch,
-              "/w" + ImageAltW + "-h" + ImageAltH + "-c/"
+              "/w" + ImageW + "-h" + ImageH + "-c/"
             );
           }
-          ListImage = ListImage.replace(
-            FeaturedImageMatch,
-            "/w" + ImageW + "-h" + ImageH + "-c/"
-          );
+        } else {
+          ListImage =
+            "'" +
+            blogDefaultImageArr[0] +
+            "/w" +
+            ImageW +
+            "-h" +
+            ImageH +
+            "-c/" +
+            blogDefaultImageArr[1] +
+            "'";
+          ListImageAltSQ =
+            "'" +
+            blogDefaultImageArr[0] +
+            "/w" +
+            ImageAltW +
+            "-h" +
+            ImageAltH +
+            "-c/" +
+            blogDefaultImageArr[1] +
+            "'";
+          blogDefaultImageClass = " none-cover";
         }
-      } else {
-        ListImage =
-          "'" +
-          blogDefaultImageArr[0] +
-          "/w" +
-          ImageW +
-          "-h" +
-          ImageH +
-          "-c/" +
-          blogDefaultImageArr[1] +
-          "'";
-        ListImageAltSQ =
-          "'" +
-          blogDefaultImageArr[0] +
-          "/w" +
-          ImageAltW +
-          "-h" +
-          ImageAltH +
-          "-c/" +
-          blogDefaultImageArr[1] +
-          "'";
-        blogDefaultImageClass = " none-cover";
       }
       if (ListImageAltSQ) {
         ListImageHTML =
@@ -593,57 +603,67 @@ function FeedRecent(
       }
       else if (json.feed.entry[i].media$thumbnail) 
       */
-      if (json.feed.entry[i].media$thumbnail) {
+      if (json.feed.entry[i].media$thumbnail && json.feed.entry[i].media$thumbnail.url.indexOf(".googleusercontent.com/") != -1) {
         thumbUrl = json.feed.entry[i].media$thumbnail.url;
-        if (thumbUrl.indexOf("/s72-w800-h400-c-p-k-no-nu/") != -1) {
-          sk = thumbUrl.replace("/s72-w800-h400-c-p-k-no-nu/", "/w" + ImageW + "-h" + ImageH + "-c/");
+        if (thumbUrl.indexOf("=s72-w800-h400-c-p-k-no-nu") != -1) {
+          sk = thumbUrl.replace("=s72-w800-h400-c-p-k-no-nu", "=w" + ImageW + "-h" + ImageH + "-c");
         } else {
-          sk = thumbUrl.replace("/s72-c/", "/w" + ImageW + "-h" + ImageH + "-c/");
+          sk = thumbUrl.replace("=s72-c", "=w" + ImageW + "-h" + ImageH + "-c");
         }
         ListImage = "'" + sk.replace("?imgmax=800", "") + "'";
+      } else {
+        if (json.feed.entry[i].media$thumbnail) {
+          thumbUrl = json.feed.entry[i].media$thumbnail.url;
+          if (thumbUrl.indexOf("/s72-w800-h400-c-p-k-no-nu/") != -1) {
+            sk = thumbUrl.replace("/s72-w800-h400-c-p-k-no-nu/", "/w" + ImageW + "-h" + ImageH + "-c/");
+          } else {
+            sk = thumbUrl.replace("/s72-c/", "/w" + ImageW + "-h" + ImageH + "-c/");
+          }
+          ListImage = "'" + sk.replace("?imgmax=800", "") + "'";
 
-        /* b:comment: */
-        if (
+          /* b:comment: */
+          if (
+            json.feed.entry[i].content.$t.match(
+              /youtube\.com.*(\?v=|\/embed\/)(.{11})/
+            ) != null
+          ) {
+            var youtube_id = json.feed.entry[i].content.$t
+              .match(/youtube\.com.*(\?v=|\/embed\/)(.{11})/)
+              .pop();
+            if (youtube_id.length == 11) {
+              ListImage =
+                "'//img.youtube.com/vi/" + youtube_id + "/mqdefault.jpg'";
+            }
+          }
+        } else if (
           json.feed.entry[i].content.$t.match(
-            /youtube\.com.*(\?v=|\/embed\/)(.{11})/
+            /src=(.+?[\.jpg|\.gif|\.png|\.webp]")/
           ) != null
         ) {
-          var youtube_id = json.feed.entry[i].content.$t
-            .match(/youtube\.com.*(\?v=|\/embed\/)(.{11})/)
-            .pop();
-          if (youtube_id.length == 11) {
-            ListImage =
-              "'//img.youtube.com/vi/" + youtube_id + "/mqdefault.jpg'";
+          // Support For 3rd Party Images
+          ListImage = json.feed.entry[i].content.$t.match(
+            /src=(.+?[\.jpg|\.gif|\.png|\.webp]")/
+          )[1];
+          /* b:comment: */
+          if (FeaturedImageMatch) {
+            ListImage = ListImage.replace(
+              FeaturedImageMatch,
+              "/w" + ImageW + "-h" + ImageH + "-c/"
+            );
           }
+        } else {
+          ListImage =
+            "'" +
+            blogDefaultImageArr[0] +
+            "/w" +
+            ImageW +
+            "-h" +
+            ImageH +
+            "-c/" +
+            blogDefaultImageArr[1] +
+            "'";
+          blogDefaultImageClass = " none-cover";
         }
-      } else if (
-        json.feed.entry[i].content.$t.match(
-          /src=(.+?[\.jpg|\.gif|\.png|\.webp]")/
-        ) != null
-      ) {
-        // Support For 3rd Party Images
-        ListImage = json.feed.entry[i].content.$t.match(
-          /src=(.+?[\.jpg|\.gif|\.png|\.webp]")/
-        )[1];
-        /* b:comment: */
-        if (FeaturedImageMatch) {
-          ListImage = ListImage.replace(
-            FeaturedImageMatch,
-            "/w" + ImageW + "-h" + ImageH + "-c/"
-          );
-        }
-      } else {
-        ListImage =
-          "'" +
-          blogDefaultImageArr[0] +
-          "/w" +
-          ImageW +
-          "-h" +
-          ImageH +
-          "-c/" +
-          blogDefaultImageArr[1] +
-          "'";
-        blogDefaultImageClass = " none-cover";
       }
       // Printing List
       listing[i] = "<li class='teaser-item node" + [i] + "' >";
@@ -982,56 +1002,66 @@ function FeedRandom(
     }
     else if (json.feed.entry[i].media$thumbnail) 
     */
-    if (json.feed.entry[i].media$thumbnail) {
+    if (json.feed.entry[i].media$thumbnail && json.feed.entry[i].media$thumbnail.url.indexOf(".googleusercontent.com/") != -1) {
       thumbUrl = json.feed.entry[i].media$thumbnail.url;
-      if (thumbUrl.indexOf("/s72-w800-h400-c-p-k-no-nu/") != -1) {
-        sk = thumbUrl.replace("/s72-w800-h400-c-p-k-no-nu/", "/w" + ImageW + "-h" + ImageH + "-c/");
+      if (thumbUrl.indexOf("=s72-w800-h400-c-p-k-no-nu") != -1) {
+        sk = thumbUrl.replace("=s72-w800-h400-c-p-k-no-nu", "=w" + ImageW + "-h" + ImageH + "-c");
       } else {
-        sk = thumbUrl.replace("/s72-c/", "/w" + ImageW + "-h" + ImageH + "-c/");
+        sk = thumbUrl.replace("=s72-c", "=w" + ImageW + "-h" + ImageH + "-c");
       }
       ListImage = "'" + sk.replace("?imgmax=800", "") + "'";
+    } else {
+      if (json.feed.entry[i].media$thumbnail) {
+        thumbUrl = json.feed.entry[i].media$thumbnail.url;
+        if (thumbUrl.indexOf("/s72-w800-h400-c-p-k-no-nu/") != -1) {
+          sk = thumbUrl.replace("/s72-w800-h400-c-p-k-no-nu/", "/w" + ImageW + "-h" + ImageH + "-c/");
+        } else {
+          sk = thumbUrl.replace("/s72-c/", "/w" + ImageW + "-h" + ImageH + "-c/");
+        }
+        ListImage = "'" + sk.replace("?imgmax=800", "") + "'";
 
-      /* b:comment: */
-      if (
+        /* b:comment: */
+        if (
+          json.feed.entry[i].content.$t.match(
+            /youtube\.com.*(\?v=|\/embed\/)(.{11})/
+          ) != null
+        ) {
+          var youtube_id = json.feed.entry[i].content.$t
+            .match(/youtube\.com.*(\?v=|\/embed\/)(.{11})/)
+            .pop();
+          if (youtube_id.length == 11) {
+            ListImage = "'//img.youtube.com/vi/" + youtube_id + "/mqdefault.jpg'";
+          }
+        }
+      } else if (
         json.feed.entry[i].content.$t.match(
-          /youtube\.com.*(\?v=|\/embed\/)(.{11})/
+          /src=(.+?[\.jpg|\.gif|\.png|\.webp]")/
         ) != null
       ) {
-        var youtube_id = json.feed.entry[i].content.$t
-          .match(/youtube\.com.*(\?v=|\/embed\/)(.{11})/)
-          .pop();
-        if (youtube_id.length == 11) {
-          ListImage = "'//img.youtube.com/vi/" + youtube_id + "/mqdefault.jpg'";
+        // Support For 3rd Party Images
+        ListImage = json.feed.entry[i].content.$t.match(
+          /src=(.+?[\.jpg|\.gif|\.png|\.webp]")/
+        )[1];
+        /* b:comment: */
+        if (FeaturedImageMatch) {
+          ListImage = ListImage.replace(
+            FeaturedImageMatch,
+            "/w" + ImageW + "-h" + ImageH + "-c/"
+          );
         }
+      } else {
+        ListImage =
+          "'" +
+          blogDefaultImageArr[0] +
+          "/w" +
+          ImageW +
+          "-h" +
+          ImageH +
+          "-c/" +
+          blogDefaultImageArr[1] +
+          "'";
+        blogDefaultImageClass = " none-cover";
       }
-    } else if (
-      json.feed.entry[i].content.$t.match(
-        /src=(.+?[\.jpg|\.gif|\.png|\.webp]")/
-      ) != null
-    ) {
-      // Support For 3rd Party Images
-      ListImage = json.feed.entry[i].content.$t.match(
-        /src=(.+?[\.jpg|\.gif|\.png|\.webp]")/
-      )[1];
-      /* b:comment: */
-      if (FeaturedImageMatch) {
-        ListImage = ListImage.replace(
-          FeaturedImageMatch,
-          "/w" + ImageW + "-h" + ImageH + "-c/"
-        );
-      }
-    } else {
-      ListImage =
-        "'" +
-        blogDefaultImageArr[0] +
-        "/w" +
-        ImageW +
-        "-h" +
-        ImageH +
-        "-c/" +
-        blogDefaultImageArr[1] +
-        "'";
-      blogDefaultImageClass = " none-cover";
     }
     // Printing List
     listing = "<li class='teaser-item node" + [i] + "' >";
