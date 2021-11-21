@@ -18,7 +18,7 @@
   <b:with value='data:view:isPreview or not data:blog.hasCustomDomain ? &quot;//gelatistatic.sugar3.io&quot; : &quot;//gelatistatic-dev.sugar3.io&quot;' var='resourcesUrl'>
   <b:with value='&quot;v1&quot;' var='resourcesVersion'>
   <b:comment>
-    <!-- <b:with value='data:view:isPreview or not data:blog.hasCustomDomain ? &quot;//gelatistatic-dev.sugar3.io&quot; : &quot;//cdn-devel.glitch.at&quot;' var='resourcesUrl'> -->
+    <!-- <b:with value='data:view:isPreview or not data:blog.hasCustomDomain ? &quot;//gelatistatic-dev.sugar3.io&quot; : &quot;//static-dev.glitch.at&quot;' var='resourcesUrl'> -->
     <!-- <b:with value='&quot;v1_dev&quot;' var='resourcesVersion'> -->
   </b:comment>
   <b:comment>

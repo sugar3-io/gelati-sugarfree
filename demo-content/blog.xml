@@ -18,7 +18,7 @@
   &lt;b:with value='data:view:isPreview or not data:blog.hasCustomDomain ? &amp;quot;//gelatistatic.sugar3.io&amp;quot; : &amp;quot;//gelatistatic-dev.sugar3.io&amp;quot;' var='resourcesUrl'&gt;
   &lt;b:with value='&amp;quot;v1&amp;quot;' var='resourcesVersion'&gt;
   &lt;b:comment&gt;
-    &lt;!-- &lt;b:with value='data:view:isPreview or not data:blog.hasCustomDomain ? &amp;quot;//gelatistatic-dev.sugar3.io&amp;quot; : &amp;quot;//cdn-devel.glitch.at&amp;quot;' var='resourcesUrl'&gt; --&gt;
+    &lt;!-- &lt;b:with value='data:view:isPreview or not data:blog.hasCustomDomain ? &amp;quot;//gelatistatic-dev.sugar3.io&amp;quot; : &amp;quot;//static-dev.glitch.at&amp;quot;' var='resourcesUrl'&gt; --&gt;
     &lt;!-- &lt;b:with value='&amp;quot;v1_dev&amp;quot;' var='resourcesVersion'&gt; --&gt;
   &lt;/b:comment&gt;
   &lt;b:comment&gt;
