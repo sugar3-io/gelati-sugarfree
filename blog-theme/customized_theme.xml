@@ -70,7 +70,7 @@
         </Group>
 
         <Group description="Links" selector="#Attribution1 .widget-content a">
-          <Variable name="link.color" description="Link Color" type="color" default="#d52a33" value="#d52a33"/>
+          <Variable name="link.color" description="Link Color" type="color" default="#7f5959" value="#7f5959"/>
           <Variable hideEditor='true' name="link.visited.color" description="Visited Color" type="color" default="#8e7cc3" value="#8e7cc3"/>
           <Variable hideEditor='true' name="link.hover.color" description="Hover Color" type="color" default="#8e7cc3" value="#8e7cc3"/>
         </Group>
@@ -79,21 +79,21 @@
           <Variable hideEditor='true' name="cover.font" description="Font" type="font"
               default="normal bold 24px Arial, Tahoma, Helvetica, FreeSans, sans-serif" value="normal normal 24px Montserrat"/>
           <Variable hideEditor='true' name="cover.text.color" description="Text Color" type="color" default="#FFFFFF" value="#FFFFFF"/>
-          <Variable name="cover.background.color" description="Background Color" type="color" default="#2ab8ab" value="#2ab8ab"/>
+          <Variable name="cover.background.color" description="Background Color" type="color" default="#7f5959" value="#7f5959"/>
         </Group>
 
         <Group description="Cover2" selector=".teaser-header.none-cover">
           <Variable hideEditor='true' name="cover2.font" description="Font" type="font"
               default="normal bold 24px Arial, Tahoma, Helvetica, FreeSans, sans-serif" value="normal normal 24px Montserrat"/>
           <Variable hideEditor='true' name="cover2.text.color" description="Text Color" type="color" default="#FFFFFF" value="#FFFFFF"/>
-          <Variable name="cover2.background.color" description="Background Color" type="color" default="#2ab8ab" value="#2ab8ab"/>
+          <Variable name="cover2.background.color" description="Background Color" type="color" default="#7f5959" value="#7f5959"/>
         </Group>
 
         <Group description="Button" selector="button.button-item, #Blog1 .button-item, #blog-panel .button-item">
           <Variable hideEditor="true" name="button.font" description="Font" type="font"
               default="normal bold 24px Arial, Tahoma, Helvetica, FreeSans, sans-serif" value="normal normal 24px Montserrat"/>
           <Variable name="button.text.color" description="Text Color" type="color" default="#ffffff" value="#ffffff"/>
-          <Variable name="button.background.color" description="Background Color" type="color" default="#d52a33" value="#d52a33"/>
+          <Variable name="button.background.color" description="Background Color" type="color" default="#7f5959" value="#7f5959"/>
         </Group>
 
         <Group description="Disabled" selector=".disabled-item">
@@ -163,14 +163,14 @@
           <Variable name="counter.font" description="Font" type="font"
               default="normal bold 24px Arial, Tahoma, Helvetica, FreeSans, sans-serif" value="normal normal 24px Montserrat"/>
           <Variable name="counter.text.color" description="Text Color" type="color" default="#FFFFFF" value="#FFFFFF"/>
-          <Variable name="counter.background.color" description="Background Color" type="color" default="#d52a33" value="#d52a33"/>
+          <Variable name="counter.background.color" description="Background Color" type="color" default="#7f5959" value="#7f5959"/>
         </Group>
 
         <Group description="Header" selector=".header-outer">
           <Variable hideEditor='true' name="header.font" description="Font" type="font"
               default="normal normal 24px Arial, Tahoma, Helvetica, FreeSans, sans-serif" value="normal normal 24px Montserrat"/>
           <Variable hideEditor='true' name="header.text.color" description="Text Color" type="color" default="#ff00ff" value="#ff00ff"/>
-          <Variable name="header.background.color" description="Background Color" type="color" default="#efcdaa" value="#efcdaa"/>
+          <Variable name="header.background.color" description="Background Color" type="color" default="#7effed" value="#7effed"/>
         </Group>
 
         <Group description="Header Widget" selector=".header-outer .widget-item-outer">
@@ -212,8 +212,8 @@
           <Variable hideEditor='true' name="hero.font" description="Font" type="font"
               default="normal bold 24px Arial, Tahoma, Helvetica, FreeSans, sans-serif" value="normal normal 24px Montserrat"/>
           <Variable hideEditor='true' name="hero.text.color" description="Text Color" type="color" default="#FFFFFF" value="#FFFFFF"/>
-          <Variable name="hero.background.color1" description="Background Color1" type="color" default="#2ab8ab" value="#2ab8ab"/>
-          <Variable name="hero.background.color2" description="Background Color2" type="color" default="#efcdaa" value="#efcdaa"/>
+          <Variable name="hero.background.color1" description="Background Color1" type="color" default="#d1ff00" value="#d1ff00"/>
+          <Variable name="hero.background.color2" description="Background Color2" type="color" default="#7effed" value="#7effed"/>
           <Variable name="hero.background.angle1" description="Background Angle1" type="string" default="0deg" value="0deg"/>
         </Group>
 
@@ -229,7 +229,7 @@
         default="normal bold 24px Arial, Tahoma, Helvetica, FreeSans, sans-serif" value="normal normal 24px Montserrat"/>
           <Variable hideEditor='true' name="hero.card.text.color" description="Text Color" type="color" default="#333333" value="#333333"/>
           <Variable name="hero.card.background.color1" description="Background Color1" type="color" default="#eeeeee" value="#eeeeee"/>
-          <Variable name="hero.card.background.color2" description="Background Color2" type="color" default="#efcdaa" value="#efcdaa"/>
+          <Variable name="hero.card.background.color2" description="Background Color2" type="color" default="#7effed" value="#7effed"/>
           <Variable name="hero.card.background.angle1" description="Background Angle1" type="string" default="90deg" value="90deg"/>
         </Group>
 
@@ -243,7 +243,7 @@
         <Group description="Hero Meta" selector="#blog-hero .teaser-meta">
           <Variable name="hero.meta.font" description="Font" type="font"
               default="normal bold 14px Arial, Tahoma, Helvetica, FreeSans, sans-serif" value="normal normal 14px Montserrat"/>
-          <Variable name="hero.meta.text.color" description="Text Color" type="color" default="#efcdaa" value="#efcdaa"/>
+          <Variable name="hero.meta.text.color" description="Text Color" type="color" default="#7effed" value="#7effed"/>
           <Variable hideEditor='true' name="hero.meta.background.color" description="Background Color" type="color" default="#f4cccc" value="#f4cccc"/>
         </Group>
 
@@ -251,7 +251,7 @@
           <Variable hideEditor='true' name="blog.font" description="Font" type="font"
               default="normal bold 24px Arial, Tahoma, Helvetica, FreeSans, sans-serif" value="normal normal 24px Montserrat"/>
           <Variable hideEditor='true' name="blog.text.color" description="Text Color" type="color" default="#FFFFFF" value="#FFFFFF"/>
-          <Variable name="blog.background.color" description="Background Color" type="color" default="#2ab8ab" value="#2ab8ab"/>
+          <Variable name="blog.background.color" description="Background Color" type="color" default="#d1ff00" value="#d1ff00"/>
         </Group>
 
         <Group description="Blog Widget" selector=".main-outer .widget-item-outer, .main-outer .blog-item-outer">
@@ -279,7 +279,7 @@
           <Variable hideEditor='true' name="blog.card.font" description="Font" type="font"
               default="normal bold 24px Arial, Tahoma, Helvetica, FreeSans, sans-serif" value="normal normal 24px Montserrat"/>
           <Variable hideEditor='true' name="blog.card.text.color" description="Text Color" type="color" default="#333333" value="#333333"/>
-          <Variable name="blog.card.background.color" description="Background Color" type="color" default="#efcdaa" value="#efcdaa"/>
+          <Variable name="blog.card.background.color" description="Background Color" type="color" default="#7effed" value="#7effed"/>
         </Group>
 
         <Group description="Blog Title" selector="#Blog1 .post-header">
@@ -300,7 +300,7 @@
           <Variable hideEditor='true' name="pager.font" description="Font" type="font"
               default="normal normal 24px Arial, Tahoma, Helvetica, FreeSans, sans-serif" value="normal normal 24px Montserrat"/>
           <Variable hideEditor='true' name="pager.text.color" description="Text Color" type="color" default="#ff00ff" value="#ff00ff"/>
-          <Variable name="pager.background.color" description="Background Color" type="color" default="#2ab8ab" value="#2ab8ab"/>
+          <Variable name="pager.background.color" description="Background Color" type="color" default="#d1ff00" value="#d1ff00"/>
         </Group>
 
         <Group description="Pager Widget" selector="#blog-panel .nav-item">
@@ -321,7 +321,7 @@
           <Variable hideEditor='true' name="pager.section.alpha.font" description="Font" type="font"
               default="normal normal 24px Arial, Tahoma, Helvetica, FreeSans, sans-serif" value="normal normal 24px Montserrat"/>
           <Variable name="pager.section.alpha.text.color" description="Text Color" type="color" default="#ffffff" value="#ffffff"/>
-          <Variable name="pager.section.alpha.background.color" description="Background Color" type="color" default="#d52a33" value="#d52a33"/>
+          <Variable name="pager.section.alpha.background.color" description="Background Color" type="color" default="#7f5959" value="#7f5959"/>
         </Group>
 
         <Group description="Pager Selected" selector="#blog-pager .selected-item">
@@ -335,7 +335,7 @@
           <Variable hideEditor='true' name="footer.font" description="Font" type="font"
               default="normal normal 24px Arial, Tahoma, Helvetica, FreeSans, sans-serif" value="normal normal 24px Montserrat"/>
           <Variable hideEditor='true' name="footer.text.color" description="Text Color" type="color" default="#333333" value="#333333"/>
-          <Variable name="footer.background.color" description="Background Color" type="color" default="#efcdaa" value="#efcdaa"/>
+          <Variable name="footer.background.color" description="Background Color" type="color" default="#7effed" value="#7effed"/>
         </Group>
 
         <Group description="Footer Widget" selector=".footer-inner .widget">
@@ -373,8 +373,8 @@
         <!-- b:comment: overlay monochrome -->
         <Group description="Overlay Monochrome" selector="">
           <Variable hideEditor='true' name="shade.gradient.background.color1" description="Shade Gradient Background Color1" type="color" default="rgba(0, 0, 0, 0.25)" value="rgba(0, 0, 0, 0.25)"/>
-          <Variable hideEditor='true' name="shade.gradient.background.color2" description="Shade Gradient Background Color2" type="color" default="rgba(42, 184, 171, 0.5)" value="rgba(42, 184, 171, 0.5)"/>
-          <Variable hideEditor='true' name="shade.gradient.background.color3" description="Shade Gradient Background Color3" type="color" default="rgba(42, 184, 171, 1)" value="rgba(42, 184, 171, 1)"/>
+          <Variable hideEditor='true' name="shade.gradient.background.color2" description="Shade Gradient Background Color2" type="color" default="rgba(209, 255, 0, 0.5)" value="rgba(209, 255, 0, 0.5)"/>
+          <Variable hideEditor='true' name="shade.gradient.background.color3" description="Shade Gradient Background Color3" type="color" default="rgba(209, 255, 0, 1)" value="rgba(209, 255, 0, 1)"/>
           <Variable hideEditor='true' name="shade.gradient.background.angle1" description="Shade Gradient Background Angle1" type="string" default="0deg" value="0deg"/>
         </Group>
         <Group description="Overlay Monochrome2" selector="">
@@ -386,9 +386,9 @@
 
         <!-- b:comment: overlay colored -->
         <Group description="Overlay Colored" selector="#Label1 .label-item a">
-          <Variable name="shade3.gradient.background.color1" description="Shade3 Gradient Background Color1" type="color" default="rgba(42, 184, 171, 0.25)" value="rgba(42, 184, 171, 0.25)"/>
-          <Variable name="shade3.gradient.background.color2" description="Shade3 Gradient Background Color2" type="color" default="rgba(42, 184, 171, 0.90)" value="rgba(42, 184, 171, 0.90)"/>
-          <Variable name="shade3.gradient.background.color3" description="Shade3 Gradient Background Color3" type="color" default="rgba(42, 184, 171, 1.00)" value="rgba(42, 184, 171, 1.00)"/>
+          <Variable name="shade3.gradient.background.color1" description="Shade3 Gradient Background Color1" type="color" default="rgba(209, 255, 0, 0.25)" value="rgba(209, 255, 0, 0.25)"/>
+          <Variable name="shade3.gradient.background.color2" description="Shade3 Gradient Background Color2" type="color" default="rgba(209, 255, 0, 0.90)" value="rgba(209, 255, 0, 0.90)"/>
+          <Variable name="shade3.gradient.background.color3" description="Shade3 Gradient Background Color3" type="color" default="rgba(209, 255, 0, 1.00)" value="rgba(209, 255, 0, 1.00)"/>
           <Variable name="shade3.gradient.background.angle1" description="Shade3 Gradient Background Angle1" type="string" default="45deg" value="45deg"/>
         </Group>
         <Group description="Overlay Colored2" selector=".footer-outer">
@@ -396,6 +396,12 @@
           <Variable name="shade4.gradient.background.color2" description="Shade4 Gradient Background Color2" type="color" default="rgba(255, 255, 255, 0.90)" value="rgba(255, 255, 255, 0.90)"/>
           <Variable name="shade4.gradient.background.color3" description="Shade4 Gradient Background Color3" type="color" default="rgba(255, 255, 255, 0)" value="rgba(255, 255, 255, 0)"/>
           <Variable name="shade4.gradient.background.angle1" description="Shade4 Gradient Background Angle1" type="string" default="45deg" value="45deg"/>
+        </Group>
+        <Group description="Overlay Colored3" selector="#Label1 .label-item a">
+          <Variable name="shade5.gradient.background.color1" description="Shade5 Gradient Background Color1" type="color" default="rgba(127, 89, 89, 0.25)" value="rgba(127, 89, 89, 0.25)"/>
+          <Variable name="shade5.gradient.background.color2" description="Shade5 Gradient Background Color2" type="color" default="rgba(127, 89, 89, 0.90)" value="rgba(127, 89, 89, 0.90)"/>
+          <Variable name="shade5.gradient.background.color3" description="Shade5 Gradient Background Color3" type="color" default="rgba(127, 89, 89, 1.00)" value="rgba(127, 89, 89, 1.00)"/>
+          <Variable name="shade5.gradient.background.angle1" description="Shade5 Gradient Background Angle1" type="string" default="45deg" value="45deg"/>
         </Group>
 
         <!-- b:comment: faded opacity -->
@@ -420,30 +426,30 @@
         </Group>
 
         <!-- b:comment: customize blogtemplate - label css (start) -->
-        <Variable hideEditor='true' name="label.cover.Image" description="Label Cover Image" type="string" default="https://4.bp.blogspot.com/-ViZyoQpb4Uw/XvRhwF6EsxI/AAAAAAAAWYw/2qNMlotAUAYCFcCiDJ5nxKxKsxrjCKxwACPcBGAYYCw/w800-h400-c/image.png" value="https://4.bp.blogspot.com/-ViZyoQpb4Uw/XvRhwF6EsxI/AAAAAAAAWYw/2qNMlotAUAYCFcCiDJ5nxKxKsxrjCKxwACPcBGAYYCw"/>
+        <Variable hideEditor='true' name="label.cover.Image" description="Label Cover Image" type="string" default="https://blogger.googleusercontent.com/img/a/AVvXsEgiIRMLAXwPfQmLqldMiw7ziN662Am6RX-my69qEnIuviQ8PzSkR4Q8q0YORYzu7wylHSCo768w772A7_59Kg_-WhMwsVw__nIoBApeaHKycAXXAacpECQZphrR7LsNYZLQz_VT0tOBiUoaBhxFlWu8ZX4oG3MQVdsOiQHB3UIfFUnOVHQsSKqS-FXViQ=w800-h400-c" value="https://blogger.googleusercontent.com/img/a/AVvXsEgiIRMLAXwPfQmLqldMiw7ziN662Am6RX-my69qEnIuviQ8PzSkR4Q8q0YORYzu7wylHSCo768w772A7_59Kg_-WhMwsVw__nIoBApeaHKycAXXAacpECQZphrR7LsNYZLQz_VT0tOBiUoaBhxFlWu8ZX4oG3MQVdsOiQHB3UIfFUnOVHQsSKqS-FXViQ"/>
 
-        <Variable hideEditor='true' name="label.cover.Markup" description="Label Cover Markup" type="string" default="https://3.bp.blogspot.com/--4UlF2Ce7Ck/XvRhwK9AGaI/AAAAAAAAWZE/HDpuwn3RVYEas7SJvyF_JVopZlPrQsdyACPcBGAYYCw/w800-h400-c/markup.png" value="https://3.bp.blogspot.com/--4UlF2Ce7Ck/XvRhwK9AGaI/AAAAAAAAWZE/HDpuwn3RVYEas7SJvyF_JVopZlPrQsdyACPcBGAYYCw"/>
+        <Variable hideEditor='true' name="label.cover.Markup" description="Label Cover Markup" type="string" default="https://blogger.googleusercontent.com/img/a/AVvXsEhobrjhsClq6Ycpb-DUY4SpZPnXu-xIVZ2oFhWN__NY8xWKGNCAzx97Q0OlV7R7q1QvwviyArgXl0_2uwh9Arcm2hxIE8JvTseryP0Kk3RzsEy34xmlRCPuGWr3hA0j-G5mHdMtYhpaVIqn81kg8Rlxil3O9WG9KAZjYvywvKG7N6ZieOAVxkj5FpLO_g=w800-h400-c" value="https://blogger.googleusercontent.com/img/a/AVvXsEhobrjhsClq6Ycpb-DUY4SpZPnXu-xIVZ2oFhWN__NY8xWKGNCAzx97Q0OlV7R7q1QvwviyArgXl0_2uwh9Arcm2hxIE8JvTseryP0Kk3RzsEy34xmlRCPuGWr3hA0j-G5mHdMtYhpaVIqn81kg8Rlxil3O9WG9KAZjYvywvKG7N6ZieOAVxkj5FpLO_g"/>
 
-        <Variable hideEditor='true' name="label.cover.Embedded" description="Label Cover Embedded" type="string" default="https://1.bp.blogspot.com/-EWLNCxAlI0M/XvRhwvxcNcI/AAAAAAAAWZE/ZCdizQon2zM8yk0xbNac_PSNSb1Dstt-gCPcBGAYYCw/w800-h400-c/embedded.png" value="https://1.bp.blogspot.com/-EWLNCxAlI0M/XvRhwvxcNcI/AAAAAAAAWZE/ZCdizQon2zM8yk0xbNac_PSNSb1Dstt-gCPcBGAYYCw"/>
+        <Variable hideEditor='true' name="label.cover.Embedded" description="Label Cover Embedded" type="string" default="https://blogger.googleusercontent.com/img/a/AVvXsEjHyyjMEXzFg4id4BOsD_jVGeGWcMmL-IvM1ZPYOiFO-7tR1jdhQnSBIEsQjVLqWtNqas1bvacepxfQr3zgehFAMWyZdx3vb1kuD1EohNm2DaRLakdUxRi0J0L5_2dYF1-jwqKV3ESh825y2AGCtVoHAPqgdTZbhPHwm-tEZ6FuGEmuY-G6NWZhPQHJQw=w800-h400-c" value="https://blogger.googleusercontent.com/img/a/AVvXsEjHyyjMEXzFg4id4BOsD_jVGeGWcMmL-IvM1ZPYOiFO-7tR1jdhQnSBIEsQjVLqWtNqas1bvacepxfQr3zgehFAMWyZdx3vb1kuD1EohNm2DaRLakdUxRi0J0L5_2dYF1-jwqKV3ESh825y2AGCtVoHAPqgdTZbhPHwm-tEZ6FuGEmuY-G6NWZhPQHJQw"/>
 
-        <Variable hideEditor='true' name="label.cover.Layout" description="Label Cover Layout" type="string" default="https://1.bp.blogspot.com/-88oRQKNxl3Q/XvRhwzn6kiI/AAAAAAAAWZE/KfLxoT7gcRodNkPGCkeZOxGSpC_pveIjgCPcBGAYYCw/w800-h400-c/layout.png" value="https://1.bp.blogspot.com/-88oRQKNxl3Q/XvRhwzn6kiI/AAAAAAAAWZE/KfLxoT7gcRodNkPGCkeZOxGSpC_pveIjgCPcBGAYYCw"/>
+        <Variable hideEditor='true' name="label.cover.Layout" description="Label Cover Layout" type="string" default="https://blogger.googleusercontent.com/img/a/AVvXsEip8PR-sZIb523PtmLXSuNLbKjzWX73JTU4IZHdquhD6T8HU52RljQGFsKUahME-ub_jYkX3lXP6IKV1J8hiZWzT8rk7C23Yg25dqm-1aDtg0Bqj6A99486mlwNB_dWf4VJ_2T1-VjSNsw8vG5BkEinH9s-jN29oDhHAcm0o0AhVN0Clh0aiOV6VfMIIQ=w800-h400-c" value="https://blogger.googleusercontent.com/img/a/AVvXsEip8PR-sZIb523PtmLXSuNLbKjzWX73JTU4IZHdquhD6T8HU52RljQGFsKUahME-ub_jYkX3lXP6IKV1J8hiZWzT8rk7C23Yg25dqm-1aDtg0Bqj6A99486mlwNB_dWf4VJ_2T1-VjSNsw8vG5BkEinH9s-jN29oDhHAcm0o0AhVN0Clh0aiOV6VfMIIQ"/>
 
-        <Variable hideEditor='true' name="label.cover.Video" description="Label Cover Video" type="string" default="https://2.bp.blogspot.com/-MLLsEuI-UPE/XvRhxIvq7wI/AAAAAAAAWY4/J06vU7MqSgEouOkJrc41d8RfbJpGUwCGACPcBGAYYCw/w800-h400-c/video.png" value="https://2.bp.blogspot.com/-MLLsEuI-UPE/XvRhxIvq7wI/AAAAAAAAWY4/J06vU7MqSgEouOkJrc41d8RfbJpGUwCGACPcBGAYYCw"/>
+        <Variable hideEditor='true' name="label.cover.Video" description="Label Cover Video" type="string" default="https://blogger.googleusercontent.com/img/a/AVvXsEi6Huyl2qBKoMDr0bWugxHCL71e641W-3S3NHxBFIMf-8kEcZvdVmSVnN_ZZ4Bfmxz2Qm9GPWlpnD08gDHsQrh8McxCkW1X4ceeTdCYhD7sqLGR-yUt9n4sMmGw4wFeWLShLmhK_MElJFOufucHBkNpiY8tq3-ONficVQASC2xhBJH3G_Aj5KSyjpizvA=w800-h400-c" value="https://blogger.googleusercontent.com/img/a/AVvXsEi6Huyl2qBKoMDr0bWugxHCL71e641W-3S3NHxBFIMf-8kEcZvdVmSVnN_ZZ4Bfmxz2Qm9GPWlpnD08gDHsQrh8McxCkW1X4ceeTdCYhD7sqLGR-yUt9n4sMmGw4wFeWLShLmhK_MElJFOufucHBkNpiY8tq3-ONficVQASC2xhBJH3G_Aj5KSyjpizvA"/>
 
-        <Variable hideEditor='true' name="label.cover.TestCase" description="Label Cover TestCase" type="string" default="https://3.bp.blogspot.com/-kTDwRQlRJfY/XvRhxZdL7mI/AAAAAAAAWY8/ZW6lxWrdMbkN3N0W-ZBSCz3Kgfvb_vwKQCPcBGAYYCw/w800-h400-c/test_case.png" value="https://3.bp.blogspot.com/-kTDwRQlRJfY/XvRhxZdL7mI/AAAAAAAAWY8/ZW6lxWrdMbkN3N0W-ZBSCz3Kgfvb_vwKQCPcBGAYYCw"/>
+        <Variable hideEditor='true' name="label.cover.TestCase" description="Label Cover TestCase" type="string" default="https://blogger.googleusercontent.com/img/a/AVvXsEhMcRVW8wImZ4dnfuTdM0T4eePJRTbhCmj93mdutGxdOXtBx0wth_AzX9LsyxSAya6VEfEo5D48U6hgML8Ta7PKIoUfPiK7jV5kdC_FtYHDH_1lcbCR6IATwd2B7LaXNI5UkGxkQLMQKmzHJwCQOSj3mugeWInt_fEVgokdAyf-lcdfdYdEbSsZFx0WQA=w800-h400-c" value="https://blogger.googleusercontent.com/img/a/AVvXsEhMcRVW8wImZ4dnfuTdM0T4eePJRTbhCmj93mdutGxdOXtBx0wth_AzX9LsyxSAya6VEfEo5D48U6hgML8Ta7PKIoUfPiK7jV5kdC_FtYHDH_1lcbCR6IATwd2B7LaXNI5UkGxkQLMQKmzHJwCQOSj3mugeWInt_fEVgokdAyf-lcdfdYdEbSsZFx0WQA"/>
 
-        <Variable hideEditor='true' name="label.cover.Media" description="Label Cover Media" type="string" default="https://4.bp.blogspot.com/-N9Ql9x_xX9c/XvRhxSqBSfI/AAAAAAAAWZA/pswTNS4o27c8V84roQx1kUG9mFxqzZxGQCPcBGAYYCw/w800-h400-c/media.png" value="https://4.bp.blogspot.com/-N9Ql9x_xX9c/XvRhxSqBSfI/AAAAAAAAWZA/pswTNS4o27c8V84roQx1kUG9mFxqzZxGQCPcBGAYYCw"/>
+        <Variable hideEditor='true' name="label.cover.Media" description="Label Cover Media" type="string" default="https://blogger.googleusercontent.com/img/a/AVvXsEiFMrhaofBRl9kmtUBIMpijgzlSFzJ66Ou0WldHXMUHw19TDh-tcZVJa_QGz3DTKpKjIva-T6MF2c5f-apOXdQNFvkpnHyNr7LbJ3RB5saSVdhLK2qt5Z_gVoYwjr9WE8baAR3e0oAlAmz5MdyM3lhHdUttLdQ5Rl-nYlLwByCRGbHY6CtKiUyi0ukkIA=w800-h400-c" value="https://blogger.googleusercontent.com/img/a/AVvXsEiFMrhaofBRl9kmtUBIMpijgzlSFzJ66Ou0WldHXMUHw19TDh-tcZVJa_QGz3DTKpKjIva-T6MF2c5f-apOXdQNFvkpnHyNr7LbJ3RB5saSVdhLK2qt5Z_gVoYwjr9WE8baAR3e0oAlAmz5MdyM3lhHdUttLdQ5Rl-nYlLwByCRGbHY6CtKiUyi0ukkIA"/>
 
-        <Variable hideEditor='true' name="label.cover.Gallery" description="Label Cover Gallery" type="string" default="https://3.bp.blogspot.com/-bW-mckNpYj4/XvRhx9r0mcI/AAAAAAAAWZE/Ps8Wnj--s68KuW9CN5VIA-Vb8nTrm8CFACPcBGAYYCw/w800-h400-c/gallery.png" value="https://3.bp.blogspot.com/-bW-mckNpYj4/XvRhx9r0mcI/AAAAAAAAWZE/Ps8Wnj--s68KuW9CN5VIA-Vb8nTrm8CFACPcBGAYYCw"/>
+        <Variable hideEditor='true' name="label.cover.Gallery" description="Label Cover Gallery" type="string" default="https://blogger.googleusercontent.com/img/a/AVvXsEhEWQXbGsXyHowWlxPpVUaYSF3e7ciAuk8LPAqDif7fsOImVjWaXqJk6I_uX895SBNsrXxcmsWrL-Yd-wLR68IMD3BeCJE38XZeRb-LwgbwLm2KTgKGkov2VRuWmKAShjJQpQRQi-bY6ieDaSeBWn9sPSiBXwyjPk_JMUYMfOpuufHVHJZq4KhM8DgVbA=w800-h400-c" value="https://blogger.googleusercontent.com/img/a/AVvXsEhEWQXbGsXyHowWlxPpVUaYSF3e7ciAuk8LPAqDif7fsOImVjWaXqJk6I_uX895SBNsrXxcmsWrL-Yd-wLR68IMD3BeCJE38XZeRb-LwgbwLm2KTgKGkov2VRuWmKAShjJQpQRQi-bY6ieDaSeBWn9sPSiBXwyjPk_JMUYMfOpuufHVHJZq4KhM8DgVbA"/>
         <!-- b:comment: customize blogtemplate - label css (end) -->
 
         <Variable hideEditor='true' name="comments.color" description="Comments Color" type="color" default="#bbbbbb" value="#bbbbbb"/>
         <!-- b:comment: legacy, use if necessary -->
         <Variable hideEditor='true' name="post.border.bevel.color" description="Bevel Color post3" type="color" default="#8e7cc3" value="#8e7cc3"/>
         <Variable hideEditor='true' name="feed.text.color" description="Text Color" type="color" default="#333333" value="#333333"/>
-        <Variable hideEditor='true' name="feed.link.color" description="Link Color" type="color" default="#d52a33" value="#d52a33"/>
+        <Variable hideEditor='true' name="feed.link.color" description="Link Color" type="color" default="#7f5959" value="#7f5959"/>
         <Variable hideEditor='true' name="feed.link.visited.color" description="Visited Color" type="color" default="#7d181e" value="#7d181e"/>
-        <Variable hideEditor='true' name="feed.link.hover.color" description="Hover Color" type="color" default="#d52a33" value="#d52a33"/>
+        <Variable hideEditor='true' name="feed.link.hover.color" description="Hover Color" type="color" default="#7f5959" value="#7f5959"/>
         <Variable name="body.background" description="Body Background" type="background"
             color="$(body.background.color)"
             default="$(color) none no-repeat scroll center center" value="$(color) none no-repeat scroll center center"/>
@@ -602,7 +608,7 @@
       }
 
       #Label1 .social-links-3 {
-        background: #d52a33;
+        background: #7f5959;
       }
 
       body .page-links .link-item .font-icon::before {
@@ -1162,76 +1168,76 @@
 
 
       body .label-item-Image {
-        background-image: url("$(label.cover.Image)/w400-h200-c/image.png");
+        background-image: url("$(label.cover.Image)=w400-h200-c");
       }
       body .label-item-Markup {
-        background-image: url("$(label.cover.Markup)/w400-h200-c/markup.png");
+        background-image: url("$(label.cover.Markup)=w400-h200-c");
       }
       body .label-item-Embedded {
-        background-image: url("$(label.cover.Embedded)/w400-h200-c/embedded.png");
+        background-image: url("$(label.cover.Embedded)=w400-h200-c");
       }
       body .label-item-Layout {
-        background-image: url("$(label.cover.Layout)/w400-h200-c/layout.png");
+        background-image: url("$(label.cover.Layout)=w400-h200-c");
       }
       body .label-item-Video {
-        background-image: url("$(label.cover.Video)/w400-h200-c/video.png");
+        background-image: url("$(label.cover.Video)=w400-h200-c");
       }
       body .label-item-Test_Case {
-        background-image: url("$(label.cover.TestCase)/w400-h200-c/test_case.png");
+        background-image: url("$(label.cover.TestCase)=w400-h200-c");
       }
       body .label-item-Media {
-        background-image: url("$(label.cover.Media)/w400-h200-c/media.png");
+        background-image: url("$(label.cover.Media)=w400-h200-c");
       }
       body .label-item-Gallery {
-        background-image: url("$(label.cover.Gallery)/w400-h200-c/gallery.png");
+        background-image: url("$(label.cover.Gallery)=w400-h200-c");
       }
       body .full-width.label-item-Image {
-        background-image: url("$(label.cover.Image)/w800-h400-c/image.png");
+        background-image: url("$(label.cover.Image)=w800-h400-c");
       }
       body .full-width.label-item-Markup {
-        background-image: url("$(label.cover.Markup)/w800-h400-c/markup.png");
+        background-image: url("$(label.cover.Markup)=w800-h400-c");
       }
       body .full-width.label-item-Embedded {
-        background-image: url("$(label.cover.Embedded)/w800-h400-c/embedded.png");
+        background-image: url("$(label.cover.Embedded)=w800-h400-c");
       }
       body .full-width.label-item-Layout {
-        background-image: url("$(label.cover.Layout)/w800-h400-c/layout.png");
+        background-image: url("$(label.cover.Layout)=w800-h400-c");
       }
       body .full-width.label-item-Video {
-        background-image: url("$(label.cover.Video)/w800-h400-c/video.png");
+        background-image: url("$(label.cover.Video)=w800-h400-c");
       }
       body .full-width.label-item-Test_Case {
-        background-image: url("$(label.cover.TestCase)/w800-h400-c/test_case.png");
+        background-image: url("$(label.cover.TestCase)=w800-h400-c");
       }
       body .full-width.label-item-Media {
-        background-image: url("$(label.cover.Media)/w800-h400-c/media.png");
+        background-image: url("$(label.cover.Media)=w800-h400-c");
       }
       body .full-width.label-item-Gallery {
-        background-image: url("$(label.cover.Gallery)/w800-h400-c/gallery.png");
+        background-image: url("$(label.cover.Gallery)=w800-h400-c");
       }
       body .ratio-square.label-item-Image {
-        background-image: url("$(label.cover.Image)/w400-h400-c/image.png");
+        background-image: url("$(label.cover.Image)=w400-h400-c");
       }
       body .ratio-square.label-item-Markup {
-        background-image: url("$(label.cover.Markup)/w400-h400-c/markup.png");
+        background-image: url("$(label.cover.Markup)=w400-h400-c");
       }
       body .ratio-square.label-item-Embedded {
-        background-image: url("$(label.cover.Embedded)/w400-h400-c/embedded.png");
+        background-image: url("$(label.cover.Embedded)=w400-h400-c");
       }
       body .ratio-square.label-item-Layout {
-        background-image: url("$(label.cover.Layout)/w400-h400-c/layout.png");
+        background-image: url("$(label.cover.Layout)=w400-h400-c");
       }
       body .ratio-square.label-item-Video {
-        background-image: url("$(label.cover.Video)/w400-h400-c/video.png");
+        background-image: url("$(label.cover.Video)=w400-h400-c");
       }
       body .ratio-square.label-item-Test_Case {
-        background-image: url("$(label.cover.TestCase)/w400-h400-c/test_case.png");
+        background-image: url("$(label.cover.TestCase)=w400-h400-c");
       }
       body .ratio-square.label-item-Media {
-        background-image: url("$(label.cover.Media)/w400-h400-c/media.png");
+        background-image: url("$(label.cover.Media)=w400-h400-c");
       }
       body .ratio-square.label-item-Gallery {
-        background-image: url("$(label.cover.Gallery)/w400-h400-c/gallery.png");
+        background-image: url("$(label.cover.Gallery)=w400-h400-c");
       }
 
       body .label-item-FEATUREDSLIDER {
@@ -1541,6 +1547,7 @@
 
         body:not([class~="more-active"]) header:not([class~="fixed"]) #Label1 nav ul li.label-item {
           background-image: none;
+          color: $(header.background.color);
         }             
 
         body.more-active header:not([class~="fixed"]) #Label1 nav ul li.label-item a {
@@ -3611,6 +3618,10 @@
           padding-bottom: 2.5em;
         }
 
+        body:not([class~="more-active"]) header:not([class~="fixed"]) #Label1 nav ul li.label-item a {
+          background: linear-gradient($(shade5.gradient.background.angle1), $(shade5.gradient.background.color1), $(shade5.gradient.background.color2), $(shade5.gradient.background.color3));
+        }
+
         body:not([class~="more-active"]) header:not([class~="fixed"]) #Label1 nav ul li.label-item a::before {
           border-width: 6px 6px 0px 6px;
           top: 0px;
@@ -4516,7 +4527,7 @@
 
       /* b:comment: customize blogtemplate - blogpost css (start) */
 
-      body.article-view .post-body .content-item input,body.article-view .post-body .content-item textarea,body.article-view .post-body .content-item select,body.article-view .post-body .content-item button,body.article-view .post-body .content-item option{font-family:system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:18px;font-stretch:normal;font-style:normal;font-weight:400;line-height:29.7px}body.article-view .post-body .content-item input,body.article-view .post-body .content-item textarea,body.article-view .post-body .content-item select,body.article-view .post-body .content-item button,body.article-view .post-body .content-item option{font-family:system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:18px;font-stretch:normal;font-style:normal;font-weight:400;line-height:29.7px}body.article-view .post-body .content-item th{font-weight:600}body.article-view .post-body .content-item td,body.article-view .post-body .content-item th{border-bottom:1.08px solid #595959;padding:14.85px 18px;text-align:left;vertical-align:top}body.article-view .post-body .content-item thead th{border-bottom-width:2.16px;padding-bottom:6.3px}body.article-view .post-body .content-item table{display:table;width:100%}@media all and (max-width: 1023px){body.article-view .post-body .content-item table{display:none}}@media all and (max-width: 1023px){body.article-view .post-body .content-item table thead{display:none}}body.article-view .post-body .content-item table tr{border-bottom-width:2.16px}body.article-view .post-body .content-item table tr td,body.article-view .post-body .content-item table tr th{overflow:hidden;padding:5.4px 3.6px}@media all and (max-width: 1023px){body.article-view .post-body .content-item table tr td,body.article-view .post-body .content-item table tr th{border:0;display:inline-block}}@media all and (max-width: 1023px){body.article-view .post-body .content-item table tr{display:inline-block;margin:10.8px 0}}@media all and (max-width: 1023px){body.article-view .post-body .content-item table{display:inline-block}}body.article-view .post-body .content-item input,body.article-view .post-body .content-item textarea,body.article-view .post-body .content-item select,body.article-view .post-body .content-item button,body.article-view .post-body .content-item option{font-family:system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:18px;font-stretch:normal;font-style:normal;font-weight:400;line-height:29.7px}body.article-view .post-body .content-item fieldset{display:flex;flex-direction:row;flex-wrap:wrap}body.article-view .post-body .content-item fieldset legend{margin:18px 0}body.article-view .post-body .content-item input,body.article-view .post-body .content-item textarea,body.article-view .post-body .content-item select,body.article-view .post-body .content-item button{border-radius:3.6px;display:inline-block;padding:9.9px}body.article-view .post-body .content-item input+label,body.article-view .post-body .content-item input+input[type="checkbox"],body.article-view .post-body .content-item input+input[type="radio"],body.article-view .post-body .content-item textarea+label,body.article-view .post-body .content-item textarea+input[type="checkbox"],body.article-view .post-body .content-item textarea+input[type="radio"],body.article-view .post-body .content-item select+label,body.article-view .post-body .content-item select+input[type="checkbox"],body.article-view .post-body .content-item select+input[type="radio"],body.article-view .post-body .content-item button+label,body.article-view .post-body .content-item button+input[type="checkbox"],body.article-view .post-body .content-item button+input[type="radio"]{page-break-before:always}body.article-view .post-body .content-item input,body.article-view .post-body .content-item select,body.article-view .post-body .content-item label{margin-right:3.6px}body.article-view .post-body .content-item textarea{min-height:90px;min-width:360px}body.article-view .post-body .content-item label{display:inline-block;margin-bottom:12.6px}body.article-view .post-body .content-item label+*{page-break-before:always}body.article-view .post-body .content-item label>input{margin-bottom:0}body.article-view .post-body .content-item input[type="submit"],body.article-view .post-body .content-item input[type="reset"],body.article-view .post-body .content-item button{background:#f2f2f2;color:#191919;cursor:pointer;display:inline;margin-bottom:18px;margin-right:7.2px;padding:6.525px 23.4px;text-align:center}body.article-view .post-body .content-item input[type="submit"]:hover,body.article-view .post-body .content-item input[type="reset"]:hover,body.article-view .post-body .content-item button:hover{background:#d9d9d9;color:#000}body.article-view .post-body .content-item input[type="submit"][disabled],body.article-view .post-body .content-item input[type="reset"][disabled],body.article-view .post-body .content-item button[disabled]{background:#e6e5e5;color:#403f3f;cursor:not-allowed}body.article-view .post-body .content-item input[type="submit"],body.article-view .post-body .content-item button[type="submit"]{background:#d52a33;color:#fff}body.article-view .post-body .content-item input[type="submit"]:hover,body.article-view .post-body .content-item button[type="submit"]:hover{background:#951d24;color:#bfbfbf}body.article-view .post-body .content-item input,body.article-view .post-body .content-item select,body.article-view .post-body .content-item textarea{margin-bottom:18px}body.article-view .post-body .content-item input[type="text"],body.article-view .post-body .content-item input[type="password"],body.article-view .post-body .content-item input[type="email"],body.article-view .post-body .content-item input[type="url"],body.article-view .post-body .content-item input[type="phone"],body.article-view .post-body .content-item input[type="tel"],body.article-view .post-body .content-item input[type="number"],body.article-view .post-body .content-item input[type="datetime"],body.article-view .post-body .content-item input[type="date"],body.article-view .post-body .content-item input[type="month"],body.article-view .post-body .content-item input[type="week"],body.article-view .post-body .content-item input[type="color"],body.article-view .post-body .content-item input[type="time"],body.article-view .post-body .content-item input[type="search"],body.article-view .post-body .content-item input[type="range"],body.article-view .post-body .content-item input[type="file"],body.article-view .post-body .content-item input[type="datetime-local"],body.article-view .post-body .content-item select,body.article-view .post-body .content-item textarea{border:1px solid #595959;padding:5.4px 6.3px}body.article-view .post-body .content-item input[type="checkbox"],body.article-view .post-body .content-item input[type="radio"]{flex-grow:0;height:29.7px;margin-left:0;margin-right:9px;vertical-align:middle}body.article-view .post-body .content-item input[type="checkbox"]+label,body.article-view .post-body .content-item input[type="radio"]+label{page-break-before:avoid}body.article-view .post-body .content-item select[multiple]{min-width:270px}body.article-view .post-body .content-item input,body.article-view .post-body .content-item textarea,body.article-view .post-body .content-item select,body.article-view .post-body .content-item button,body.article-view .post-body .content-item option{font-family:system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:18px;font-stretch:normal;font-style:normal;font-weight:400;line-height:29.7px}body.article-view .post-body .content-item pre,body.article-view .post-body .content-item code,body.article-view .post-body .content-item kbd,body.article-view .post-body .content-item samp,body.article-view .post-body .content-item var,body.article-view .post-body .content-item output{font-family:Menlo,Monaco,Consolas,"Courier New",monospace;font-size:14.4px}body.article-view .post-body .content-item pre{border-left:2.16px solid #2ab8ab;line-height:25.2px;overflow:auto}body.article-view .post-body .content-item pre code{background:none;border:0;line-height:29.7px;padding:0}body.article-view .post-body .content-item pre{margin-left:9px;padding-left:18px}body.article-view .post-body .content-item code,body.article-view .post-body .content-item kbd{background:#d9d8d8;border-radius:3.6px;color:#000;display:inline-block;line-height:18px;padding:3.6px 6.3px 2.7px}body.article-view .post-body .content-item kbd{background:#41d4c6;color:#12504b}body.article-view .post-body .content-item mark{background:#efcdaa;padding:0 3.6px}body.article-view .post-body .content-item input,body.article-view .post-body .content-item textarea,body.article-view .post-body .content-item select,body.article-view .post-body .content-item button,body.article-view .post-body .content-item option{font-family:system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:18px;font-stretch:normal;font-style:normal;font-weight:400;line-height:29.7px}body.article-view .post-body .content-item h1,body.article-view .post-body .content-item h2,body.article-view .post-body .content-item h3,body.article-view .post-body .content-item h4,body.article-view .post-body .content-item h5,body.article-view .post-body .content-item h6{color:#000;margin-bottom:18px}body.article-view .post-body .content-item h1{font-size:36px;font-weight:bold;line-height:43.2px;margin-top:36px}body.article-view .post-body .content-item h2{font-size:28.8px;font-weight:bold;line-height:34.2px;margin-top:31.5px}body.article-view .post-body .content-item h3{font-size:21.6px;font-weight:bold;line-height:27px;margin-top:31.5px}body.article-view .post-body .content-item h4{font-size:18px;font-weight:bold;line-height:23.4px;margin-top:27px}body.article-view .post-body .content-item h5{font-size:14.4px;font-weight:bold;line-height:21.6px;margin-top:27px;text-transform:uppercase}body.article-view .post-body .content-item h6{font-size:14.4px;font-weight:bold;line-height:18px;margin-top:27px;text-transform:uppercase}body.article-view .post-body .content-item input,body.article-view .post-body .content-item textarea,body.article-view .post-body .content-item select,body.article-view .post-body .content-item button,body.article-view .post-body .content-item option{font-family:system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:18px;font-stretch:normal;font-style:normal;font-weight:400;line-height:29.7px}body.article-view .post-body .content-item hr{border-bottom:1px solid #595959}body.article-view .post-body .content-item figcaption,body.article-view .post-body .content-item small{font-size:15.3px}body.article-view .post-body .content-item figcaption{color:#595959}body.article-view .post-body .content-item var,body.article-view .post-body .content-item em,body.article-view .post-body .content-item i{font-style:italic}body.article-view .post-body .content-item dt,body.article-view .post-body .content-item strong,body.article-view .post-body .content-item b{font-weight:600}body.article-view .post-body .content-item del,body.article-view .post-body .content-item s{text-decoration:line-through}body.article-view .post-body .content-item ins,body.article-view .post-body .content-item u{text-decoration:underline}body.article-view .post-body .content-item sub,body.article-view .post-body .content-item sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}body.article-view .post-body .content-item sup{top:-.5em}body.article-view .post-body .content-item sub{bottom:-.25em}body.article-view .post-body .content-item aside{float:right;width:285px}body.article-view .post-body .content-item dl{display:inline-block}body.article-view .post-body .content-item dt{padding:9px 18px}body.article-view .post-body .content-item dd{padding:0 18px 9px;margin:0}body.article-view .post-body .content-item dd:last-of-type{border-bottom:1.08px solid #595959}body.article-view .post-body .content-item dd+dt{border-top:1.08px solid #595959;padding-top:9px}body.article-view .post-body .content-item blockquote{border-left:2.16px solid #595959;padding:4.5px 18px 4.5px 15.84px}body.article-view .post-body .content-item blockquote footer{color:#595959;font-size:13.5px;margin:0}body.article-view .post-body .content-item blockquote p{margin-bottom:0}body.article-view .post-body .content-item blockquote{margin-left:9px;margin-right:9px}@media (max-width: 479px){body.article-view .post-body .content-item textarea,body.article-view .post-body .content-item input,body.article-view .post-body .content-item select{min-width:0}body.article-view .post-body .content-item fieldset{min-width:0}body.article-view .post-body .content-item fieldset *{flex-grow:1;page-break-before:auto}}
+      body.article-view .post-body .content-item input,body.article-view .post-body .content-item textarea,body.article-view .post-body .content-item select,body.article-view .post-body .content-item button,body.article-view .post-body .content-item option{font-family:system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:18px;font-stretch:normal;font-style:normal;font-weight:400;line-height:29.7px}body.article-view .post-body .content-item input,body.article-view .post-body .content-item textarea,body.article-view .post-body .content-item select,body.article-view .post-body .content-item button,body.article-view .post-body .content-item option{font-family:system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:18px;font-stretch:normal;font-style:normal;font-weight:400;line-height:29.7px}body.article-view .post-body .content-item th{font-weight:600}body.article-view .post-body .content-item td,body.article-view .post-body .content-item th{border-bottom:1.08px solid #595959;padding:14.85px 18px;text-align:left;vertical-align:top}body.article-view .post-body .content-item thead th{border-bottom-width:2.16px;padding-bottom:6.3px}body.article-view .post-body .content-item table{display:table;width:100%}@media all and (max-width: 1023px){body.article-view .post-body .content-item table{display:none}}@media all and (max-width: 1023px){body.article-view .post-body .content-item table thead{display:none}}body.article-view .post-body .content-item table tr{border-bottom-width:2.16px}body.article-view .post-body .content-item table tr td,body.article-view .post-body .content-item table tr th{overflow:hidden;padding:5.4px 3.6px}@media all and (max-width: 1023px){body.article-view .post-body .content-item table tr td,body.article-view .post-body .content-item table tr th{border:0;display:inline-block}}@media all and (max-width: 1023px){body.article-view .post-body .content-item table tr{display:inline-block;margin:10.8px 0}}@media all and (max-width: 1023px){body.article-view .post-body .content-item table{display:inline-block}}body.article-view .post-body .content-item input,body.article-view .post-body .content-item textarea,body.article-view .post-body .content-item select,body.article-view .post-body .content-item button,body.article-view .post-body .content-item option{font-family:system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:18px;font-stretch:normal;font-style:normal;font-weight:400;line-height:29.7px}body.article-view .post-body .content-item fieldset{display:flex;flex-direction:row;flex-wrap:wrap}body.article-view .post-body .content-item fieldset legend{margin:18px 0}body.article-view .post-body .content-item input,body.article-view .post-body .content-item textarea,body.article-view .post-body .content-item select,body.article-view .post-body .content-item button{border-radius:3.6px;display:inline-block;padding:9.9px}body.article-view .post-body .content-item input+label,body.article-view .post-body .content-item input+input[type="checkbox"],body.article-view .post-body .content-item input+input[type="radio"],body.article-view .post-body .content-item textarea+label,body.article-view .post-body .content-item textarea+input[type="checkbox"],body.article-view .post-body .content-item textarea+input[type="radio"],body.article-view .post-body .content-item select+label,body.article-view .post-body .content-item select+input[type="checkbox"],body.article-view .post-body .content-item select+input[type="radio"],body.article-view .post-body .content-item button+label,body.article-view .post-body .content-item button+input[type="checkbox"],body.article-view .post-body .content-item button+input[type="radio"]{page-break-before:always}body.article-view .post-body .content-item input,body.article-view .post-body .content-item select,body.article-view .post-body .content-item label{margin-right:3.6px}body.article-view .post-body .content-item textarea{min-height:90px;min-width:360px}body.article-view .post-body .content-item label{display:inline-block;margin-bottom:12.6px}body.article-view .post-body .content-item label+*{page-break-before:always}body.article-view .post-body .content-item label>input{margin-bottom:0}body.article-view .post-body .content-item input[type="submit"],body.article-view .post-body .content-item input[type="reset"],body.article-view .post-body .content-item button{background:#f2f2f2;color:#191919;cursor:pointer;display:inline;margin-bottom:18px;margin-right:7.2px;padding:6.525px 23.4px;text-align:center}body.article-view .post-body .content-item input[type="submit"]:hover,body.article-view .post-body .content-item input[type="reset"]:hover,body.article-view .post-body .content-item button:hover{background:#d9d9d9;color:#000}body.article-view .post-body .content-item input[type="submit"][disabled],body.article-view .post-body .content-item input[type="reset"][disabled],body.article-view .post-body .content-item button[disabled]{background:#e6e5e5;color:#403f3f;cursor:not-allowed}body.article-view .post-body .content-item input[type="submit"],body.article-view .post-body .content-item button[type="submit"]{background:#7f5959;color:#fff}body.article-view .post-body .content-item input[type="submit"]:hover,body.article-view .post-body .content-item button[type="submit"]:hover{background:#951d24;color:#bfbfbf}body.article-view .post-body .content-item input,body.article-view .post-body .content-item select,body.article-view .post-body .content-item textarea{margin-bottom:18px}body.article-view .post-body .content-item input[type="text"],body.article-view .post-body .content-item input[type="password"],body.article-view .post-body .content-item input[type="email"],body.article-view .post-body .content-item input[type="url"],body.article-view .post-body .content-item input[type="phone"],body.article-view .post-body .content-item input[type="tel"],body.article-view .post-body .content-item input[type="number"],body.article-view .post-body .content-item input[type="datetime"],body.article-view .post-body .content-item input[type="date"],body.article-view .post-body .content-item input[type="month"],body.article-view .post-body .content-item input[type="week"],body.article-view .post-body .content-item input[type="color"],body.article-view .post-body .content-item input[type="time"],body.article-view .post-body .content-item input[type="search"],body.article-view .post-body .content-item input[type="range"],body.article-view .post-body .content-item input[type="file"],body.article-view .post-body .content-item input[type="datetime-local"],body.article-view .post-body .content-item select,body.article-view .post-body .content-item textarea{border:1px solid #595959;padding:5.4px 6.3px}body.article-view .post-body .content-item input[type="checkbox"],body.article-view .post-body .content-item input[type="radio"]{flex-grow:0;height:29.7px;margin-left:0;margin-right:9px;vertical-align:middle}body.article-view .post-body .content-item input[type="checkbox"]+label,body.article-view .post-body .content-item input[type="radio"]+label{page-break-before:avoid}body.article-view .post-body .content-item select[multiple]{min-width:270px}body.article-view .post-body .content-item input,body.article-view .post-body .content-item textarea,body.article-view .post-body .content-item select,body.article-view .post-body .content-item button,body.article-view .post-body .content-item option{font-family:system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:18px;font-stretch:normal;font-style:normal;font-weight:400;line-height:29.7px}body.article-view .post-body .content-item pre,body.article-view .post-body .content-item code,body.article-view .post-body .content-item kbd,body.article-view .post-body .content-item samp,body.article-view .post-body .content-item var,body.article-view .post-body .content-item output{font-family:Menlo,Monaco,Consolas,"Courier New",monospace;font-size:14.4px}body.article-view .post-body .content-item pre{border-left:2.16px solid #d1ff00;line-height:25.2px;overflow:auto}body.article-view .post-body .content-item pre code{background:none;border:0;line-height:29.7px;padding:0}body.article-view .post-body .content-item pre{margin-left:9px;padding-left:18px}body.article-view .post-body .content-item code,body.article-view .post-body .content-item kbd{background:#d9d8d8;border-radius:3.6px;color:#000;display:inline-block;line-height:18px;padding:3.6px 6.3px 2.7px}body.article-view .post-body .content-item kbd{background:#41d4c6;color:#12504b}body.article-view .post-body .content-item mark{background:#7effed;padding:0 3.6px}body.article-view .post-body .content-item input,body.article-view .post-body .content-item textarea,body.article-view .post-body .content-item select,body.article-view .post-body .content-item button,body.article-view .post-body .content-item option{font-family:system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:18px;font-stretch:normal;font-style:normal;font-weight:400;line-height:29.7px}body.article-view .post-body .content-item h1,body.article-view .post-body .content-item h2,body.article-view .post-body .content-item h3,body.article-view .post-body .content-item h4,body.article-view .post-body .content-item h5,body.article-view .post-body .content-item h6{color:#000;margin-bottom:18px}body.article-view .post-body .content-item h1{font-size:36px;font-weight:bold;line-height:43.2px;margin-top:36px}body.article-view .post-body .content-item h2{font-size:28.8px;font-weight:bold;line-height:34.2px;margin-top:31.5px}body.article-view .post-body .content-item h3{font-size:21.6px;font-weight:bold;line-height:27px;margin-top:31.5px}body.article-view .post-body .content-item h4{font-size:18px;font-weight:bold;line-height:23.4px;margin-top:27px}body.article-view .post-body .content-item h5{font-size:14.4px;font-weight:bold;line-height:21.6px;margin-top:27px;text-transform:uppercase}body.article-view .post-body .content-item h6{font-size:14.4px;font-weight:bold;line-height:18px;margin-top:27px;text-transform:uppercase}body.article-view .post-body .content-item input,body.article-view .post-body .content-item textarea,body.article-view .post-body .content-item select,body.article-view .post-body .content-item button,body.article-view .post-body .content-item option{font-family:system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:18px;font-stretch:normal;font-style:normal;font-weight:400;line-height:29.7px}body.article-view .post-body .content-item hr{border-bottom:1px solid #595959}body.article-view .post-body .content-item figcaption,body.article-view .post-body .content-item small{font-size:15.3px}body.article-view .post-body .content-item figcaption{color:#595959}body.article-view .post-body .content-item var,body.article-view .post-body .content-item em,body.article-view .post-body .content-item i{font-style:italic}body.article-view .post-body .content-item dt,body.article-view .post-body .content-item strong,body.article-view .post-body .content-item b{font-weight:600}body.article-view .post-body .content-item del,body.article-view .post-body .content-item s{text-decoration:line-through}body.article-view .post-body .content-item ins,body.article-view .post-body .content-item u{text-decoration:underline}body.article-view .post-body .content-item sub,body.article-view .post-body .content-item sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}body.article-view .post-body .content-item sup{top:-.5em}body.article-view .post-body .content-item sub{bottom:-.25em}body.article-view .post-body .content-item aside{float:right;width:285px}body.article-view .post-body .content-item dl{display:inline-block}body.article-view .post-body .content-item dt{padding:9px 18px}body.article-view .post-body .content-item dd{padding:0 18px 9px;margin:0}body.article-view .post-body .content-item dd:last-of-type{border-bottom:1.08px solid #595959}body.article-view .post-body .content-item dd+dt{border-top:1.08px solid #595959;padding-top:9px}body.article-view .post-body .content-item blockquote{border-left:2.16px solid #595959;padding:4.5px 18px 4.5px 15.84px}body.article-view .post-body .content-item blockquote footer{color:#595959;font-size:13.5px;margin:0}body.article-view .post-body .content-item blockquote p{margin-bottom:0}body.article-view .post-body .content-item blockquote{margin-left:9px;margin-right:9px}@media (max-width: 479px){body.article-view .post-body .content-item textarea,body.article-view .post-body .content-item input,body.article-view .post-body .content-item select{min-width:0}body.article-view .post-body .content-item fieldset{min-width:0}body.article-view .post-body .content-item fieldset *{flex-grow:1;page-break-before:auto}}
 
       /* b:comment: customize blogtemplate - blogpost css (end) */
 
@@ -5697,7 +5708,7 @@
                       <b:widget-setting name='style.urlcolor'>#8e7cc3</b:widget-setting>
                       <b:widget-setting name='showAuthor'>true</b:widget-setting>
                       <b:widget-setting name='disableGooglePlusShare'>true</b:widget-setting>
-                      <b:widget-setting name='style.linkcolor'>#d52a33</b:widget-setting>
+                      <b:widget-setting name='style.linkcolor'>#7f5959</b:widget-setting>
                       <b:widget-setting name='style.unittype'>TextAndImage</b:widget-setting>
                       <b:widget-setting name='style.bgcolor'>#1b1d1e</b:widget-setting>
                       <b:widget-setting name='reactionsLabel'/>
@@ -5708,7 +5719,7 @@
                       <b:widget-setting name='showTimestamp'>true</b:widget-setting>
                       <b:widget-setting name='postsPerAd'>1</b:widget-setting>
                       <b:widget-setting name='showBacklinks'>false</b:widget-setting>
-                      <b:widget-setting name='style.bordercolor'>#d52a33</b:widget-setting>
+                      <b:widget-setting name='style.bordercolor'>#1b1d1e</b:widget-setting>
                       <b:widget-setting name='showInlineAds'>false</b:widget-setting>
                       <b:widget-setting name='showReactions'>false</b:widget-setting>
                     </b:widget-settings>
