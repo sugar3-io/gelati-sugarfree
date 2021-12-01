@@ -2,11 +2,12 @@
 
 A+ Retrofitted Blogger v2 Template
 
-- [Gelati Sugarfree Demo](https://gelati.sugar3.io/)
+- Gelati Sugarfree [Default Theme](https://gelati.sugar3.io/) / [Customized Theme](https://www.glitch.at/)
 - [Documentation](https://gelati.sugar3.io/p/docs.html)
 - [About](https://gelati.sugar3.io/p/about.html)
 
 ![https://www.flaticon.com/authors/smalllikeart/](blog-resources/dist/images/icon.png)
+![https://www.glitch.at](blog-resources/dist/images/customized_icon.png)
 
 > To start, please consult the Documention, referenced above. In case you encounter build-related problems or want to run the build process in special environments - e.g. managed Node.js hosting - see the following, detailed instructions:
 
