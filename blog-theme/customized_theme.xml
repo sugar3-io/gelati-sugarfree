@@ -7472,9 +7472,7 @@
             <div class='column-right-outer'>
               <div class='column-right-inner widget-item-outer'>
 
-                <b:section class='sidebar widget-container sidebar-container' id='sidebar-left-1'/>
-
-                <b:section class='sidebar widget-container sidebar-container' id='sidebar-right-1'>
+                <b:section class='sidebar widget-container sidebar-container' id='sidebar-left-1'>
                   <b:widget id='FeaturedPost1' locked='false' mobile='yes' title='Featured Post' type='FeaturedPost' version='1'>
                     <b:widget-settings>
                       <b:widget-setting name='showSnippet'>true</b:widget-setting>
@@ -7573,6 +7571,8 @@
                     </b:includable>
                   </b:widget>
                 </b:section>
+
+                <b:section class='sidebar widget-container sidebar-container' id='sidebar-right-1'/>
 
                 <b:comment>
                   widgets in macro areas will get rendered to footer area in mobile view: use section area above instead
