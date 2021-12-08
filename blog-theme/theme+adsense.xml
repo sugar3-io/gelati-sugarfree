@@ -2109,20 +2109,20 @@
         }
 
 
-        body #mcTooltipWrapper #mcTooltip.service-container {
+        body #mcTooltipWrapper #mcTooltip.banner-item {
             width: 80vw !important;
         }
 
-        body #mcTooltipWrapper #mcTooltip.service-container .panel-item {
+        body #mcTooltipWrapper #mcTooltip.banner-item .panel-item {
             display: flex;
             flex-direction: column;
         }
 
-        body #mcTooltipWrapper #mcTooltip.service-container .link-container li {
+        body #mcTooltipWrapper #mcTooltip.banner-item .link-container li {
           margin-left: inherit;
         }
 
-        body #mcTooltipWrapper #mcTooltip.service-container #HTML1 {
+        body #mcTooltipWrapper #mcTooltip.banner-item #HTML1 {
           order: 2;
         }
 
@@ -5704,9 +5704,9 @@
                 </div>
               </b:includable>
             </b:widget>
-            <b:widget id='HTML3' locked='false' mobile='yes' title='Service Message' type='HTML' version='1'>
+            <b:widget id='HTML3' locked='false' mobile='yes' title='Banner Message' type='HTML' version='1'>
               <b:widget-settings>
-                <b:widget-setting name='content'><![CDATA[<div style="position: relative; font-size: 1.25em; text-align: center; box-shadow: 0px 6px 6px rgb(0 0 0 / 20%);"><div style="padding: 12px; color: white; background: black;">A+ Blogger<i class="font-icon fa-fw fab fa-blogger" aria-hidden="true"></i> Template <span class="button-item is-control" style="width: 1.25em; height: 1.25em; position: absolute; right: 12px; color: inherit; "><i class="fas fa-info-circle" onclick="tooltip.pop(this, '##links-mobile', {overlay:true, relativeTo:'screen', position:41, cssClass:'service-container blog-links panel-container head-item'}); return false;" aria-hidden="true"></i></span></div><a href="https://www.glitch.at" style="padding: 12px; display: block; font-weight: bold; background-color: #d1ff00; color: #7f5959;"><img src="https://blogger.googleusercontent.com/img/a/AVvXsEh2nMEmqh4w0o3HGFLoo4IWFu062u5Vyh1BIe82ExYLgPJsc855B4rvNGi7oz3P9K5eFDV945LL4sGv7kE4XRJpRerY7y11tMgBoQf073jTgAul3to6bvcuJsMvMnIcQaN0tiBGytKx2pT7Ri7oB5aN89qKHVGjpSjCzrjsRF7I6zP0-4YSq1FeG2Rrpw=s48" style="vertical-align: middle; margin-right: 0.5em;" />Multiple Themes</a></div>]]></b:widget-setting>
+                <b:widget-setting name='content'><![CDATA[<div style="position: relative; font-size: 1.25em; text-align: center; box-shadow: 0px 6px 6px rgb(0 0 0 / 20%);"><div style="padding: 12px; color: white; background: black;">A+ Blogger<i class="font-icon fa-fw fab fa-blogger" aria-hidden="true"></i> Template<span class="button-item is-control" style="width: 1.25em; height: 1.25em; position: absolute; right: 12px; color: inherit; "><i class="fas fa-info-circle" onclick="tooltip.pop(this, '##links-mobile', {overlay:true, relativeTo:'screen', position:41, cssClass:'banner-item blog-links panel-container head-item'}); return false;" aria-hidden="true"></i></span></div><a href="https://www.glitch.at" style="padding: 12px; display: block; font-weight: bold; background-color: #d1ff00; color: #7f5959;"><img src="https://blogger.googleusercontent.com/img/a/AVvXsEh2nMEmqh4w0o3HGFLoo4IWFu062u5Vyh1BIe82ExYLgPJsc855B4rvNGi7oz3P9K5eFDV945LL4sGv7kE4XRJpRerY7y11tMgBoQf073jTgAul3to6bvcuJsMvMnIcQaN0tiBGytKx2pT7Ri7oB5aN89qKHVGjpSjCzrjsRF7I6zP0-4YSq1FeG2Rrpw=s48" style="vertical-align: middle; margin-right: 0.5em;" />Multiple Themes</a></div>]]></b:widget-setting>
               </b:widget-settings>
               <b:includable id='main'>
                 <b:if cond='data:title != &quot;&quot;'>
@@ -5724,15 +5724,15 @@
             </b:widget>
           </b:section>
           <b:comment>
-            define includable servicemessageLogic
+            define includable bannermessageLogic
           </b:comment>
           <script type='text/javascript'>
             window.addEventListener(&#39;DOMContentLoaded&#39;, function(e) {
-              var serviceName = &quot;HTML3&quot;;
-              var serviceElm = document.getElementById(serviceName);
+              var bannerName = &quot;HTML3&quot;;
+              var bannerElm = document.getElementById(bannerName);
 
-              if (serviceElm.querySelector(&#39;.widget-content&#39;).childNodes.length != 0) {
-                serviceElm.parentElement.classList.add(&#39;widget-container&#39;);
+              if (bannerElm.querySelector(&#39;.widget-content&#39;).childNodes.length != 0) {
+                bannerElm.parentElement.classList.add(&#39;widget-container&#39;);
               }
             });
           </script>
