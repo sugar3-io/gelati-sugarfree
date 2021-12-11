@@ -713,6 +713,41 @@
       }
 
 
+      #blog-banner-1 {
+        position: relative;
+        font-size: 1.25em;
+        text-align: center;
+        box-shadow: 0px 6px 6px $(shadow.color);
+      }
+
+      #blog-banner-1 .banner-header {
+        padding: 12px;
+        color: $(light.text.color);
+        background: $(dark.background.color);
+      }
+
+      #blog-banner-1 .banner-header > .banner-info {
+        position: absolute;
+        right: 12px;
+        color: inherit; 
+        width: 1.25em;
+        height: 1.25em;
+      }
+
+      #blog-banner-1 .banner-body {
+        padding: 12px;
+        display: block;
+        font-weight: bold;
+        background-color: #d1ff00;
+        color: #7f5959;
+      }
+
+      #blog-banner-1 .banner-body > img {
+        vertical-align: middle;
+        margin-right: 0.5em;
+      }
+
+
       body .column-left-outer, body .column-right-outer {
         box-sizing: border-box;
         padding-left: 12px;
@@ -5663,9 +5698,10 @@
           <b:section class='tabs' id='crosscol-overflow' name='Cross-Column 2' showaddelement='no'>
             <b:widget id='HTML3' locked='false' mobile='yes' title='Banner Message' type='HTML' version='1'>
               <b:widget-settings>
-                <b:widget-setting name='content'><![CDATA[<div style="position: relative; font-size: 1.25em; text-align: center; box-shadow: 0px 6px 6px rgb(0 0 0 / 20%);"><div style="padding: 12px; color: white; background: black;">A+ Blogger<i class="font-icon fa-fw fab fa-blogger" aria-hidden="true"></i> Template<span class="button-item is-control" style="width: 1.25em; height: 1.25em; position: absolute; right: 12px; color: inherit; "><i class="fas fa-info-circle" onclick="tooltip.pop(this, '##links-mobile', {overlay:true, relativeTo:'screen', position:41, cssClass:'banner-item blog-links panel-container head-item'}); return false;" aria-hidden="true"></i></span></div><a href="https://www.glitch.at" style="padding: 12px; display: block; font-weight: bold; background-color: #d1ff00; color: #7f5959;"><img src="https://blogger.googleusercontent.com/img/a/AVvXsEh2nMEmqh4w0o3HGFLoo4IWFu062u5Vyh1BIe82ExYLgPJsc855B4rvNGi7oz3P9K5eFDV945LL4sGv7kE4XRJpRerY7y11tMgBoQf073jTgAul3to6bvcuJsMvMnIcQaN0tiBGytKx2pT7Ri7oB5aN89qKHVGjpSjCzrjsRF7I6zP0-4YSq1FeG2Rrpw=s48" style="vertical-align: middle; margin-right: 0.5em;" />Multiple Themes</a></div>]]></b:widget-setting>
+                <b:widget-setting name='content'><![CDATA[<div id="blog-banner-1"><div class="banner-header">A+ Blogger<i class="font-icon fa-fw fab fa-blogger" aria-hidden="true"></i> Template<span class="banner-info button-item is-control"><i class="fas fa-info-circle" onclick="tooltip.pop(this, '##links-mobile', {overlay:true, relativeTo:'screen', position:41, cssClass:'banner-item blog-links panel-container head-item'}); return false;" aria-hidden="true"></i></span></div><a class="banner-body" href="https://www.glitch.at"><img src="https://blogger.googleusercontent.com/img/a/AVvXsEh2nMEmqh4w0o3HGFLoo4IWFu062u5Vyh1BIe82ExYLgPJsc855B4rvNGi7oz3P9K5eFDV945LL4sGv7kE4XRJpRerY7y11tMgBoQf073jTgAul3to6bvcuJsMvMnIcQaN0tiBGytKx2pT7Ri7oB5aN89qKHVGjpSjCzrjsRF7I6zP0-4YSq1FeG2Rrpw=s48"/>Multiple Themes</a></div>]]></b:widget-setting>
               </b:widget-settings>
               <b:includable id='main'>
+                <b:class name='banner-item'/>
                 <b:if cond='data:title != &quot;&quot;'>
                   <div class='title widget-title'><data:title/></div>
                 </b:if>
