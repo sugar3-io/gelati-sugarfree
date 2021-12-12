@@ -362,6 +362,11 @@
           <Variable name="dark.background.color" description="Background Color" type="color" default="#000000" value="#000000"/>
         </Group>
 
+        <Group description="Complementary Color" selector="">
+          <Variable name="complementary.text.color" description="Text Color" type="color" default="#7f5959" value="#7f5959"/>
+          <Variable name="complementary.background.color" description="Background Color" type="color" default="#d1ff00" value="#d1ff00"/>
+        </Group>
+
         <!-- b:comment: overlay solid -->
         <Group description="Overlay Solid" selector="#blog-hero .hero-item-slider .teaser-body, #Blog1 .post-body .cover-item.small-cover ~ .content-item">
           <Variable name="shade.solid.background.color" description="Shade Solid Background Color" type="color" default="rgba(0, 0, 0, 0.5)" value="rgba(0, 0, 0, 0.5)"/>
@@ -738,8 +743,8 @@
         padding: 12px;
         display: block;
         font-weight: bold;
-        background-color: #d1ff00;
-        color: #7f5959;
+        color: $(complementary.text.color);
+        background: $(complementary.background.color);
       }
 
       #blog-banner-1 .banner-body > img {
