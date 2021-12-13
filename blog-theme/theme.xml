@@ -2106,12 +2106,21 @@
         }
 
 
+        body.article-view .widget.ads-item ins.adsbygoogle[data-ad-status="filled"] {
+          margin-top: 12px;
+        }
+
+
         body #blog-banner-1 {
           margin-top: 12px;
           margin-bottom: 12px;
         }
 
-        body.index-type #blog-banner-1 {
+        body.list-view #blog-banner-1 {
+          margin-top: 0px;
+        }
+
+        body.list-view.index-type #blog-banner-1 {
           margin-bottom: 0px;
         }
 
