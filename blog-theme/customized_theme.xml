@@ -58,15 +58,12 @@
         <Variable name="keycolor" description="Main Color" type="color" default="#b3ca88" value="#b3ca88"/>
 
         <Group description="Page" selector="body, #Attribution1 .widget-content">
-          <Variable name="body.font" description="Font" type="font"
-              default="normal normal 16px Arial, Tahoma, Helvetica, FreeSans, sans-serif" value="normal normal 16px Montserrat"/>
+          <Variable name="body.font" description="Font" type="font" default="normal normal 16px Arial, Tahoma, Helvetica, FreeSans, sans-serif" value="normal normal 16px Montserrat"/>
           <Variable name="body.text.color" description="Text Color" type="color" default="#000000" value="#000000"/>
           <Variable name="body.background.color" description="Background Color" type="color" default="#ffffff" value="#ffffff"/>
 
-          <Variable name="body.font.desktop" description="Font Size Desktop" type="font" size="16px" family="Montserrat"
-              default="normal normal $(size) $(family)" value="normal normal $(size) $(family)"/>
-          <Variable name="body.font.mobile" description="Font Size Mobile" type="font" size="18px" family="Montserrat"
-              default="normal normal $(size) $(family)" value="normal normal $(size) $(family)"/>
+          <Variable name="body.font.desktop" description="Font Size Desktop" type="font" size="16px" family="Montserrat" default="normal normal $(size) $(family)" value="normal normal $(size) $(family)"/>
+          <Variable name="body.font.mobile" description="Font Size Mobile" type="font" size="18px" family="Montserrat" default="normal normal $(size) $(family)" value="normal normal $(size) $(family)"/>
         </Group>
 
         <Group description="Links" selector="#Attribution1 .widget-content a">
@@ -76,141 +73,121 @@
         </Group>
 
         <Group description="Cover" selector=".teaser-header:not([class~='none-cover']), .cover-item:not([class~='none-cover'])">
-          <Variable hideEditor='true' name="cover.font" description="Font" type="font"
-              default="normal bold 24px Arial, Tahoma, Helvetica, FreeSans, sans-serif" value="normal normal 24px Montserrat"/>
+          <Variable hideEditor='true' name="cover.font" description="Font" type="font" default="normal bold 24px Arial, Tahoma, Helvetica, FreeSans, sans-serif" value="normal normal 24px Montserrat"/>
           <Variable hideEditor='true' name="cover.text.color" description="Text Color" type="color" default="#FFFFFF" value="#FFFFFF"/>
           <Variable name="cover.background.color" description="Background Color" type="color" default="#7f5959" value="#7f5959"/>
         </Group>
 
         <Group description="Cover2" selector=".teaser-header.none-cover">
-          <Variable hideEditor='true' name="cover2.font" description="Font" type="font"
-              default="normal bold 24px Arial, Tahoma, Helvetica, FreeSans, sans-serif" value="normal normal 24px Montserrat"/>
+          <Variable hideEditor='true' name="cover2.font" description="Font" type="font" default="normal bold 24px Arial, Tahoma, Helvetica, FreeSans, sans-serif" value="normal normal 24px Montserrat"/>
           <Variable hideEditor='true' name="cover2.text.color" description="Text Color" type="color" default="#FFFFFF" value="#FFFFFF"/>
           <Variable name="cover2.background.color" description="Background Color" type="color" default="#7f5959" value="#7f5959"/>
         </Group>
 
         <Group description="Button" selector="button.button-item, #Blog1 .button-item, #blog-panel .button-item">
-          <Variable hideEditor="true" name="button.font" description="Font" type="font"
-              default="normal bold 24px Arial, Tahoma, Helvetica, FreeSans, sans-serif" value="normal normal 24px Montserrat"/>
+          <Variable hideEditor="true" name="button.font" description="Font" type="font" default="normal bold 24px Arial, Tahoma, Helvetica, FreeSans, sans-serif" value="normal normal 24px Montserrat"/>
           <Variable name="button.text.color" description="Text Color" type="color" default="#ffffff" value="#ffffff"/>
           <Variable name="button.background.color" description="Background Color" type="color" default="#7f5959" value="#7f5959"/>
         </Group>
 
         <Group description="Disabled" selector=".disabled-item">
-          <Variable hideEditor="true" name="disabled.font" description="Font" type="font"
-              default="normal bold 24px Arial, Tahoma, Helvetica, FreeSans, sans-serif" value="normal normal 24px Montserrat"/>
+          <Variable hideEditor="true" name="disabled.font" description="Font" type="font" default="normal bold 24px Arial, Tahoma, Helvetica, FreeSans, sans-serif" value="normal normal 24px Montserrat"/>
           <Variable name="disabled.text.color" description="Text Color" type="color" default="#bbbbbb" value="#bbbbbb"/>
           <Variable name="disabled.background.color" description="Background Color" type="color" default="#bbbbbb" value="#bbbbbb"/>
         </Group>
 
         <Group description="Caption" selector=".caption-item">
-          <Variable name="caption.font" description="Font" type="font"
-              default="normal bold 14px Arial, Tahoma, Helvetica, FreeSans, sans-serif" value="normal bold 24px Montserrat"/>
+          <Variable name="caption.font" description="Font" type="font" default="normal bold 14px Arial, Tahoma, Helvetica, FreeSans, sans-serif" value="normal bold 24px Montserrat"/>
           <Variable hideEditor="true" name="caption.text.color" description="Text Color" type="color" default="#0000ff" value="#0000ff"/>
           <Variable hideEditor='true' name="caption.background.color" description="Background Color" type="color" default="#1b1d1e" value="#1b1d1e"/>
         </Group>
 
         <Group description="Widget Head" selector=".widget-title">
-          <Variable name="widget.font" description="Font" type="font"
-            default="normal normal 24px Arial, Tahoma, Helvetica, FreeSans, sans-serif" value="normal normal 24px Montserrat"/>
+          <Variable name="widget.font" description="Font" type="font" default="normal normal 24px Arial, Tahoma, Helvetica, FreeSans, sans-serif" value="normal normal 24px Montserrat"/>
           <Variable name="widget.text.color" description="Text Color" type="color" default="#000000" value="#000000"/>
           <Variable hideEditor='true' name="widget.background.color" description="Background Color" type="color" default="#ABCDEF" value="#ABCDEF"/>
         </Group>
 
         <Group description="Section Head" selector=".header-item">
-          <Variable name="section.head.font" description="Font" type="font"
-            default="normal normal 24px Arial, Tahoma, Helvetica, FreeSans, sans-serif" value="normal normal 24px Montserrat"/>
+          <Variable name="section.head.font" description="Font" type="font" default="normal normal 24px Arial, Tahoma, Helvetica, FreeSans, sans-serif" value="normal normal 24px Montserrat"/>
           <Variable hideEditor='true' name="section.head.text.color" description="Text Color" type="color" default="#333333" value="#333333"/>
           <Variable hideEditor='true' name="section.head.background.color" description="Background Color" type="color" default="#ABCDEF" value="#ABCDEF"/>
         </Group>
 
         <Group description="Section Body" selector=".body-item">
-          <Variable name="section.body.font" description="Font" type="font"
-            default="normal normal 24px Arial, Tahoma, Helvetica, FreeSans, sans-serif" value="normal normal 24px Montserrat"/>
+          <Variable name="section.body.font" description="Font" type="font" default="normal normal 24px Arial, Tahoma, Helvetica, FreeSans, sans-serif" value="normal normal 24px Montserrat"/>
           <Variable hideEditor='true' name="section.body.text.color" description="Text Color" type="color" default="#333333" value="#333333"/>
           <Variable hideEditor='true' name="section.body.background.color" description="Background Color" type="color" default="#ABCDEF" value="#ABCDEF"/>
         </Group>
 
         <Group description="Card Title" selector=".teaser-body &gt; .title-item">
-          <Variable name="title.font" description="Font" type="font"
-              default="normal bold 24px Arial, Tahoma, Helvetica, FreeSans, sans-serif" value="normal normal 24px Montserrat"/>
+          <Variable name="title.font" description="Font" type="font" default="normal bold 24px Arial, Tahoma, Helvetica, FreeSans, sans-serif" value="normal normal 24px Montserrat"/>
           <Variable name="title.text.color" description="Text Color" type="color" default="#000000" value="#000000"/>
           <Variable hideEditor="true" name="title.background.color" description="Background Color" type="color" default="#1b1d1e" value="#1b1d1e"/>
         </Group>
 
         <Group description="Card Content" selector=".teaser-body &gt; .content-item">
-          <Variable name="content.font" description="Font" type="font"
-              default="normal bold 24px Arial, Tahoma, Helvetica, FreeSans, sans-serif" value="normal normal 24px Montserrat"/>
+          <Variable name="content.font" description="Font" type="font" default="normal bold 24px Arial, Tahoma, Helvetica, FreeSans, sans-serif" value="normal normal 24px Montserrat"/>
           <Variable name="content.text.color" description="Text Color" type="color" default="#000000" value="#000000"/>
           <Variable hideEditor="true" name="content.background.color" description="Background Color" type="color" default="#1b1d1e" value="#1b1d1e"/>
         </Group>
 
         <Group description="Card Meta" selector=".hero-item-list .meta-item, .widget-item-list .meta-item">
-          <Variable name="meta.font" description="Font" type="font"
-              default="normal bold 24px Arial, Tahoma, Helvetica, FreeSans, sans-serif" value="normal normal 24px Montserrat"/>
+          <Variable name="meta.font" description="Font" type="font" default="normal bold 24px Arial, Tahoma, Helvetica, FreeSans, sans-serif" value="normal normal 24px Montserrat"/>
           <Variable name="meta.text.color" description="Text Color" type="color" default="#000000" value="#000000"/>
           <Variable hideEditor="true" name="meta.background.color" description="Background Color" type="color" default="#1b1d1e" value="#1b1d1e"/>
         </Group>
 
         <Group description="Card Label" selector=".hero-item-list .label-item, .widget-item-list .label-item, .teaser-footer .label-item">
-          <Variable name="label.font" description="Font" type="font"
-              default="normal bold 24px Arial, Tahoma, Helvetica, FreeSans, sans-serif" value="normal normal 24px Montserrat"/>
+          <Variable name="label.font" description="Font" type="font" default="normal bold 24px Arial, Tahoma, Helvetica, FreeSans, sans-serif" value="normal normal 24px Montserrat"/>
           <Variable name="label.text.color" description="Text Color" type="color" default="#ffffff" value="#ffffff"/>
           <Variable name="label.background.color" description="Background Color" type="color" default="#000000" value="#000000"/>
         </Group>
 
         <Group description="Card Counter" selector=".counter-item">
-          <Variable name="counter.font" description="Font" type="font"
-              default="normal bold 24px Arial, Tahoma, Helvetica, FreeSans, sans-serif" value="normal normal 24px Montserrat"/>
+          <Variable name="counter.font" description="Font" type="font" default="normal bold 24px Arial, Tahoma, Helvetica, FreeSans, sans-serif" value="normal normal 24px Montserrat"/>
           <Variable name="counter.text.color" description="Text Color" type="color" default="#FFFFFF" value="#FFFFFF"/>
           <Variable name="counter.background.color" description="Background Color" type="color" default="#7f5959" value="#7f5959"/>
         </Group>
 
         <Group description="Header" selector=".header-outer">
-          <Variable hideEditor='true' name="header.font" description="Font" type="font"
-              default="normal normal 24px Arial, Tahoma, Helvetica, FreeSans, sans-serif" value="normal normal 24px Montserrat"/>
+          <Variable hideEditor='true' name="header.font" description="Font" type="font" default="normal normal 24px Arial, Tahoma, Helvetica, FreeSans, sans-serif" value="normal normal 24px Montserrat"/>
           <Variable hideEditor='true' name="header.text.color" description="Text Color" type="color" default="#ff00ff" value="#ff00ff"/>
           <Variable name="header.background.color" description="Background Color" type="color" default="#7effed" value="#7effed"/>
         </Group>
 
         <Group description="Header Widget" selector=".header-outer .widget-item-outer">
-          <Variable hideEditor='true' name="header.widget.font" description="Font" type="font"
-              default="normal normal 24px Arial, Tahoma, Helvetica, FreeSans, sans-serif" value="normal normal 24px Montserrat"/>
+          <Variable hideEditor='true' name="header.widget.font" description="Font" type="font" default="normal normal 24px Arial, Tahoma, Helvetica, FreeSans, sans-serif" value="normal normal 24px Montserrat"/>
           <Variable hideEditor='true' name="header.widget.text.color" description="Text Color" type="color" default="transparent" value="transparent"/>
           <Variable name="header.widget.background.color" description="Background Color" type="color" default="transparent" value="transparent"/>
         </Group>
 
         <Group description="Header Section" selector="#Label1 .label-item, #Label1 #more-open">
-          <Variable name="header.section.font" description="Font" type="font"
-              default="normal normal 24px Arial, Tahoma, Helvetica, FreeSans, sans-serif" value="normal normal 24px Montserrat"/>
+          <Variable name="header.section.font" description="Font" type="font" default="normal normal 24px Arial, Tahoma, Helvetica, FreeSans, sans-serif" value="normal normal 24px Montserrat"/>
           <Variable name="header.section.text.color" description="Text Color" type="color" default="#000000" value="#000000"/>
           <Variable hideEditor='true' name="header.section.background.color" description="Background Color" type="color" default="#ffff00" value="#ffff00"/>
         </Group>
 
         <Group description="Header Selected" selector="#Label1 .selected-item a">
-          <Variable hideEditor='true' name="header.selected.font" description="Font" type="font"
-              default="normal bold 24px Arial, Tahoma, Helvetica, FreeSans, sans-serif" value="normal normal 24px Montserrat"/>
+          <Variable hideEditor='true' name="header.selected.font" description="Font" type="font" default="normal bold 24px Arial, Tahoma, Helvetica, FreeSans, sans-serif" value="normal normal 24px Montserrat"/>
           <Variable name="header.selected.text.color" description="Text Color" type="color" default="#ffffff" value="#ffffff"/>
           <Variable name="header.selected.background.color" description="Background Color" type="color" default="#0000ff" value="#0000ff"/>
         </Group>
 
         <Group description="Header Logo" selector="#Header1 .logo-title">
-          <Variable name="header.logo.font" description="Font" type="font"
-              default="normal normal 24px Arial, Tahoma, Helvetica, FreeSans, sans-serif" value="normal normal 24px Montserrat"/>
+          <Variable name="header.logo.font" description="Font" type="font" default="normal normal 24px Arial, Tahoma, Helvetica, FreeSans, sans-serif" value="normal normal 24px Montserrat"/>
           <Variable name="header.logo.text.color" description="Text Color" type="color" default="#000000" value="#000000"/>
           <Variable hideEditor='true' name="header.logo.background.color" description="Background Color" type="color" default="#ffff00" value="#ffff00"/>
         </Group>
 
         <Group description="Header Logo2" selector="#Header1 .logo-content">
-          <Variable name="header2.logo.font" description="Font" type="font"
-              default="normal normal 24px Arial, Tahoma, Helvetica, FreeSans, sans-serif" value="normal normal 24px Montserrat"/>
+          <Variable name="header2.logo.font" description="Font" type="font" default="normal normal 24px Arial, Tahoma, Helvetica, FreeSans, sans-serif" value="normal normal 24px Montserrat"/>
           <Variable name="header2.logo.text.color" description="Text Color" type="color" default="#000000" value="#000000"/>
           <Variable hideEditor='true' name="header2.logo.background.color" description="Background Color" type="color" default="#ffff00" value="#ffff00"/>
         </Group>
 
         <Group description="Hero" selector=".tabs-outer">
-          <Variable hideEditor='true' name="hero.font" description="Font" type="font"
-              default="normal bold 24px Arial, Tahoma, Helvetica, FreeSans, sans-serif" value="normal normal 24px Montserrat"/>
+          <Variable hideEditor='true' name="hero.font" description="Font" type="font" default="normal bold 24px Arial, Tahoma, Helvetica, FreeSans, sans-serif" value="normal normal 24px Montserrat"/>
           <Variable hideEditor='true' name="hero.text.color" description="Text Color" type="color" default="#FFFFFF" value="#FFFFFF"/>
           <Variable name="hero.background.color1" description="Background Color1" type="color" default="#d1ff00" value="#d1ff00"/>
           <Variable name="hero.background.color2" description="Background Color2" type="color" default="#7effed" value="#7effed"/>
@@ -218,8 +195,7 @@
         </Group>
 
         <Group description="Hero Widget" selector=".tabs-outer .hero-item-list.widget-item-outer">
-          <Variable hideEditor='true' name="hero.widget.font" description="Font" type="font"
-              default="normal bold 24px Arial, Tahoma, Helvetica, FreeSans, sans-serif" value="normal normal 24px Montserrat"/>
+          <Variable hideEditor='true' name="hero.widget.font" description="Font" type="font" default="normal bold 24px Arial, Tahoma, Helvetica, FreeSans, sans-serif" value="normal normal 24px Montserrat"/>
           <Variable hideEditor='true' name="hero.widget.text.color" description="Text Color" type="color" default="#FFFFFF" value="#FFFFFF"/>
           <Variable name="hero.widget.background.color" description="Background Color" type="color" default="rgba(0, 0, 0, 0)" value="rgba(0, 0, 0, 0)"/>
         </Group>
@@ -234,120 +210,103 @@
         </Group>
 
         <Group description="Hero Title" selector="#blog-hero .teaser-title">
-          <Variable name="hero.title.font" description="Font" type="font"
-              default="normal bold 24px Arial, Tahoma, Helvetica, FreeSans, sans-serif" value="normal normal 24px Montserrat"/>
+          <Variable name="hero.title.font" description="Font" type="font" default="normal bold 24px Arial, Tahoma, Helvetica, FreeSans, sans-serif" value="normal normal 24px Montserrat"/>
           <Variable name="hero.title.text.color" description="Text Color" type="color" default="#000000" value="#000000"/>
           <Variable hideEditor='true' name="hero.title.background.color" description="Background Color" type="color" default="#f4cccc" value="#f4cccc"/>
         </Group>
 
         <Group description="Hero Meta" selector="#blog-hero .teaser-meta">
-          <Variable name="hero.meta.font" description="Font" type="font"
-              default="normal bold 14px Arial, Tahoma, Helvetica, FreeSans, sans-serif" value="normal normal 14px Montserrat"/>
+          <Variable name="hero.meta.font" description="Font" type="font" default="normal bold 14px Arial, Tahoma, Helvetica, FreeSans, sans-serif" value="normal normal 14px Montserrat"/>
           <Variable name="hero.meta.text.color" description="Text Color" type="color" default="#7effed" value="#7effed"/>
           <Variable hideEditor='true' name="hero.meta.background.color" description="Background Color" type="color" default="#f4cccc" value="#f4cccc"/>
         </Group>
 
         <Group description="Blog" selector=".main-outer">
-          <Variable hideEditor='true' name="blog.font" description="Font" type="font"
-              default="normal bold 24px Arial, Tahoma, Helvetica, FreeSans, sans-serif" value="normal normal 24px Montserrat"/>
+          <Variable hideEditor='true' name="blog.font" description="Font" type="font" default="normal bold 24px Arial, Tahoma, Helvetica, FreeSans, sans-serif" value="normal normal 24px Montserrat"/>
           <Variable hideEditor='true' name="blog.text.color" description="Text Color" type="color" default="#FFFFFF" value="#FFFFFF"/>
           <Variable name="blog.background.color" description="Background Color" type="color" default="#d1ff00" value="#d1ff00"/>
         </Group>
 
         <Group description="Blog Widget" selector=".main-outer .widget-item-outer, .main-outer .blog-item-outer">
-          <Variable hideEditor='true' name="blog.widget.font" description="Font" type="font"
-              default="normal bold 24px Arial, Tahoma, Helvetica, FreeSans, sans-serif" value="normal normal 24px Montserrat"/>
+          <Variable hideEditor='true' name="blog.widget.font" description="Font" type="font" default="normal bold 24px Arial, Tahoma, Helvetica, FreeSans, sans-serif" value="normal normal 24px Montserrat"/>
           <Variable hideEditor='true' name="blog.widget.text.color" description="Text Color" type="color" default="#FFFFFF" value="#FFFFFF"/>
           <Variable name="blog.widget.background.color" description="Background Color" type="color" default="rgba(0, 0, 0, 0)" value="rgba(0, 0, 0, 0)"/>
         </Group>
 
         <Group description="Blog Section" selector="#Blog1 .main-item">
-          <Variable name="blog.section.font" description="Font" type="font"
-              default="normal normal 14px Arial, Tahoma, Helvetica, FreeSans, sans-serif" value="normal normal 14px Montserrat"/>
+          <Variable name="blog.section.font" description="Font" type="font" default="normal normal 14px Arial, Tahoma, Helvetica, FreeSans, sans-serif" value="normal normal 14px Montserrat"/>
           <Variable name="blog.section.text.color" description="Text Color" type="color" default="#000000" value="#000000"/>
           <Variable name="blog.section.background.color" description="Background Color" type="color" default="#eeeeee" value="#eeeeee"/>
         </Group>
 
         <Group description="Blog Section2" selector=".main-outer .widget-item-inner">
-          <Variable hideEditor='true' name="blog2.widget.font" description="Font" type="font"
-            default="normal normal 24px Arial, Tahoma, Helvetica, FreeSans, sans-serif" value="normal normal 24px Montserrat"/>
+          <Variable hideEditor='true' name="blog2.widget.font" description="Font" type="font" default="normal normal 24px Arial, Tahoma, Helvetica, FreeSans, sans-serif" value="normal normal 24px Montserrat"/>
           <Variable hideEditor='true' name="blog2.widget.text.color" description="Text Color" type="color" default="#333333" value="#333333"/>
           <Variable name="blog2.widget.background.color" description="Background Color" type="color" default="#666666" value="#666666"/>
         </Group>
 
         <Group description="Blog Card" selector=".main-outer .teaser-item">
-          <Variable hideEditor='true' name="blog.card.font" description="Font" type="font"
-              default="normal bold 24px Arial, Tahoma, Helvetica, FreeSans, sans-serif" value="normal normal 24px Montserrat"/>
+          <Variable hideEditor='true' name="blog.card.font" description="Font" type="font" default="normal bold 24px Arial, Tahoma, Helvetica, FreeSans, sans-serif" value="normal normal 24px Montserrat"/>
           <Variable hideEditor='true' name="blog.card.text.color" description="Text Color" type="color" default="#333333" value="#333333"/>
           <Variable name="blog.card.background.color" description="Background Color" type="color" default="#7effed" value="#7effed"/>
         </Group>
 
         <Group description="Blog Title" selector="#Blog1 .post-header">
-          <Variable name="blog.title.font" description="Font" type="font"
-              default="normal bold 24px Arial, Tahoma, Helvetica, FreeSans, sans-serif" value="normal normal 24px Montserrat"/>
+          <Variable name="blog.title.font" description="Font" type="font" default="normal bold 24px Arial, Tahoma, Helvetica, FreeSans, sans-serif" value="normal normal 24px Montserrat"/>
           <Variable name="blog.title.text.color" description="Text Color" type="color" default="#000000" value="#000000"/>
           <Variable hideEditor='true' name="blog.title.background.color" description="Background Color" type="color" default="#CCBBAA" value="#CCBBAA"/>
         </Group>
 
         <Group description="Blog Meta" selector="#Blog1 .date-header">
-          <Variable name="blog.meta.font" description="Font" type="font"
-              default="normal normal 24px Arial, Tahoma, Helvetica, FreeSans, sans-serif" value="normal normal 24px Montserrat"/>
+          <Variable name="blog.meta.font" description="Font" type="font" default="normal normal 24px Arial, Tahoma, Helvetica, FreeSans, sans-serif" value="normal normal 24px Montserrat"/>
           <Variable name="blog.meta.text.color" description="Text Color" type="color" default="#000000" value="#000000"/>
           <Variable hideEditor='true' name="blog.meta.background.color" description="Background Color" type="color" default="#00ffff" value="#00ffff"/>
         </Group>
 
         <Group description="Pager" selector="#blog-panel">
-          <Variable hideEditor='true' name="pager.font" description="Font" type="font"
-              default="normal normal 24px Arial, Tahoma, Helvetica, FreeSans, sans-serif" value="normal normal 24px Montserrat"/>
+          <Variable hideEditor='true' name="pager.font" description="Font" type="font" default="normal normal 24px Arial, Tahoma, Helvetica, FreeSans, sans-serif" value="normal normal 24px Montserrat"/>
           <Variable hideEditor='true' name="pager.text.color" description="Text Color" type="color" default="#ff00ff" value="#ff00ff"/>
           <Variable name="pager.background.color" description="Background Color" type="color" default="#d1ff00" value="#d1ff00"/>
         </Group>
 
         <Group description="Pager Widget" selector="#blog-panel .nav-item">
-          <Variable hideEditor='true' name="pager.widget.font" description="Font" type="font"
-              default="normal normal 24px Arial, Tahoma, Helvetica, FreeSans, sans-serif" value="normal normal 24px Montserrat"/>
+          <Variable hideEditor='true' name="pager.widget.font" description="Font" type="font" default="normal normal 24px Arial, Tahoma, Helvetica, FreeSans, sans-serif" value="normal normal 24px Montserrat"/>
           <Variable hideEditor='true' name="pager.widget.text.color" description="Text Color" type="color" default="#ff00ff" value="#ff00ff"/>
           <Variable name="pager.widget.background.color" description="Background Color" type="color" default="rgba(0, 0, 0, 0)" value="rgba(0, 0, 0, 0)"/>
         </Group>
 
         <Group description="Pager Section" selector="#blog-pager .pager-item-number">
-          <Variable name="pager.section.number.font" description="Font" type="font"
-              default="normal normal 24px Arial, Tahoma, Helvetica, FreeSans, sans-serif" value="normal normal 24px Montserrat"/>
+          <Variable name="pager.section.number.font" description="Font" type="font" default="normal normal 24px Arial, Tahoma, Helvetica, FreeSans, sans-serif" value="normal normal 24px Montserrat"/>
           <Variable name="pager.section.number.text.color" description="Text Color" type="color" default="#000000" value="#000000"/>
           <Variable name="pager.section.number.background.color" description="Background Color" type="color" default="#ffffff" value="#ffffff"/>
         </Group>
 
         <Group description="Pager Section2" selector="#blog-pager .pager-item-alpha">
-          <Variable hideEditor='true' name="pager.section.alpha.font" description="Font" type="font"
-              default="normal normal 24px Arial, Tahoma, Helvetica, FreeSans, sans-serif" value="normal normal 24px Montserrat"/>
+          <Variable hideEditor='true' name="pager.section.alpha.font" description="Font" type="font" default="normal normal 24px Arial, Tahoma, Helvetica, FreeSans, sans-serif" value="normal normal 24px Montserrat"/>
           <Variable name="pager.section.alpha.text.color" description="Text Color" type="color" default="#ffffff" value="#ffffff"/>
           <Variable name="pager.section.alpha.background.color" description="Background Color" type="color" default="#7f5959" value="#7f5959"/>
         </Group>
 
         <Group description="Pager Selected" selector="#blog-pager .selected-item">
-          <Variable hideEditor='true' name="pager.selected.font" description="Selected Font" type="font"
-              default="normal bold 24px Arial, Tahoma, Helvetica, FreeSans, sans-serif" value="normal normal 24px Montserrat"/>
+          <Variable hideEditor='true' name="pager.selected.font" description="Selected Font" type="font" default="normal bold 24px Arial, Tahoma, Helvetica, FreeSans, sans-serif" value="normal normal 24px Montserrat"/>
           <Variable name="pager.selected.text.color" description="Selected Color" type="color" default="#ffffff" value="#ffffff"/>
           <Variable name="pager.selected.background.color" description="Selected Background" type="color" default="#0000ff" value="#0000ff"/>
         </Group>
 
         <Group description="Footer" selector=".footer-outer">
-          <Variable hideEditor='true' name="footer.font" description="Font" type="font"
-              default="normal normal 24px Arial, Tahoma, Helvetica, FreeSans, sans-serif" value="normal normal 24px Montserrat"/>
+          <Variable hideEditor='true' name="footer.font" description="Font" type="font" default="normal normal 24px Arial, Tahoma, Helvetica, FreeSans, sans-serif" value="normal normal 24px Montserrat"/>
           <Variable hideEditor='true' name="footer.text.color" description="Text Color" type="color" default="#333333" value="#333333"/>
           <Variable name="footer.background.color" description="Background Color" type="color" default="#7effed" value="#7effed"/>
         </Group>
 
         <Group description="Footer Widget" selector=".footer-inner .widget">
-          <Variable hideEditor='true' name="footer.widget.font" description="Font" type="font"
-              default="normal normal 14px Arial, Tahoma, Helvetica, FreeSans, sans-serif" value="normal normal 24px Montserrat"/>
+          <Variable hideEditor='true' name="footer.widget.font" description="Font" type="font" default="normal normal 14px Arial, Tahoma, Helvetica, FreeSans, sans-serif" value="normal normal 24px Montserrat"/>
           <Variable hideEditor='true' name="footer.widget.text.color" description="Text Color" type="color" default="#333333" value="#333333"/>
           <Variable name="footer.widget.background.color" description="Background Color" type="color" default="rgba(0, 0, 0, 0)" value="rgba(0, 0, 0, 0)"/>
         </Group>
 
         <Group description="Footer Section" selector=".footer-inner .widget">
-          <Variable name="footer.section.font" description="Font" type="font"
-              default="normal normal 24px Arial, Tahoma, Helvetica, FreeSans, sans-serif" value="normal normal 24px Montserrat"/>
+          <Variable name="footer.section.font" description="Font" type="font" default="normal normal 24px Arial, Tahoma, Helvetica, FreeSans, sans-serif" value="normal normal 24px Montserrat"/>
           <Variable name="footer.section.text.color" description="Text Color" type="color" default="#000000" value="#000000"/>
           <Variable name="footer.section.background.color" description="Background Color" type="color" default="rgba(0, 0, 0, 0)" value="rgba(0, 0, 0, 0)"/>
         </Group>
@@ -455,9 +414,7 @@
         <Variable hideEditor='true' name="feed.link.color" description="Link Color" type="color" default="#7f5959" value="#7f5959"/>
         <Variable hideEditor='true' name="feed.link.visited.color" description="Visited Color" type="color" default="#7d181e" value="#7d181e"/>
         <Variable hideEditor='true' name="feed.link.hover.color" description="Hover Color" type="color" default="#7f5959" value="#7f5959"/>
-        <Variable name="body.background" description="Body Background" type="background"
-            color="$(body.background.color)"
-            default="$(color) none no-repeat scroll center center" value="$(color) none no-repeat scroll center center"/>
+        <Variable name="body.background" description="Body Background" type="background" color="$(body.background.color)" default="$(color) none no-repeat scroll center center" value="$(color) none no-repeat scroll center center"/>
         <Variable name="separator.outdent" description="Separator Outdent" type="length" default="15px" min="0" max="100px" value="0"/>
 
       */
