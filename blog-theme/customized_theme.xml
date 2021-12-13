@@ -2114,8 +2114,8 @@
 
 
         #blog-banner-1 {
-          padding-top: 12px;
-          padding-bottom: 12px;
+          margin-top: 12px;
+          margin-bottom: 12px;
         }
 
         body #mcTooltipWrapper #mcTooltip.banner-item {
