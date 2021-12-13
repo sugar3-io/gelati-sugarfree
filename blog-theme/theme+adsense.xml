@@ -2106,9 +2106,13 @@
         }
 
 
-        #blog-banner-1 {
+        body #blog-banner-1 {
           margin-top: 12px;
           margin-bottom: 12px;
+        }
+
+        body.index-type #blog-banner-1 {
+          margin-bottom: 0px;
         }
 
         body #mcTooltipWrapper #mcTooltip.banner-item {
