@@ -1697,11 +1697,11 @@
         }
 
         body.article-view #Blog1 .post-header .cover-item.large-text-size ~ .title-item {
-            font-size: 3.0em;
+          font-size: 3.0em;
         }
 
         body.article-view #Blog1 .post-header .cover-item.small-text-size ~ .title-item {
-            font-size: 1.5em;
+          font-size: 1.5em;
         }
 
         body.list-view #Blog1 .post-header .title-item {
@@ -2149,13 +2149,18 @@
         }
 
 
+        #blog-banner-1 {
+          padding-top: 12px;
+          padding-bottom: 12px;
+        }
+
         body #mcTooltipWrapper #mcTooltip.banner-item {
-            width: 80vw !important;
+          width: 80vw !important;
         }
 
         body #mcTooltipWrapper #mcTooltip.banner-item .panel-item {
-            display: flex;
-            flex-direction: column;
+          display: flex;
+          flex-direction: column;
         }
 
         body #mcTooltipWrapper #mcTooltip.banner-item .link-container li {
