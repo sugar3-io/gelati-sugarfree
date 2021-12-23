@@ -14,10 +14,14 @@ A+ Retrofitted Blogger/Blogspot v2 Template
 
 ## Getting Started
 
-Please see [Documentation](https://gelati.sugar3.io/p/docs.html) before importing one of the available [Blog-Themes](blog-theme) for Gelati Sugarfree.
+Please consult [Quick Setup Guide](https://gelati.sugar3.io/p/docs.html#quick_installation) regarding <i>Installation</i>, <i>Configuration</i> and <i>Customization</i> before Importing one of the available [Blog-Themes](blog-theme) for Gelati Sugarfree.
 
-Although optional, you might also consider to import some [Demo-Content](demo-content) to gain better understanding of its internal mechanisms with the provided examples. Feel free to delete/unplublish unnecessary Posts, Pages and Labels afterwards.
+<br>
 
+## Features and Usage
+* Although optional, you might consider to import the provided [Demo-Content](demo-content) which provides representational examples regarding Gelati Sugarfree's [Features and Usage](https://gelati.sugar3.io/p/about.html).
+* Feel free to delete or unplublish unnecessary Posts, Pages and Labels after you got a grasp on its internals and mechanics.
+### Demo-Content Preperation
 > Some of the Posts contain <i>Jump-Breaks</i>, a feature of Blogger/Blogpost represented by the following expression: <pre><i>&lt;!--more--&gt;</i></pre> 
 > When exporting content in Blogger/Blogspot these expressions get converted to plain &lt;a&gt;-Tags: <pre><i>&lt;a name='more'&gt;</i> resp. <i>&amp;lt;a name='more'&amp;gt;</i></pre>
 > Unfortunately, after importing such content you have to manual replace all occurences of "ill-converted" <i>Jump-Breaks</i> to their correct expression with the help of Post-Editor.
@@ -26,16 +30,11 @@ Although optional, you might also consider to import some [Demo-Content](demo-co
 
 ## Final Notes
 
-As stated in [Advanced Setup Guide](https://gelati.sugar3.io/p/docs.html#advanced_setup) for most use-cases like
+As stated in Gelati Sugarfree's [Advanced Setup Guide](https://gelati.sugar3.io/p/docs.html#advanced_setup)
+* For use-cases, including <i>custom domain usage</i>, you are good to go, even when using <i>hosted Assets</i> as referenced in the provided Blog-Themes.
+* If you want to <i>self-host</i> these static assets feel free to <i>download</i> [Blog-Resources](blog-resources) provided pre-built here on GitHub
 
-* custom domain usage 
-* self-hosting
-
-you should be fine with pre-built [Blog-Resources](blog-resources) provided for <i>Download</i> here on GitHub.
-
-In case you don't want to (or simply don't have the capabilitites to do so) use Gelati Sugarfree's <i>hosted Assets</i>, as referenced in Blog-Themes.
-
-If you have followed [Quick Setup Guide](https://gelati.sugar3.io/p/docs.html#quick_installation) and everything worked well you might already have a working setup of Gelati Sugarfree 🎉.
+If you followed Documentation and everything worked well you might already have a working instance of Gelati Sugarfree 🎉.
 
 <br>
 <hr>
