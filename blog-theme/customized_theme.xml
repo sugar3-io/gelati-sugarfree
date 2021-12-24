@@ -7838,89 +7838,6 @@
   </b:with>
 
 <b:section-contents id='sidebar-right-macro-1'/><b:section-contents id='footer-1'>
-  <b:widget id='FollowByEmail1' locked='false' mobile='yes' title='Follow by Email' type='FollowByEmail' version='1'>
-    <b:includable id='main'>
-      <b:class name='widget-item-outer'/>
-      <b:if cond='data:title != &quot;&quot;'>
-        <div class='title widget-title'><data:title/></div>
-      </b:if>
-      <div class='widget-content'>
-        <div class='follow-by-email-inner'>
-          <form action='https://feedburner.google.com/fb/a/mailverify' expr:onsubmit='&quot;window.open(\&quot;https://feedburner.google.com/fb/a/mailverify?uri=&quot; + data:feedPath + &quot;\&quot;, \&quot;popupwindow\&quot;, \&quot;scrollbars=yes,width=550,height=520\&quot;); return true&quot;' method='post' target='popupwindow'>
-            <input expr:value='data:feedPath' name='uri' type='hidden'/>
-            <input name='loc' type='hidden' value='en_US'/>
-            <b:if cond='!data:blog.isMobileRequest'>
-              <div class='emailfeed-header header-item'>
-                <data:messages.emailAddress/>
-              </div>
-            </b:if>
-            <input class='emailfeed-body body-item' expr:placeholder='(data:blog.isMobileRequest ? data:messages.emailAddress : &quot;&quot;) + &quot;&amp;hellip;&quot;' name='email' type='text'/>
-            <input class='emailfeed-footer footer-item button-item is-link' expr:value='data:messages.subscribe' type='submit'/>
-          </form>
-        </div>
-      </div>
-      <span class='item-control blog-admin'>
-        <b:include name='dotmenuLogic'/>
-        <b:include name='quickedit'/>
-      </span>
-    </b:includable>
-    <b:includable id='dotmenuLogic'>
-      <script type='text/javascript'>
-        window.addEventListener(&#39;DOMContentLoaded&#39;, function(e) {
-          var panelSel = &quot;#more-panel&quot;;
-          var panelElm = document.querySelector(panelSel);
-          
-          if (panelElm) {
-            panelElm.style.display = &quot;block&quot;;
-          }
-        });
-      </script>
-    </b:includable>
-  </b:widget>
-  <b:widget id='HTML4' locked='false' mobile='yes' title='Feed by Email' type='HTML' version='1'>
-    <b:widget-settings>
-      <b:widget-setting name='content'>GelatiSugarfreeBDEV</b:widget-setting>
-    </b:widget-settings>
-    <b:includable id='main'>
-      <b:class name='widget-item-outer'/>
-      <b:if cond='data:title != &quot;&quot;'>
-        <div class='title widget-title'><data:title/></div>
-      </b:if>
-      <div class='widget-content'>
-        <b:with value='data:content' var='feedPath'>
-          <div class='follow-by-email-inner'>
-            <form action='https://feedburner.google.com/fb/a/mailverify' expr:onsubmit='&quot;window.open(\&quot;https://feedburner.google.com/fb/a/mailverify?uri=&quot; + data:feedPath + &quot;\&quot;, \&quot;popupwindow\&quot;, \&quot;scrollbars=yes,width=550,height=520\&quot;); return true&quot;' method='post' target='popupwindow'>
-              <input expr:value='data:feedPath' name='uri' type='hidden'/>
-              <input name='loc' type='hidden' value='en_US'/>
-              <b:if cond='!data:blog.isMobileRequest'>
-                <div class='emailfeed-header header-item'>
-                  <data:messages.emailAddress/>
-                </div>
-              </b:if>
-              <input class='emailfeed-body body-item' expr:placeholder='(data:blog.isMobileRequest ? data:messages.emailAddress : &quot;&quot;) + &quot;&amp;hellip;&quot;' name='email' type='text'/>
-              <input class='emailfeed-footer footer-item button-item is-link' expr:value='data:messages.subscribe' type='submit'/>
-            </form>
-          </div>
-        </b:with>
-      </div>
-      <span class='item-control blog-admin'>
-        <b:include name='dotmenuLogic'/>
-        <b:include name='quickedit'/>
-      </span>
-    </b:includable>
-    <b:includable id='dotmenuLogic'>
-      <script type='text/javascript'>
-        window.addEventListener(&#39;DOMContentLoaded&#39;, function(e) {
-          var panelSel = &quot;#more-panel&quot;;
-          var panelElm = document.querySelector(panelSel);
-          
-          if (panelElm) {
-            panelElm.style.display = &quot;block&quot;;
-          }
-        });
-      </script>
-    </b:includable>
-  </b:widget>
   <b:widget id='Subscribe1' locked='false' mobile='yes' title='Subscribe To' type='Subscribe' version='1'>
     <b:includable id='main'>
       <b:class name='widget-item-outer'/>
@@ -8075,6 +7992,89 @@
           var labelElm = document.getElementById(navName).querySelector(&quot;[class*=&#39;&quot; + labelUnescaped + &quot;&#39;]&quot;);
           if (labelElm) {
             labelElm.className = labelElm.className.replace(labelUnescaped, labelEscaped);
+          }
+        });
+      </script>
+    </b:includable>
+  </b:widget>
+  <b:widget id='FollowByEmail1' locked='false' mobile='yes' title='Follow by Email' type='FollowByEmail' version='1'>
+    <b:includable id='main'>
+      <b:class name='widget-item-outer'/>
+      <b:if cond='data:title != &quot;&quot;'>
+        <div class='title widget-title'><data:title/></div>
+      </b:if>
+      <div class='widget-content'>
+        <div class='follow-by-email-inner'>
+          <form action='https://feedburner.google.com/fb/a/mailverify' expr:onsubmit='&quot;window.open(\&quot;https://feedburner.google.com/fb/a/mailverify?uri=&quot; + data:feedPath + &quot;\&quot;, \&quot;popupwindow\&quot;, \&quot;scrollbars=yes,width=550,height=520\&quot;); return true&quot;' method='post' target='popupwindow'>
+            <input expr:value='data:feedPath' name='uri' type='hidden'/>
+            <input name='loc' type='hidden' value='en_US'/>
+            <b:if cond='!data:blog.isMobileRequest'>
+              <div class='emailfeed-header header-item'>
+                <data:messages.emailAddress/>
+              </div>
+            </b:if>
+            <input class='emailfeed-body body-item' expr:placeholder='(data:blog.isMobileRequest ? data:messages.emailAddress : &quot;&quot;) + &quot;&amp;hellip;&quot;' name='email' type='text'/>
+            <input class='emailfeed-footer footer-item button-item is-link' expr:value='data:messages.subscribe' type='submit'/>
+          </form>
+        </div>
+      </div>
+      <span class='item-control blog-admin'>
+        <b:include name='dotmenuLogic'/>
+        <b:include name='quickedit'/>
+      </span>
+    </b:includable>
+    <b:includable id='dotmenuLogic'>
+      <script type='text/javascript'>
+        window.addEventListener(&#39;DOMContentLoaded&#39;, function(e) {
+          var panelSel = &quot;#more-panel&quot;;
+          var panelElm = document.querySelector(panelSel);
+          
+          if (panelElm) {
+            panelElm.style.display = &quot;block&quot;;
+          }
+        });
+      </script>
+    </b:includable>
+  </b:widget>
+  <b:widget id='HTML4' locked='false' mobile='yes' title='Feed by Email' type='HTML' version='1'>
+    <b:widget-settings>
+      <b:widget-setting name='content'>GelatiSugarfreeBDEV</b:widget-setting>
+    </b:widget-settings>
+    <b:includable id='main'>
+      <b:class name='widget-item-outer'/>
+      <b:if cond='data:title != &quot;&quot;'>
+        <div class='title widget-title'><data:title/></div>
+      </b:if>
+      <div class='widget-content'>
+        <b:with value='data:content' var='feedPath'>
+          <div class='follow-by-email-inner'>
+            <form action='https://feedburner.google.com/fb/a/mailverify' expr:onsubmit='&quot;window.open(\&quot;https://feedburner.google.com/fb/a/mailverify?uri=&quot; + data:feedPath + &quot;\&quot;, \&quot;popupwindow\&quot;, \&quot;scrollbars=yes,width=550,height=520\&quot;); return true&quot;' method='post' target='popupwindow'>
+              <input expr:value='data:feedPath' name='uri' type='hidden'/>
+              <input name='loc' type='hidden' value='en_US'/>
+              <b:if cond='!data:blog.isMobileRequest'>
+                <div class='emailfeed-header header-item'>
+                  <data:messages.emailAddress/>
+                </div>
+              </b:if>
+              <input class='emailfeed-body body-item' expr:placeholder='(data:blog.isMobileRequest ? data:messages.emailAddress : &quot;&quot;) + &quot;&amp;hellip;&quot;' name='email' type='text'/>
+              <input class='emailfeed-footer footer-item button-item is-link' expr:value='data:messages.subscribe' type='submit'/>
+            </form>
+          </div>
+        </b:with>
+      </div>
+      <span class='item-control blog-admin'>
+        <b:include name='dotmenuLogic'/>
+        <b:include name='quickedit'/>
+      </span>
+    </b:includable>
+    <b:includable id='dotmenuLogic'>
+      <script type='text/javascript'>
+        window.addEventListener(&#39;DOMContentLoaded&#39;, function(e) {
+          var panelSel = &quot;#more-panel&quot;;
+          var panelElm = document.querySelector(panelSel);
+          
+          if (panelElm) {
+            panelElm.style.display = &quot;block&quot;;
           }
         });
       </script>
