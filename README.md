@@ -7,8 +7,8 @@ A+ Retrofitted Blogger/Blogspot v2 Template
 
 <br>
 
-![https://www.flaticon.com/authors/smalllikeart/](blog-resources/dist/images/icon.png)
-![https://www.glitch.at](blog-resources/dist/images/customized_icon.png)
+[![https://www.flaticon.com/authors/smalllikeart/](blog-resources/dist/images/icon.png)](https://gelati.sugar3.io)
+[![Gelati Sugarfree](blog-resources/dist/images/customized_icon.png)](https://www.glitch.at)
 
 <br>
 

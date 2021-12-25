@@ -2059,7 +2059,7 @@
         }
 
         body #mcTooltipWrapper[style*="position: fixed"] #mcTooltip.blog-subscribe #FollowByEmail1, body #mcTooltipWrapper[style*="position: fixed"] #mcTooltip.blog-subscribe #HTML4 {
-          order: 1;
+          /* order: 1; */
         }
 
         body #mcTooltipWrapper[style*="position: fixed"] #mcTooltip.blog-subscribe #ContactForm1 {
@@ -4541,7 +4541,7 @@
         /* b:comment: override position in dependence of FeaturedPost presence variation */
         #PopularPosts1 {
           width: 100%;
-         }
+        }
 
         /* b:comment: override position in dependence of FeaturedPost presence variation */
         #FeaturedPost1 + #PopularPosts1 {
