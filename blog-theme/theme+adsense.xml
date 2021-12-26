@@ -1538,11 +1538,11 @@
 
         body:not([class~="more-active"]) header:not([class~="fixed"]) #Label1 nav ul li.label-item {
           background-image: none;
-        }             
+        }
 
         body.more-active header:not([class~="fixed"]) #Label1 nav ul li.label-item a {
           box-shadow: 0px 6px 18px -6px $(shadow3.color);
-        }             
+        }
 
 
         body:not([class~="more-active"]) header:not([class~="fixed"]) #Label1 nav ul li.label-item a::before, body:not([class~="more-active"]) header:not([class~="fixed"]) #Label1 nav ul li.label-item a::after {
