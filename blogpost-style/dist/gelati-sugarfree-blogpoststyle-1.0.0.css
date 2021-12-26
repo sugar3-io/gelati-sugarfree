@@ -493,4 +493,8 @@ body.article-view .post-body .content-item blockquote {
     flex-grow: 1;
     page-break-before: auto;
   }
+  body.article-view .post-body .content-item aside {
+    width: auto;
+    float: none;
+  }
 }

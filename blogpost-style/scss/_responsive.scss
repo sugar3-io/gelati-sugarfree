@@ -65,4 +65,10 @@
   //   // `-moz-any-link` hack so W3C CSS validator will pass it.
   //   display: table-cell;
   // }
+
+
+  aside {
+    width: auto;
+    float: none; 
+  }
 }
