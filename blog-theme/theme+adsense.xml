@@ -701,7 +701,7 @@
         display: block;
         font-weight: bold;
         color: $(complementary.text.color);
-        background: $(complementary.background.color);
+        background: linear-gradient(0deg, $(header.background.color), $(complementary.background.color));
       }
 
       #blog-banner-1 .banner-body > img {
@@ -5703,12 +5703,12 @@
           <b:section class='tabs' id='crosscol-overflow' name='Cross-Column 2' showaddelement='no'>
             <b:widget id='AdSense1' locked='false' title='' type='AdSense' version='1'>
               <b:widget-settings>
-                <b:widget-setting name='style.bgcolor'>#1b1d1e</b:widget-setting>
-                <b:widget-setting name='style.textcolor'>#000000</b:widget-setting>
+                <b:widget-setting name='style.bgcolor'>#ffffff</b:widget-setting>
+                <b:widget-setting name='style.textcolor'>#ffffff</b:widget-setting>
                 <b:widget-setting name='style.layout'>1x1</b:widget-setting>
-                <b:widget-setting name='style.bordercolor'>#1b1d1e</b:widget-setting>
-                <b:widget-setting name='style.urlcolor'>#8e7cc3</b:widget-setting>
-                <b:widget-setting name='style.linkcolor'>#d52a33</b:widget-setting>
+                <b:widget-setting name='style.bordercolor'>#ffffff</b:widget-setting>
+                <b:widget-setting name='style.urlcolor'>#ffffff</b:widget-setting>
+                <b:widget-setting name='style.linkcolor'>#ffffff</b:widget-setting>
                 <b:widget-setting name='style.unittype'>TextAndImage</b:widget-setting>
               </b:widget-settings>
               <b:includable id='main'>
@@ -5767,25 +5767,25 @@
                 <b:section class='main widget-container' id='main' name='Main' showaddelement='no'>
                   <b:widget id='Blog1' locked='false' title='Blog Posts' type='Blog' version='1'>
                     <b:widget-settings>
-                      <b:widget-setting name='showDateHeader'>true</b:widget-setting>
-                      <b:widget-setting name='style.textcolor'>#000000</b:widget-setting>
                       <b:widget-setting name='showShareButtons'>true</b:widget-setting>
-                      <b:widget-setting name='showCommentLink'>true</b:widget-setting>
-                      <b:widget-setting name='style.urlcolor'>#8e7cc3</b:widget-setting>
-                      <b:widget-setting name='showAuthor'>true</b:widget-setting>
                       <b:widget-setting name='disableGooglePlusShare'>true</b:widget-setting>
-                      <b:widget-setting name='style.linkcolor'>#d52a33</b:widget-setting>
                       <b:widget-setting name='style.unittype'>TextAndImage</b:widget-setting>
-                      <b:widget-setting name='style.bgcolor'>#1b1d1e</b:widget-setting>
                       <b:widget-setting name='reactionsLabel'/>
                       <b:widget-setting name='showAuthorProfile'>false</b:widget-setting>
                       <b:widget-setting name='style.layout'>1x1</b:widget-setting>
-                      <b:widget-setting name='showLabels'>true</b:widget-setting>
                       <b:widget-setting name='showLocation'>true</b:widget-setting>
                       <b:widget-setting name='showTimestamp'>true</b:widget-setting>
                       <b:widget-setting name='postsPerAd'>3</b:widget-setting>
+                      <b:widget-setting name='style.bordercolor'>#1b1d1e</b:widget-setting>
+                      <b:widget-setting name='showDateHeader'>true</b:widget-setting>
+                      <b:widget-setting name='style.textcolor'>#000000</b:widget-setting>
+                      <b:widget-setting name='showCommentLink'>true</b:widget-setting>
+                      <b:widget-setting name='style.urlcolor'>#8e7cc3</b:widget-setting>
+                      <b:widget-setting name='showAuthor'>true</b:widget-setting>
+                      <b:widget-setting name='style.linkcolor'>#d52a33</b:widget-setting>
+                      <b:widget-setting name='style.bgcolor'>#1b1d1e</b:widget-setting>
+                      <b:widget-setting name='showLabels'>true</b:widget-setting>
                       <b:widget-setting name='showBacklinks'>false</b:widget-setting>
-                      <b:widget-setting name='style.bordercolor'>#d52a33</b:widget-setting>
                       <b:widget-setting name='showInlineAds'>true</b:widget-setting>
                       <b:widget-setting name='showReactions'>false</b:widget-setting>
                     </b:widget-settings>
