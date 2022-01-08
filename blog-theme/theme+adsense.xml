@@ -2221,7 +2221,7 @@
         margin-right: 0px;
       }
 
-      #Blog1 .post-body hr.seperator.content-block {
+      #Blog1 .post-body hr.separator.content-block {
         padding: 1px;
         height: 1px;
         background: linear-gradient(90deg, transparent, $(dark.background.color), transparent);
@@ -2231,7 +2231,7 @@
         opacity: 0.75;
       }
 
-      #Blog1 .post-body hr.seperator.content-block::before {
+      #Blog1 .post-body hr.separator.content-block::before {
         content: "";
         height: 20px;
         width: 20px;
@@ -2242,7 +2242,7 @@
         transform: translate(-50%, -50%);
       }
 
-      #Blog1 .post-body hr.seperator.content-block::after {
+      #Blog1 .post-body hr.separator.content-block::after {
         content: "";
         height: 8px;
         width: 8px;
