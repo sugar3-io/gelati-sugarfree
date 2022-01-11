@@ -3530,6 +3530,10 @@
         }
 
 
+        body #Blog1 header {
+          position: inherit;
+        }
+
         body.more-active header {
           position: fixed;
           top: 0px;
@@ -4105,6 +4109,10 @@
         }
 
 
+        body #Blog1 footer {
+          width: auto;
+        }
+
         body .column-center-outer, body footer {
           width: 100%;
         }
@@ -4153,6 +4161,11 @@
       /*---*/
 
       @media only screen and (max-width: 479px) {
+
+        body #Blog1 header {
+          height: auto;
+          position: inherit;
+        }
 
         body header:not([class~="fixed"]) {
           height: 3em; 
