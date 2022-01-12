@@ -384,21 +384,21 @@
         </Group>
 
         <!-- b:comment: customize blogtemplate - label css (start) -->
-        <Variable hideEditor='true' name="label.cover.Image" description="Label Cover Image" type="string" default="https://4.bp.blogspot.com/-ViZyoQpb4Uw/XvRhwF6EsxI/AAAAAAAAWYw/2qNMlotAUAYCFcCiDJ5nxKxKsxrjCKxwACPcBGAYYCw/w800-h400-c/image.png" value="https://4.bp.blogspot.com/-ViZyoQpb4Uw/XvRhwF6EsxI/AAAAAAAAWYw/2qNMlotAUAYCFcCiDJ5nxKxKsxrjCKxwACPcBGAYYCw"/>
+        <Variable hideEditor='true' name="label.cover.Image" description="Label Cover Image" type="string" default="https://blogger.googleusercontent.com/img/a/AVvXsEgrNrmb8uxJXmN-SM1Age7jJpARGKoGicrBOiX44v1eNB6VxyoseJKOuAbsS7v-q-Y_ML4AwyGKm2zPG0EYwFVVjOxxQVatSDzPdBks8oXKF-U5khbEo0Nc950mdn7HQ5Rise2nNJtFGpm71CAX8vkZ43dGHjs3rrlhHzagKYWbk7Zh3szbns3NGFcBDw=w800-h400-c" value="https://blogger.googleusercontent.com/img/a/AVvXsEgrNrmb8uxJXmN-SM1Age7jJpARGKoGicrBOiX44v1eNB6VxyoseJKOuAbsS7v-q-Y_ML4AwyGKm2zPG0EYwFVVjOxxQVatSDzPdBks8oXKF-U5khbEo0Nc950mdn7HQ5Rise2nNJtFGpm71CAX8vkZ43dGHjs3rrlhHzagKYWbk7Zh3szbns3NGFcBDw"/>
 
-        <Variable hideEditor='true' name="label.cover.Markup" description="Label Cover Markup" type="string" default="https://3.bp.blogspot.com/--4UlF2Ce7Ck/XvRhwK9AGaI/AAAAAAAAWZE/HDpuwn3RVYEas7SJvyF_JVopZlPrQsdyACPcBGAYYCw/w800-h400-c/markup.png" value="https://3.bp.blogspot.com/--4UlF2Ce7Ck/XvRhwK9AGaI/AAAAAAAAWZE/HDpuwn3RVYEas7SJvyF_JVopZlPrQsdyACPcBGAYYCw"/>
+        <Variable hideEditor='true' name="label.cover.Markup" description="Label Cover Markup" type="string" default="https://blogger.googleusercontent.com/img/a/AVvXsEhcDZHFmYwP9I3RjdCvMBLtKP1zqShJXMObSwuoE6j3nJ6jhprvM8IseLMEfNHVRF3PuwTT8k4NMJXXn-o_UUKeUbpfepGtBP6T61Ni2ulcvl2o4T_B4m_zTcKajJOSI-CC11QSnU7UyyD4JzECjmiKLKozVVRh4-F8fXYPCOGst40pm-nqnHFiGmmJ5A=w800-h400-c" value="https://blogger.googleusercontent.com/img/a/AVvXsEhcDZHFmYwP9I3RjdCvMBLtKP1zqShJXMObSwuoE6j3nJ6jhprvM8IseLMEfNHVRF3PuwTT8k4NMJXXn-o_UUKeUbpfepGtBP6T61Ni2ulcvl2o4T_B4m_zTcKajJOSI-CC11QSnU7UyyD4JzECjmiKLKozVVRh4-F8fXYPCOGst40pm-nqnHFiGmmJ5A"/>
 
-        <Variable hideEditor='true' name="label.cover.Embedded" description="Label Cover Embedded" type="string" default="https://1.bp.blogspot.com/-EWLNCxAlI0M/XvRhwvxcNcI/AAAAAAAAWZE/ZCdizQon2zM8yk0xbNac_PSNSb1Dstt-gCPcBGAYYCw/w800-h400-c/embedded.png" value="https://1.bp.blogspot.com/-EWLNCxAlI0M/XvRhwvxcNcI/AAAAAAAAWZE/ZCdizQon2zM8yk0xbNac_PSNSb1Dstt-gCPcBGAYYCw"/>
+        <Variable hideEditor='true' name="label.cover.Embedded" description="Label Cover Embedded" type="string" default="https://blogger.googleusercontent.com/img/a/AVvXsEgooC-IUMxTrWOk4cTu4aT-J_5Kdzcv9FgJ73wDLyqT0FDL_-BBnKJLqEnsLEVrb34O7kWnHxbSLcfCvan8y-dI_SXtNHXhq60cDohArIgVaikPsfqHKKeK1dJO6YWKGGS0B7rjZ48zQvfMIPUjDDpIVR0Nu41U0p6_Sch8XHZcl4lnZb50I06-5pg7bg=w800-h400-c" value="https://blogger.googleusercontent.com/img/a/AVvXsEgooC-IUMxTrWOk4cTu4aT-J_5Kdzcv9FgJ73wDLyqT0FDL_-BBnKJLqEnsLEVrb34O7kWnHxbSLcfCvan8y-dI_SXtNHXhq60cDohArIgVaikPsfqHKKeK1dJO6YWKGGS0B7rjZ48zQvfMIPUjDDpIVR0Nu41U0p6_Sch8XHZcl4lnZb50I06-5pg7bg"/>
 
-        <Variable hideEditor='true' name="label.cover.Layout" description="Label Cover Layout" type="string" default="https://1.bp.blogspot.com/-88oRQKNxl3Q/XvRhwzn6kiI/AAAAAAAAWZE/KfLxoT7gcRodNkPGCkeZOxGSpC_pveIjgCPcBGAYYCw/w800-h400-c/layout.png" value="https://1.bp.blogspot.com/-88oRQKNxl3Q/XvRhwzn6kiI/AAAAAAAAWZE/KfLxoT7gcRodNkPGCkeZOxGSpC_pveIjgCPcBGAYYCw"/>
+        <Variable hideEditor='true' name="label.cover.Layout" description="Label Cover Layout" type="string" default="https://blogger.googleusercontent.com/img/a/AVvXsEh6BUZWMcmm5nodj-YxBVMG13R1NnlYcsoXHUC3UXeEUcbRBb4Up_IE29NV0oTzRTNNmcNXqSKo5ofyN24rKyszXbquM1zm3hOsSBNsqhjKI8NI9ddkxDdyT-5t7r7w-jwWn48dOFbLvEH9-HgV3PD4LLhjaPTDR9iwfXISzOI73li63aG0gof3N4M3eQ=w800-h400-c" value="https://blogger.googleusercontent.com/img/a/AVvXsEh6BUZWMcmm5nodj-YxBVMG13R1NnlYcsoXHUC3UXeEUcbRBb4Up_IE29NV0oTzRTNNmcNXqSKo5ofyN24rKyszXbquM1zm3hOsSBNsqhjKI8NI9ddkxDdyT-5t7r7w-jwWn48dOFbLvEH9-HgV3PD4LLhjaPTDR9iwfXISzOI73li63aG0gof3N4M3eQ"/>
 
-        <Variable hideEditor='true' name="label.cover.Video" description="Label Cover Video" type="string" default="https://2.bp.blogspot.com/-MLLsEuI-UPE/XvRhxIvq7wI/AAAAAAAAWY4/J06vU7MqSgEouOkJrc41d8RfbJpGUwCGACPcBGAYYCw/w800-h400-c/video.png" value="https://2.bp.blogspot.com/-MLLsEuI-UPE/XvRhxIvq7wI/AAAAAAAAWY4/J06vU7MqSgEouOkJrc41d8RfbJpGUwCGACPcBGAYYCw"/>
+        <Variable hideEditor='true' name="label.cover.Video" description="Label Cover Video" type="string" default="https://blogger.googleusercontent.com/img/a/AVvXsEgud1fk5zfq5lMnvgxNKYURKgp877aPfA8HKBPQLpnpjFQMk2wEeIfQNDbIVf7qXALiDnLD1OaQN6gtSVR8k1NwCtfsZbhI4j3R3XU_D5X-Z_gBEr2EEktGOd_BJlHLsVHKU6k9lsblyCqgqTPN7egRsJdwn3oz4zpy5d4jQrq-xihE32ssTQ0R0SVftQ=w800-h400-c" value="https://blogger.googleusercontent.com/img/a/AVvXsEgud1fk5zfq5lMnvgxNKYURKgp877aPfA8HKBPQLpnpjFQMk2wEeIfQNDbIVf7qXALiDnLD1OaQN6gtSVR8k1NwCtfsZbhI4j3R3XU_D5X-Z_gBEr2EEktGOd_BJlHLsVHKU6k9lsblyCqgqTPN7egRsJdwn3oz4zpy5d4jQrq-xihE32ssTQ0R0SVftQ"/>
 
-        <Variable hideEditor='true' name="label.cover.TestCase" description="Label Cover TestCase" type="string" default="https://3.bp.blogspot.com/-kTDwRQlRJfY/XvRhxZdL7mI/AAAAAAAAWY8/ZW6lxWrdMbkN3N0W-ZBSCz3Kgfvb_vwKQCPcBGAYYCw/w800-h400-c/test_case.png" value="https://3.bp.blogspot.com/-kTDwRQlRJfY/XvRhxZdL7mI/AAAAAAAAWY8/ZW6lxWrdMbkN3N0W-ZBSCz3Kgfvb_vwKQCPcBGAYYCw"/>
+        <Variable hideEditor='true' name="label.cover.TestCase" description="Label Cover TestCase" type="string" default="https://blogger.googleusercontent.com/img/a/AVvXsEijpgj8s-KoBU-qyUwwIWOS2_1eaImVCAt569PyWmB9498O2a21cO3yZkETppwJ8-flwqjpOfxLKhE18aV58ByOzewEv8lIm3qtykx17zKHHiy_R4CSX9sv-nWjzfxqvn12xSL57-SotpuQGvrkOCDAo1hHAqRwmujACHtBuT6aik0DNutwhDNqaK2g-w=w800-h400-c" value="https://blogger.googleusercontent.com/img/a/AVvXsEijpgj8s-KoBU-qyUwwIWOS2_1eaImVCAt569PyWmB9498O2a21cO3yZkETppwJ8-flwqjpOfxLKhE18aV58ByOzewEv8lIm3qtykx17zKHHiy_R4CSX9sv-nWjzfxqvn12xSL57-SotpuQGvrkOCDAo1hHAqRwmujACHtBuT6aik0DNutwhDNqaK2g-w"/>
 
-        <Variable hideEditor='true' name="label.cover.Media" description="Label Cover Media" type="string" default="https://4.bp.blogspot.com/-N9Ql9x_xX9c/XvRhxSqBSfI/AAAAAAAAWZA/pswTNS4o27c8V84roQx1kUG9mFxqzZxGQCPcBGAYYCw/w800-h400-c/media.png" value="https://4.bp.blogspot.com/-N9Ql9x_xX9c/XvRhxSqBSfI/AAAAAAAAWZA/pswTNS4o27c8V84roQx1kUG9mFxqzZxGQCPcBGAYYCw"/>
+        <Variable hideEditor='true' name="label.cover.Media" description="Label Cover Media" type="string" default="https://blogger.googleusercontent.com/img/a/AVvXsEht0xPDmslocAEytgWUu0pEIWXGCluBk5nFEv1dz0dyRnIGIlgNO40HKJ7nqY5kzR4o754MOOQmPzEris9BfdK7-2KeXsMiz264LP8s-9hEa714Dp8TDPsZ4U41EBZre5nMsBR9L9h-IJvpVrtXj5sh4VQ_-2ysqggXWNHvHoT4u3lNpUqnsXsyTav50A=w800-h400-c" value="https://blogger.googleusercontent.com/img/a/AVvXsEht0xPDmslocAEytgWUu0pEIWXGCluBk5nFEv1dz0dyRnIGIlgNO40HKJ7nqY5kzR4o754MOOQmPzEris9BfdK7-2KeXsMiz264LP8s-9hEa714Dp8TDPsZ4U41EBZre5nMsBR9L9h-IJvpVrtXj5sh4VQ_-2ysqggXWNHvHoT4u3lNpUqnsXsyTav50A"/>
 
-        <Variable hideEditor='true' name="label.cover.Gallery" description="Label Cover Gallery" type="string" default="https://3.bp.blogspot.com/-bW-mckNpYj4/XvRhx9r0mcI/AAAAAAAAWZE/Ps8Wnj--s68KuW9CN5VIA-Vb8nTrm8CFACPcBGAYYCw/w800-h400-c/gallery.png" value="https://3.bp.blogspot.com/-bW-mckNpYj4/XvRhx9r0mcI/AAAAAAAAWZE/Ps8Wnj--s68KuW9CN5VIA-Vb8nTrm8CFACPcBGAYYCw"/>
+        <Variable hideEditor='true' name="label.cover.Gallery" description="Label Cover Gallery" type="string" default="https://blogger.googleusercontent.com/img/a/AVvXsEj1oLEIBpP8H4IPJr0XsRDY4dYk1ekA_hC9SlcNrtX6Fu0Ynt9vbB-Z3-mklQTM4MzEZUn8wn7lNuaWf14g2SD7RIBMGpUkFMxdhVCOi0uruOHjWIM0-kl3tBHIYSvhdS3zHl1a6z7cyqHBj8QshRbfvgq65fjPw3roAqxT4a1BQsTCBwpTBJ31Y7_jug=w800-h400-c" value="https://blogger.googleusercontent.com/img/a/AVvXsEj1oLEIBpP8H4IPJr0XsRDY4dYk1ekA_hC9SlcNrtX6Fu0Ynt9vbB-Z3-mklQTM4MzEZUn8wn7lNuaWf14g2SD7RIBMGpUkFMxdhVCOi0uruOHjWIM0-kl3tBHIYSvhdS3zHl1a6z7cyqHBj8QshRbfvgq65fjPw3roAqxT4a1BQsTCBwpTBJ31Y7_jug"/>
         <!-- b:comment: customize blogtemplate - label css (end) -->
 
         <Variable hideEditor='true' name="comments.color" description="Comments Color" type="color" default="#bbbbbb" value="#bbbbbb"/>
@@ -1159,76 +1159,76 @@
 
 
       body .label-item-Image {
-        background-image: url("$(label.cover.Image)/w400-h200-c/image.png");
+        background-image: url("$(label.cover.Image)=w400-h200-c");
       }
       body .label-item-Markup {
-        background-image: url("$(label.cover.Markup)/w400-h200-c/markup.png");
+        background-image: url("$(label.cover.Markup)=w400-h200-c");
       }
       body .label-item-Embedded {
-        background-image: url("$(label.cover.Embedded)/w400-h200-c/embedded.png");
+        background-image: url("$(label.cover.Embedded)=w400-h200-c");
       }
       body .label-item-Layout {
-        background-image: url("$(label.cover.Layout)/w400-h200-c/layout.png");
+        background-image: url("$(label.cover.Layout)=w400-h200-c");
       }
       body .label-item-Video {
-        background-image: url("$(label.cover.Video)/w400-h200-c/video.png");
+        background-image: url("$(label.cover.Video)=w400-h200-c");
       }
       body .label-item-Test_Case {
-        background-image: url("$(label.cover.TestCase)/w400-h200-c/test_case.png");
+        background-image: url("$(label.cover.TestCase)=w400-h200-c");
       }
       body .label-item-Media {
-        background-image: url("$(label.cover.Media)/w400-h200-c/media.png");
+        background-image: url("$(label.cover.Media)=w400-h200-c");
       }
       body .label-item-Gallery {
-        background-image: url("$(label.cover.Gallery)/w400-h200-c/gallery.png");
+        background-image: url("$(label.cover.Gallery)=w400-h200-c");
       }
       body .full-width.label-item-Image {
-        background-image: url("$(label.cover.Image)/w800-h400-c/image.png");
+        background-image: url("$(label.cover.Image)=w800-h400-c");
       }
       body .full-width.label-item-Markup {
-        background-image: url("$(label.cover.Markup)/w800-h400-c/markup.png");
+        background-image: url("$(label.cover.Markup)=w800-h400-c");
       }
       body .full-width.label-item-Embedded {
-        background-image: url("$(label.cover.Embedded)/w800-h400-c/embedded.png");
+        background-image: url("$(label.cover.Embedded)=w800-h400-c");
       }
       body .full-width.label-item-Layout {
-        background-image: url("$(label.cover.Layout)/w800-h400-c/layout.png");
+        background-image: url("$(label.cover.Layout)=w800-h400-c");
       }
       body .full-width.label-item-Video {
-        background-image: url("$(label.cover.Video)/w800-h400-c/video.png");
+        background-image: url("$(label.cover.Video)=w800-h400-c");
       }
       body .full-width.label-item-Test_Case {
-        background-image: url("$(label.cover.TestCase)/w800-h400-c/test_case.png");
+        background-image: url("$(label.cover.TestCase)=w800-h400-c");
       }
       body .full-width.label-item-Media {
-        background-image: url("$(label.cover.Media)/w800-h400-c/media.png");
+        background-image: url("$(label.cover.Media)=w800-h400-c");
       }
       body .full-width.label-item-Gallery {
-        background-image: url("$(label.cover.Gallery)/w800-h400-c/gallery.png");
+        background-image: url("$(label.cover.Gallery)=w800-h400-c");
       }
       body .ratio-square.label-item-Image {
-        background-image: url("$(label.cover.Image)/w400-h400-c/image.png");
+        background-image: url("$(label.cover.Image)=w400-h400-c");
       }
       body .ratio-square.label-item-Markup {
-        background-image: url("$(label.cover.Markup)/w400-h400-c/markup.png");
+        background-image: url("$(label.cover.Markup)=w400-h400-c");
       }
       body .ratio-square.label-item-Embedded {
-        background-image: url("$(label.cover.Embedded)/w400-h400-c/embedded.png");
+        background-image: url("$(label.cover.Embedded)=w400-h400-c");
       }
       body .ratio-square.label-item-Layout {
-        background-image: url("$(label.cover.Layout)/w400-h400-c/layout.png");
+        background-image: url("$(label.cover.Layout)=w400-h400-c");
       }
       body .ratio-square.label-item-Video {
-        background-image: url("$(label.cover.Video)/w400-h400-c/video.png");
+        background-image: url("$(label.cover.Video)=w400-h400-c");
       }
       body .ratio-square.label-item-Test_Case {
-        background-image: url("$(label.cover.TestCase)/w400-h400-c/test_case.png");
+        background-image: url("$(label.cover.TestCase)=w400-h400-c");
       }
       body .ratio-square.label-item-Media {
-        background-image: url("$(label.cover.Media)/w400-h400-c/media.png");
+        background-image: url("$(label.cover.Media)=w400-h400-c");
       }
       body .ratio-square.label-item-Gallery {
-        background-image: url("$(label.cover.Gallery)/w400-h400-c/gallery.png");
+        background-image: url("$(label.cover.Gallery)=w400-h400-c");
       }
 
       body .label-item-FEATUREDSLIDER {
