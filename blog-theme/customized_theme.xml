@@ -170,7 +170,7 @@
 
         <Group description="Header Selected" selector="#Label1 .selected-item a">
           <Variable hideEditor='true' name="header.selected.font" description="Font" type="font" default="normal bold 24px Arial, Tahoma, Helvetica, FreeSans, sans-serif" value="normal normal 24px Montserrat"/>
-          <Variable name="header.selected.text.color" description="Text Color" type="color" default="#ffffff" value="#ffffff"/>
+          <Variable name="header.selected.text.color" description="Text Color" type="color" default="#6e00ff" value="#6e00ff"/>
           <Variable name="header.selected.background.color" description="Background Color" type="color" default="#6e00ff" value="#6e00ff"/>
         </Group>
 
@@ -499,7 +499,7 @@
       }
 
       #Label1 .selected-item span, #mcTooltip .selected-item span {
-        color: $(header.selected.text.color);
+        color: $(light.text.color);
       }
 
       body #ddmenu .dropdown {
@@ -3656,6 +3656,10 @@
         header:not([class~="fixed"]) #Label1 nav ul li.label-item a {
           height: 100%;
           padding-bottom: 2.5em;
+        }
+
+        body:not([class~="more-active"]) header:not([class~="fixed"]) #Label1 nav ul li.label-item a:hover {
+          color: $(complementary.background.color);
         }
 
         body:not([class~="more-active"]) header:not([class~="fixed"]) #Label1 nav ul li.label-item a {
