@@ -99,10 +99,9 @@ body.article-view .post-body .content-item button, body.article-view .post-body 
   line-height: 29.7px;
 }
 
-body.article-view .post-body .content-item fieldset {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+body.article-view .post-body .content-item fieldset label,
+body.article-view .post-body .content-item fieldset legend {
+  display: block;
 }
 
 body.article-view .post-body .content-item fieldset legend {

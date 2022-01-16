@@ -1,7 +1,7 @@
 /**
  * The MIT License (MIT)
  *
- * Copyright (c) 2015-2020 Yegor Bugayenko
+ * Copyright (c) 2015-2021 Yegor Bugayenko
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -28,6 +28,7 @@ const child_process = require('child_process')
 module.exports = function (grunt) {
   'use strict';
   grunt.util.linefeed = '\n';
+  grunt.loadNpmTasks('grunt-css-purge');
   grunt.initConfig(
     {
       pkg: grunt.file.readJSON('package.json'),
@@ -70,7 +71,19 @@ module.exports = function (grunt) {
         allFiles: [
           'scss/*.scss'
         ]
-      }
+      },
+      css_purge: {
+        dist: {
+          options: {},
+          src: 'dist/<%= pkg.name %>-<%= pkg.version %>.min.css',
+          dest: 'dist/<%= pkg.name %>-<%= pkg.version %>.min.css',
+        },
+        uncompressed: {
+          options: {},
+          src: 'dist/<%= pkg.name %>-<%= pkg.version %>.css',
+          dest: 'dist/<%= pkg.name %>-<%= pkg.version %>.css',
+        },
+      },
     }
   );
   require('load-grunt-tasks')(grunt, { scope: 'devDependencies' });
