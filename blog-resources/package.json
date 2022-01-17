@@ -45,14 +45,14 @@
   "dependencies": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sugar3-io/gelati-sugrarfee.git"
+    "url": "git+https://github.com/sugar3-io/gelati-sugarfree.git"
   },
   "author": "Christian Sam",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/sugar3-io/gelati-sugrarfee/issues"
+    "url": "https://github.com/sugar3-io/gelati-sugarfree/issues"
   },
-  "homepage": "https://github.com/sugar3-io/gelati-sugrarfee#readme",
+  "homepage": "https://github.com/sugar3-io/gelati-sugarfree",
   "keywords": [
     "Blogger",
     "blog"
