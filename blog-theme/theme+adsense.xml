@@ -2763,6 +2763,11 @@
 
       /*---*/
 
+      #Blog1 .blog-posts .post-body section {
+        width: auto;
+        margin-bottom: inherit;
+      }
+
       #Blog1 .blog-posts section {
         width: 100%;
       }
