@@ -3015,6 +3015,11 @@
         text-align: center;
       }
 
+      body #Blog1 .post-body footer.content-block.content-spacer {
+        padding: 6px 12px 12px;
+        box-sizing: border-box;
+      }
+
       body #Blog1 .post-body footer.content-block > * {
         margin-bottom: 0px;
         font-size: 1.15em;
