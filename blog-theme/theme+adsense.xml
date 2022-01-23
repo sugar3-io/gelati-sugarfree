@@ -74,13 +74,13 @@
 
         <Group description="Cover" selector=".teaser-header:not([class~='none-cover']), .cover-item:not([class~='none-cover'])">
           <Variable hideEditor='true' name="cover.font" description="Font" type="font" default="normal bold 24px Arial, Tahoma, Helvetica, FreeSans, sans-serif" value="normal normal 24px Montserrat"/>
-          <Variable hideEditor='true' name="cover.text.color" description="Text Color" type="color" default="#FFFFFF" value="#FFFFFF"/>
+          <Variable hideEditor='true' name="cover.text.color" description="Text Color" type="color" default="#ffffff" value="#ffffff"/>
           <Variable name="cover.background.color" description="Background Color" type="color" default="#2ab8ab" value="#2ab8ab"/>
         </Group>
 
         <Group description="Cover2" selector=".teaser-header.none-cover">
           <Variable hideEditor='true' name="cover2.font" description="Font" type="font" default="normal bold 24px Arial, Tahoma, Helvetica, FreeSans, sans-serif" value="normal normal 24px Montserrat"/>
-          <Variable hideEditor='true' name="cover2.text.color" description="Text Color" type="color" default="#FFFFFF" value="#FFFFFF"/>
+          <Variable hideEditor='true' name="cover2.text.color" description="Text Color" type="color" default="#ffffff" value="#ffffff"/>
           <Variable name="cover2.background.color" description="Background Color" type="color" default="#2ab8ab" value="#2ab8ab"/>
         </Group>
 
@@ -146,7 +146,7 @@
 
         <Group description="Card Counter" selector=".counter-item">
           <Variable name="counter.font" description="Font" type="font" default="normal bold 24px Arial, Tahoma, Helvetica, FreeSans, sans-serif" value="normal normal 24px Montserrat"/>
-          <Variable name="counter.text.color" description="Text Color" type="color" default="#FFFFFF" value="#FFFFFF"/>
+          <Variable name="counter.text.color" description="Text Color" type="color" default="#ffffff" value="#ffffff"/>
           <Variable name="counter.background.color" description="Background Color" type="color" default="#d52a33" value="#d52a33"/>
         </Group>
 
@@ -188,7 +188,7 @@
 
         <Group description="Hero" selector=".tabs-outer">
           <Variable hideEditor='true' name="hero.font" description="Font" type="font" default="normal bold 24px Arial, Tahoma, Helvetica, FreeSans, sans-serif" value="normal normal 24px Montserrat"/>
-          <Variable hideEditor='true' name="hero.text.color" description="Text Color" type="color" default="#FFFFFF" value="#FFFFFF"/>
+          <Variable hideEditor='true' name="hero.text.color" description="Text Color" type="color" default="#ffffff" value="#ffffff"/>
           <Variable name="hero.background.color1" description="Background Color1" type="color" default="#2ab8ab" value="#2ab8ab"/>
           <Variable name="hero.background.color2" description="Background Color2" type="color" default="#efcdaa" value="#efcdaa"/>
           <Variable name="hero.background.angle1" description="Background Angle1" type="string" default="0deg" value="0deg"/>
@@ -196,7 +196,7 @@
 
         <Group description="Hero Widget" selector=".tabs-outer .hero-item-list.widget-item-outer">
           <Variable hideEditor='true' name="hero.widget.font" description="Font" type="font" default="normal bold 24px Arial, Tahoma, Helvetica, FreeSans, sans-serif" value="normal normal 24px Montserrat"/>
-          <Variable hideEditor='true' name="hero.widget.text.color" description="Text Color" type="color" default="#FFFFFF" value="#FFFFFF"/>
+          <Variable hideEditor='true' name="hero.widget.text.color" description="Text Color" type="color" default="#ffffff" value="#ffffff"/>
           <Variable name="hero.widget.background.color" description="Background Color" type="color" default="rgba(0, 0, 0, 0)" value="rgba(0, 0, 0, 0)"/>
         </Group>
 
@@ -223,13 +223,13 @@
 
         <Group description="Blog" selector=".main-outer">
           <Variable hideEditor='true' name="blog.font" description="Font" type="font" default="normal bold 24px Arial, Tahoma, Helvetica, FreeSans, sans-serif" value="normal normal 24px Montserrat"/>
-          <Variable hideEditor='true' name="blog.text.color" description="Text Color" type="color" default="#FFFFFF" value="#FFFFFF"/>
+          <Variable hideEditor='true' name="blog.text.color" description="Text Color" type="color" default="#ffffff" value="#ffffff"/>
           <Variable name="blog.background.color" description="Background Color" type="color" default="#2ab8ab" value="#2ab8ab"/>
         </Group>
 
         <Group description="Blog Widget" selector=".main-outer .widget-item-outer, .main-outer .blog-item-outer">
           <Variable hideEditor='true' name="blog.widget.font" description="Font" type="font" default="normal bold 24px Arial, Tahoma, Helvetica, FreeSans, sans-serif" value="normal normal 24px Montserrat"/>
-          <Variable hideEditor='true' name="blog.widget.text.color" description="Text Color" type="color" default="#FFFFFF" value="#FFFFFF"/>
+          <Variable hideEditor='true' name="blog.widget.text.color" description="Text Color" type="color" default="#ffffff" value="#ffffff"/>
           <Variable name="blog.widget.background.color" description="Background Color" type="color" default="rgba(0, 0, 0, 0)" value="rgba(0, 0, 0, 0)"/>
         </Group>
 
@@ -261,6 +261,12 @@
           <Variable name="blog.meta.font" description="Font" type="font" default="normal normal 24px Arial, Tahoma, Helvetica, FreeSans, sans-serif" value="normal normal 24px Montserrat"/>
           <Variable name="blog.meta.text.color" description="Text Color" type="color" default="#000000" value="#000000"/>
           <Variable hideEditor='true' name="blog.meta.background.color" description="Background Color" type="color" default="#00ffff" value="#00ffff"/>
+        </Group>
+
+        <Group description="Blogpost Cite" selector="">
+          <Variable name="blogpost.cite.font" description="Font" type="font" default="normal bold 14px Arial, Tahoma, Helvetica, FreeSans, sans-serif" value="italic normal 24px Philosopher"/>
+          <Variable hideEditor="true" name="blogpost.cite.text.color" description="Text Color" type="color" default="#6e00ff" value="#6e00ff"/>
+          <Variable hideEditor='true' name="blogpost.cite.background.color" description="Background Color" type="color" default="#1b1d1e" value="#1b1d1e"/>
         </Group>
 
         <Group description="Pager" selector="#blog-panel">
@@ -312,8 +318,8 @@
         </Group>
 
         <Group description="Light Color" selector="#Blog1 .post-body .cover-item.small-cover ~ .content-item, #Blog1 .widget-item-outer .widget-item-slider.has-left::before, #Blog1 .widget-item-outer .widget-item-slider.has-right::after">
-          <Variable name="light.text.color" description="Text Color" type="color" default="#FFFFFF" value="#FFFFFF"/>
-          <Variable name="light.background.color" description="Background Color" type="color" default="#FFFFFF" value="#FFFFFF"/>
+          <Variable name="light.text.color" description="Text Color" type="color" default="#ffffff" value="#ffffff"/>
+          <Variable name="light.background.color" description="Background Color" type="color" default="#ffffff" value="#ffffff"/>
         </Group>
 
         <Group description="Dark Color" selector="">
@@ -3703,6 +3709,14 @@
           width: calc(100% + 1px);
         }
 
+        body.more-active header:not([class~="fixed"]):first-of-type #Label1 nav ul li.label-item span {
+          text-shadow: 0px 0px 1px $(header.section.text.color);
+        }
+
+        body.more-active header:not([class~="fixed"]):first-of-type #Label1 nav ul li.label-item.selected-item span {
+          text-shadow: 0px 0px 1px $(light.text.color);
+        }
+
         header.fixed #Label1 nav ul li.label-item a span {
           position: inherit;
           left: inherit;
@@ -4269,6 +4283,18 @@
         }
 
 
+        #Label1 nav ul li span {
+          text-shadow: 0px 0px 1px $(header.section.text.color);
+        }
+
+        #Label1 nav ul li.selected-item span {
+          text-shadow: 0px 0px 1px $(light.text.color);
+        }
+
+        #Label1 nav ul li span.font-icon {
+          text-shadow: none;
+        }
+
         #Label1 nav ul li a, #Label1 nav ul li span {
           height: calc((100vh - 3em) / 8);
           line-height: calc((100vh - 3em) / 8);
@@ -4581,6 +4607,12 @@
       /* b:comment: customize blogtemplate - blogpost css (start) */
 
       body.article-view .post-body .content-item input,body.article-view .post-body .content-item textarea,body.article-view .post-body .content-item select,body.article-view .post-body .content-item button,body.article-view .post-body .content-item option{font-family:system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:18px;font-stretch:normal;font-style:normal;font-weight:400;line-height:29.7px}body.article-view .post-body .content-item input,body.article-view .post-body .content-item textarea,body.article-view .post-body .content-item select,body.article-view .post-body .content-item button,body.article-view .post-body .content-item option{font-family:system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:18px;font-stretch:normal;font-style:normal;font-weight:400;line-height:29.7px}body.article-view .post-body .content-item th{font-weight:600}body.article-view .post-body .content-item td,body.article-view .post-body .content-item th{border-bottom:1.08px solid #595959;padding:14.85px 18px;text-align:left;vertical-align:top}body.article-view .post-body .content-item thead th{border-bottom-width:2.16px;padding-bottom:6.3px}body.article-view .post-body .content-item table{display:table;width:100%}@media all and (max-width: 1023px){body.article-view .post-body .content-item table{display:none}}@media all and (max-width: 1023px){body.article-view .post-body .content-item table thead{display:none}}body.article-view .post-body .content-item table tr{border-bottom-width:2.16px}body.article-view .post-body .content-item table tr td,body.article-view .post-body .content-item table tr th{overflow:hidden;padding:5.4px 3.6px}@media all and (max-width: 1023px){body.article-view .post-body .content-item table tr td,body.article-view .post-body .content-item table tr th{border:0;display:inline-block}}@media all and (max-width: 1023px){body.article-view .post-body .content-item table tr{display:inline-block;margin:10.8px 0}}@media all and (max-width: 1023px){body.article-view .post-body .content-item table{display:inline-block}}body.article-view .post-body .content-item input,body.article-view .post-body .content-item textarea,body.article-view .post-body .content-item select,body.article-view .post-body .content-item button,body.article-view .post-body .content-item option{font-family:system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:18px;font-stretch:normal;font-style:normal;font-weight:400;line-height:29.7px}body.article-view .post-body .content-item fieldset label,body.article-view .post-body .content-item fieldset legend{display:block}body.article-view .post-body .content-item fieldset legend{margin:18px 0}body.article-view .post-body .content-item input,body.article-view .post-body .content-item textarea,body.article-view .post-body .content-item select,body.article-view .post-body .content-item button{border-radius:3.6px;display:inline-block;padding:9.9px}body.article-view .post-body .content-item input+label,body.article-view .post-body .content-item input+input[type="checkbox"],body.article-view .post-body .content-item input+input[type="radio"],body.article-view .post-body .content-item textarea+label,body.article-view .post-body .content-item textarea+input[type="checkbox"],body.article-view .post-body .content-item textarea+input[type="radio"],body.article-view .post-body .content-item select+label,body.article-view .post-body .content-item select+input[type="checkbox"],body.article-view .post-body .content-item select+input[type="radio"],body.article-view .post-body .content-item button+label,body.article-view .post-body .content-item button+input[type="checkbox"],body.article-view .post-body .content-item button+input[type="radio"]{page-break-before:always}body.article-view .post-body .content-item input,body.article-view .post-body .content-item select,body.article-view .post-body .content-item label{margin-right:3.6px}body.article-view .post-body .content-item textarea{min-height:90px;min-width:360px}body.article-view .post-body .content-item label{display:inline-block;margin-bottom:12.6px}body.article-view .post-body .content-item label+*{page-break-before:always}body.article-view .post-body .content-item label>input{margin-bottom:0}body.article-view .post-body .content-item input[type="submit"],body.article-view .post-body .content-item input[type="reset"],body.article-view .post-body .content-item button{background:#f2f2f2;color:#191919;cursor:pointer;display:inline;margin-bottom:18px;margin-right:7.2px;padding:6.525px 23.4px;text-align:center}body.article-view .post-body .content-item input[type="submit"]:hover,body.article-view .post-body .content-item input[type="reset"]:hover,body.article-view .post-body .content-item button:hover{background:#d9d9d9;color:#000}body.article-view .post-body .content-item input[type="submit"][disabled],body.article-view .post-body .content-item input[type="reset"][disabled],body.article-view .post-body .content-item button[disabled]{background:#e6e5e5;color:#403f3f;cursor:not-allowed}body.article-view .post-body .content-item input[type="submit"],body.article-view .post-body .content-item button[type="submit"]{background:#d52a33;color:#fff}body.article-view .post-body .content-item input[type="submit"]:hover,body.article-view .post-body .content-item button[type="submit"]:hover{background:#951d24;color:#bfbfbf}body.article-view .post-body .content-item input,body.article-view .post-body .content-item select,body.article-view .post-body .content-item textarea{margin-bottom:18px}body.article-view .post-body .content-item input[type="text"],body.article-view .post-body .content-item input[type="password"],body.article-view .post-body .content-item input[type="email"],body.article-view .post-body .content-item input[type="url"],body.article-view .post-body .content-item input[type="phone"],body.article-view .post-body .content-item input[type="tel"],body.article-view .post-body .content-item input[type="number"],body.article-view .post-body .content-item input[type="datetime"],body.article-view .post-body .content-item input[type="date"],body.article-view .post-body .content-item input[type="month"],body.article-view .post-body .content-item input[type="week"],body.article-view .post-body .content-item input[type="color"],body.article-view .post-body .content-item input[type="time"],body.article-view .post-body .content-item input[type="search"],body.article-view .post-body .content-item input[type="range"],body.article-view .post-body .content-item input[type="file"],body.article-view .post-body .content-item input[type="datetime-local"],body.article-view .post-body .content-item select,body.article-view .post-body .content-item textarea{border:1px solid #595959;padding:5.4px 6.3px}body.article-view .post-body .content-item input[type="checkbox"],body.article-view .post-body .content-item input[type="radio"]{flex-grow:0;height:29.7px;margin-left:0;margin-right:9px;vertical-align:middle}body.article-view .post-body .content-item input[type="checkbox"]+label,body.article-view .post-body .content-item input[type="radio"]+label{page-break-before:avoid}body.article-view .post-body .content-item select[multiple]{min-width:270px}body.article-view .post-body .content-item input,body.article-view .post-body .content-item textarea,body.article-view .post-body .content-item select,body.article-view .post-body .content-item button,body.article-view .post-body .content-item option{font-family:system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:18px;font-stretch:normal;font-style:normal;font-weight:400;line-height:29.7px}body.article-view .post-body .content-item pre,body.article-view .post-body .content-item code,body.article-view .post-body .content-item kbd,body.article-view .post-body .content-item samp,body.article-view .post-body .content-item var,body.article-view .post-body .content-item output{font-family:Menlo,Monaco,Consolas,"Courier New",monospace;font-size:14.4px}body.article-view .post-body .content-item pre{border-left:2.16px solid #2ab8ab;line-height:25.2px;overflow:auto}body.article-view .post-body .content-item pre code{background:none;border:0;line-height:29.7px;padding:0}body.article-view .post-body .content-item pre{margin-left:9px;padding-left:18px}body.article-view .post-body .content-item code,body.article-view .post-body .content-item kbd{background:#d9d8d8;border-radius:3.6px;color:#000;display:inline-block;line-height:18px;padding:3.6px 6.3px 2.7px}body.article-view .post-body .content-item kbd{background:#41d4c6;color:#12504b}body.article-view .post-body .content-item mark{background:#efcdaa;padding:0 3.6px}body.article-view .post-body .content-item input,body.article-view .post-body .content-item textarea,body.article-view .post-body .content-item select,body.article-view .post-body .content-item button,body.article-view .post-body .content-item option{font-family:system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:18px;font-stretch:normal;font-style:normal;font-weight:400;line-height:29.7px}body.article-view .post-body .content-item h1,body.article-view .post-body .content-item h2,body.article-view .post-body .content-item h3,body.article-view .post-body .content-item h4,body.article-view .post-body .content-item h5,body.article-view .post-body .content-item h6{color:#000;margin-bottom:18px}body.article-view .post-body .content-item h1{font-size:36px;font-weight:bold;line-height:43.2px;margin-top:36px}body.article-view .post-body .content-item h2{font-size:28.8px;font-weight:bold;line-height:34.2px;margin-top:31.5px}body.article-view .post-body .content-item h3{font-size:21.6px;font-weight:bold;line-height:27px;margin-top:31.5px}body.article-view .post-body .content-item h4{font-size:18px;font-weight:bold;line-height:23.4px;margin-top:27px}body.article-view .post-body .content-item h5{font-size:14.4px;font-weight:bold;line-height:21.6px;margin-top:27px;text-transform:uppercase}body.article-view .post-body .content-item h6{font-size:14.4px;font-weight:bold;line-height:18px;margin-top:27px;text-transform:uppercase}body.article-view .post-body .content-item input,body.article-view .post-body .content-item textarea,body.article-view .post-body .content-item select,body.article-view .post-body .content-item button,body.article-view .post-body .content-item option{font-family:system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:18px;font-stretch:normal;font-style:normal;font-weight:400;line-height:29.7px}body.article-view .post-body .content-item hr{border-bottom:1px solid #595959}body.article-view .post-body .content-item figcaption,body.article-view .post-body .content-item small{font-size:15.3px}body.article-view .post-body .content-item figcaption{color:#595959}body.article-view .post-body .content-item var,body.article-view .post-body .content-item em,body.article-view .post-body .content-item i{font-style:italic}body.article-view .post-body .content-item dt,body.article-view .post-body .content-item strong,body.article-view .post-body .content-item b{font-weight:600}body.article-view .post-body .content-item del,body.article-view .post-body .content-item s{text-decoration:line-through}body.article-view .post-body .content-item ins,body.article-view .post-body .content-item u{text-decoration:underline}body.article-view .post-body .content-item sub,body.article-view .post-body .content-item sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}body.article-view .post-body .content-item sup{top:-.5em}body.article-view .post-body .content-item sub{bottom:-.25em}body.article-view .post-body .content-item aside{float:right;width:285px}body.article-view .post-body .content-item dl{display:inline-block}body.article-view .post-body .content-item dt{padding:9px 18px}body.article-view .post-body .content-item dd{padding:0 18px 9px;margin:0}body.article-view .post-body .content-item dd:last-of-type{border-bottom:1.08px solid #595959}body.article-view .post-body .content-item dd+dt{border-top:1.08px solid #595959;padding-top:9px}body.article-view .post-body .content-item blockquote{border-left:2.16px solid #595959;padding:4.5px 18px 4.5px 15.84px}body.article-view .post-body .content-item blockquote footer{color:#595959;font-size:13.5px;margin:0}body.article-view .post-body .content-item blockquote p{margin-bottom:0}body.article-view .post-body .content-item blockquote{margin-left:9px;margin-right:9px}@media (max-width: 479px){body.article-view .post-body .content-item textarea,body.article-view .post-body .content-item input,body.article-view .post-body .content-item select{min-width:0}body.article-view .post-body .content-item fieldset{min-width:0}body.article-view .post-body .content-item fieldset *{flex-grow:1;page-break-before:auto}body.article-view .post-body .content-item aside{width:auto;float:none}}
+
+
+      body.article-view .post-body .content-item cite {
+        font: $(blogpost.cite.font);
+        font-size: 1em;
+      }
 
       /* b:comment: customize blogtemplate - blogpost css (end) */
 
