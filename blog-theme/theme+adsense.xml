@@ -264,9 +264,15 @@
         </Group>
 
         <Group description="Blogpost Cite" selector="">
-          <Variable name="blogpost.cite.font" description="Font" type="font" default="normal bold 14px Arial, Tahoma, Helvetica, FreeSans, sans-serif" value="italic normal 24px Philosopher"/>
+          <Variable name="blogpost.cite.font" description="Font" type="font" default="normal bold 14px Arial, Tahoma, Helvetica, FreeSans, sans-serif" value="italic normal 24px Cuprum"/>
           <Variable hideEditor="true" name="blogpost.cite.text.color" description="Text Color" type="color" default="#6e00ff" value="#6e00ff"/>
           <Variable hideEditor='true' name="blogpost.cite.background.color" description="Background Color" type="color" default="#1b1d1e" value="#1b1d1e"/>
+        </Group>
+
+        <Group description="Blogpost Footer" selector="">
+          <Variable name="blogpost.footer.font" description="Font" type="font" default="normal bold 14px Arial, Tahoma, Helvetica, FreeSans, sans-serif" value="normal normal 24px Cuprum"/>
+          <Variable hideEditor="true" name="blogpost.footer.text.color" description="Text Color" type="color" default="#6e00ff" value="#6e00ff"/>
+          <Variable hideEditor='true' name="blogpost.footer.background.color" description="Background Color" type="color" default="#1b1d1e" value="#1b1d1e"/>
         </Group>
 
         <Group description="Pager" selector="#blog-panel">
@@ -3028,7 +3034,6 @@
 
       body #Blog1 .post-body footer.content-block > * {
         margin-bottom: 0px;
-        font-size: 1.15em;
         /* b:comment: ie render fix */
         text-align: left;
         text-align: initial;
@@ -4611,6 +4616,11 @@
 
       body.article-view .post-body .content-item cite {
         font: $(blogpost.cite.font);
+        font-size: 1em;
+      }
+
+      body.article-view .post-body .content-item footer.content-block > * {
+        font: $(blogpost.footer.font);
         font-size: 1em;
       }
 
