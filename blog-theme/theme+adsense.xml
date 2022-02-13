@@ -5314,7 +5314,7 @@
             </b:widget>
             <b:widget id='PageList1' locked='false' mobile='yes' title='Pages' type='PageList' version='1'>
               <b:widget-settings>
-                <b:widget-setting name='pageListJson'><![CDATA[{'6590218136463857356': {'href': 'https://gelatisugar3-dev.blogspot.com/p/docs.html', 'title': 'Documentation', 'position': 0}, '4951543842723154992': {'href': 'https://gelatisugar3-dev.blogspot.com/p/about.html', 'title': 'About', 'position': 1}}]]></b:widget-setting>
+                <b:widget-setting name='pageListJson'><![CDATA[{"4951543842723154992":{"href":"https://gelatisugar3-dev.blogspot.com/p/about.html","position":1,"title":"About"},"6590218136463857356":{"href":"https://gelatisugar3-dev.blogspot.com/p/docs.html","position":0,"title":"Documentation"}}]]></b:widget-setting>
                 <b:widget-setting name='homeTitle'>Home</b:widget-setting>
               </b:widget-settings>
               <b:includable id='main'>
@@ -7772,7 +7772,7 @@
             <b:section class='foot widget-container' id='footer-3' name='Footer' showaddelement='yes'>
               <b:widget id='PageList2' locked='false' mobile='yes' title='Pages' type='PageList' version='1'>
                 <b:widget-settings>
-                  <b:widget-setting name='pageListJson'><![CDATA[{'6590218136463857356': {'href': 'https://gelatisugar3-dev.blogspot.com/p/docs.html', 'title': 'Documentation', 'position': 0}, '4951543842723154992': {'href': 'https://gelatisugar3-dev.blogspot.com/p/about.html', 'title': 'About', 'position': 1}}]]></b:widget-setting>
+                  <b:widget-setting name='pageListJson'><![CDATA[{"4951543842723154992":{"href":"https://gelatisugar3-dev.blogspot.com/p/about.html","position":1,"title":"About"},"6590218136463857356":{"href":"https://gelatisugar3-dev.blogspot.com/p/docs.html","position":0,"title":"Documentation"}}]]></b:widget-setting>
                   <b:widget-setting name='homeTitle'>Home</b:widget-setting>
                 </b:widget-settings>
                 <b:includable id='main'>
