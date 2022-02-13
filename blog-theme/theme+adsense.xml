@@ -5,20 +5,20 @@
   <b:comment>
     configure blogtemplate - custom domain (optional)
   </b:comment>
-  <b:with value='data:view:isPreview or not data:blog.hasCustomDomain ? { menu: &quot;2c6b88&quot;, slider: &quot;b2l868&quot;, tooltip: &quot;248t8&quot; } : { menu: &quot;2c1s75&quot;, slider: &quot;b2u517&quot;, tooltip: &quot;24735&quot; }' var='licenseKeys'>
+  <b:with value='data:view.isPreview or not data:blog.hasCustomDomain ? { menu: &quot;2c6b88&quot;, slider: &quot;b2l868&quot;, tooltip: &quot;248t8&quot; } : { menu: &quot;2c1s75&quot;, slider: &quot;b2u517&quot;, tooltip: &quot;24735&quot; }' var='licenseKeys'>
   <b:comment render='false'>
     configure blogtemplate - custom domain (optional)
   </b:comment>
   <b:comment>
-    <!-- <b:with value='data:view:isPreview or not data:blog.hasCustomDomain ? { menu: &quot;2c6b88&quot;, slider: &quot;b2l868&quot;, tooltip: &quot;248t8&quot; } : { menu: &quot;2c4g83&quot;, slider: &quot;b2l348&quot;, tooltip: &quot;248h3&quot; }' var='licenseKeys'> -->
+    <!-- <b:with value='data:view.isPreview or not data:blog.hasCustomDomain ? { menu: &quot;2c6b88&quot;, slider: &quot;b2l868&quot;, tooltip: &quot;248t8&quot; } : { menu: &quot;2c4g83&quot;, slider: &quot;b2l348&quot;, tooltip: &quot;248h3&quot; }' var='licenseKeys'> -->
   </b:comment>
   <b:comment>
     configure blogtemplate - hosting/development (optional)
   </b:comment>
-  <b:with value='data:view:isPreview or not data:blog.hasCustomDomain ? &quot;//gelatistatic.sugar3.io&quot; : &quot;//gelatistatic-dev.sugar3.io&quot;' var='resourcesUrl'>
+  <b:with value='data:view.isPreview or not data:blog.hasCustomDomain ? &quot;//gelatistatic.sugar3.io&quot; : &quot;//gelatistatic-dev.sugar3.io&quot;' var='resourcesUrl'>
   <b:with value='&quot;v1&quot;' var='resourcesVersion'>
   <b:comment>
-    <!-- <b:with value='data:view:isPreview or not data:blog.hasCustomDomain ? &quot;//gelatistatic-dev.sugar3.io&quot; : &quot;//static-dev.glitch.at&quot;' var='resourcesUrl'> -->
+    <!-- <b:with value='data:view.isPreview or not data:blog.hasCustomDomain ? &quot;//gelatistatic-dev.sugar3.io&quot; : &quot;//static-dev.glitch.at&quot;' var='resourcesUrl'> -->
     <!-- <b:with value='&quot;v1_dev&quot;' var='resourcesVersion'> -->
   </b:comment>
   <b:comment>
