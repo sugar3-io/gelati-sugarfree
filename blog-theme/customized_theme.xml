@@ -1726,6 +1726,8 @@
         body [id$="_ninja-slider"].carousel-slider [id$="_thumbnail-slider"] li span {
           font-size: 3em;
           white-space: pre-wrap;
+          box-sizing: border-box;
+          padding: 12px;
         }
 
       }
@@ -1961,6 +1963,8 @@
         body [id$="_ninja-slider"].carousel-slider [id$="_thumbnail-slider"] li span {
           font-size: 1.5em;
           white-space: pre-wrap;
+          box-sizing: border-box;
+          padding: 12px;
         }
 
 
