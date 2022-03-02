@@ -4648,6 +4648,284 @@
         color: $(pager.selected.background.color);
       }
 
+
+      body.article-view .post-body .content-item figcaption, body.article-view .post-body .content-item footer.custom-content-block > * {
+        color: inherit;
+        font-size: 0.85em;
+        /* b:comment: defined in blogger post-editor */
+        font-family: Lato;
+      }
+
+      body.article-view .post-body .content-item small {
+        font-size: 0.85em;
+      }
+
+
+      body.article-view .post-body .content-item .custom-content-block footer.content-block > * {
+        font-size: 1.15em;
+      }
+
+
+      body.article-view .post-body .content-item table.custom-content-block {
+        display: block;
+        overflow: auto;
+      }
+
+      body.article-view .post-body .content-item table.custom-content-block thead {
+        display: table-header-group;
+      }
+
+      body.article-view .post-body .content-item table.custom-content-block thead tr th[onclick*="w3.sortHTML"] {
+        cursor: pointer;
+      }
+
+      body.article-view .post-body .content-item table.custom-content-block thead tr th[onclick*="w3.sortHTML"]::after {
+        font-family: "Font Awesome 5 Free";
+        content: "\f0dc";
+        padding-left: 0.25em;
+      }
+
+
+      /* b:comment: ios legend onclick fix */
+      body.article-view .post-body .content-item fieldset[onclick*="w3.sortHTML"].custom-content-block {
+        width: fit-content;
+        -ms-flex-direction: column;
+        border: 0px;
+        margin: 0px;
+        padding-left: 0px;
+        padding-right: 0px;
+      }
+
+      body.article-view .post-body .content-item fieldset[onclick*="w3.sortHTML"].custom-content-block legend {
+        cursor: pointer;
+        font-weight: bold;
+        margin: 0px;
+      }
+
+      body.article-view .post-body .content-item fieldset[onclick*="w3.sortHTML"].custom-content-block legend::after {
+        font-family: "Font Awesome 5 Free";
+        content: "\f0dc";
+        padding-left: 0.25em;
+      }
+
+      body.article-view .post-body .content-item fieldset[onclick*="w3.sortHTML"].custom-content-block + ul {
+        margin-top: 0px;
+      }
+
+
+      body.article-view #mcTooltipWrapper #mcTooltip.publisher-link.blog-item .mcTooltipInner {
+        max-width: calc(250px + 12px);
+        height: inherit !important;
+        box-sizing: border-box;
+      }
+
+      body.article-view #mcTooltipWrapper #mcTooltip.publisher-link.blog-item .mcTooltipInner > a {
+        display: block;
+        top: 50%;
+        position: relative;
+        transform: translateY(-50%);
+        max-width: 250px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+      }
+
+      body.article-view #mcTooltipWrapper #mcTooltip.publisher-link.blog-item .mcTooltipInner > a > span {
+        font-weight: bold;
+      }
+
+      body.article-view #mcTooltipWrapper #mcTooltip.publisher-link.blog-item .mcTooltipInner > a::after {
+        display: block;
+        padding-top: 0.5em;
+        margin-top: 0.5em;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        content: attr(href);
+        color: $(pager.selected.background.color);
+        border-top: 1px solid $(content.text.color);
+      }
+
+
+      body.article-view .post-body .content-item details summary {
+        color: $(pager.selected.background.color);
+        cursor: pointer;
+      }
+
+      body.article-view .post-body .content-item details summary > span > span:last-of-type {
+        border-bottom: 1px solid;
+      }
+
+      body.article-view .post-body .content-item blockquote.custom-content-block details .font-icon {
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+      }
+
+      body.article-view .post-body .content-item blockquote.custom-content-block details summary {
+        position: relative;
+        display: -ms-grid;
+      }
+
+      body.article-view .post-body .content-item blockquote.custom-content-block details summary::marker {
+        color: transparent;
+      }
+
+      body.article-view .post-body .content-item blockquote.custom-content-block details summary::-webkit-details-marker {
+        visibility: hidden;
+      }
+
+      body.article-view .post-body .content-item blockquote.custom-content-block details summary .font-icon {
+        position: absolute;
+        left: -0.25em;
+      }
+
+      body.article-view .post-body .content-item blockquote.custom-content-block details summary .font-icon::before {
+        content: "\f06e";
+      }
+
+      body.article-view .post-body .content-item blockquote.custom-content-block details[open] summary .font-icon::before {
+        content: "\f070";
+      }
+
+      body.article-view.item-type .post-body .content-item blockquote.custom-content-block details dd .font-icon::before {
+        content: "\f35d";
+      }
+
+      body.article-view.item-type .post-body .content-item blockquote.custom-content-block details footer .font-icon::before {
+        content: "\f87c";
+      }
+
+      body.article-view.static-type .post-body .content-item blockquote.custom-content-block details footer .font-icon {
+        font-family: "Font Awesome 5 Brands";
+      }
+
+      body.article-view .post-body .content-item blockquote.custom-content-block details footer ol {
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+        counter-reset: list-number;
+        padding: 0px;
+      }
+
+      body.article-view .post-body .content-item blockquote.custom-content-block details footer ol li::after {
+        counter-increment: list-number;
+        content: counter(list-number);
+        pointer-events: none;
+        right: 1em;
+        position: relative;
+        color: $(pager.selected.background.color);
+        min-width: 1em;
+        display: inline-block;
+        text-align: right;
+      }
+
+      body.article-view .post-body .content-item blockquote.custom-content-block details footer ul li {
+      }
+
+      body.article-view .post-body .content-item blockquote.custom-content-block details footer li a {
+        display: inline-block;
+        padding-right: 1em;
+        text-align: left;
+        border-bottom: 1px solid;
+      }
+
+
+      body.article-view .post-body .content-item aside.custom-content-block blockquote {
+        margin: 12px;
+      }
+
+      body.article-view .post-body .content-item aside.custom-content-block cite {
+        font-size: 1.15em;
+      }
+
+
+      body.article-view .post-body .content-item section.custom-content-block {
+        margin-left: -12px;
+        margin-right: -12px;
+        padding: 12px 0px;
+        box-sizing: border-box;
+        background: linear-gradient(0deg, $(header.background.color.transparent), $(header.background.color), $(header.background.color.transparent));
+      }
+
+      body.article-view .post-body .content-item section.custom-content-block.separator {
+        padding-left: 24px;
+        padding-right: 24px;
+      }
+
+      body.article-view .post-body .content-item section.custom-content-block .content-block.content-spacer [imageanchor] img {
+        padding-top: 0px !important;
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+      }
+
+      body.article-view .post-body .content-item section.custom-content-block footer mark {
+        background: $(complementary.background.color);
+      }
+
+
+      body.article-view .post-body .content-item aside.custom-content-block.separator {
+        /* background: linear-gradient(0deg, $(complementary.background.color), $(complementary.background.color), $(complementary.background.color.transparent)); */
+        background: linear-gradient(0deg, $(complementary.background.color) 0em, $(complementary.background.color.transparent) calc(100% - 0.5em), $(complementary.background.color.transparent) 100%);
+        padding: 12px;
+        box-sizing: border-box;
+      }
+
+      @media (min-width: 480px) {
+        body.article-view .post-body .content-item aside.custom-content-block.separator {
+          margin-left: 12px;
+          margin-right: 12px;
+          margin-bottom: 12px;
+        }
+      }
+
+      @media (min-width: 1024px) {
+        body.article-view .post-body .content-item aside.custom-content-block.separator {
+          margin-right: -36px;
+        }
+      }
+
+      @media (max-width: 479px) {
+        body.article-view .post-body .content-item aside.custom-content-block.separator {
+          margin-left: 12px;
+          margin-right: 12px;
+        }
+
+        body.article-view .post-body .content-item aside.custom-content-block[style*="width"] {
+          width: auto !important;
+        }
+
+
+        body.article-view .post-body .content-item h1 {
+          font-size: 1.75em;
+        }
+
+        body.article-view .post-body .content-item h2 {
+          font-size: 1.35em;
+        }
+
+        body.article-view .post-body .content-item h3 {
+          font-size: 1.15em;
+        }
+
+        body.article-view .post-body .content-item h4 {
+          font-size: 1.10em;
+        }
+
+        body.article-view .post-body .content-item h5 {
+          font-size: 1.05em;
+        }
+
+        body.article-view .post-body .content-item h6 {
+          font-size: 1.02em;
+        }
+      }
+
+      @media only screen and (min-width: 480px) and (max-width: 1023px) {
+        body.article-view .post-body .content-item aside.custom-content-block.separator {
+          margin-right: -12px;
+        }
+      }
+
       /* b:comment: customize blogtemplate - blogpost css (end) */
 
       /*---*/

@@ -2,13 +2,15 @@
 
 A+ Retrofitted Blogger/Blogspot v2 Template
 
-- Gelati Sugarfree Demos: [Default Theme](https://gelati.sugar3.io/) / [Customized Theme](https://www.glitch.at/)
+- To see it in action:
+  - [News\Glitch](https://news.glitch.at/) - Get a glimpse and some inspiration from this "Real world" News-Blog, showing a *customized* Theme.
+  - [Gelati Sugarfree](https://gelati.sugar3.io/) - Afterwards consult the basic examples from the Project's Demo-Blog, showing the *default* Theme.
 - Further Infos: [Documentation](https://gelati.sugar3.io/p/docs.html) and [About](https://gelati.sugar3.io/p/about.html)
 
 <br>
 
+[![Gelati Sugarfree](blog-resources/dist/images/customized_icon.png)](https://news.glitch.at)
 [![https://www.flaticon.com/authors/smalllikeart/](blog-resources/dist/images/icon.png)](https://gelati.sugar3.io)
-[![Gelati Sugarfree](blog-resources/dist/images/customized_icon.png)](https://www.glitch.at)
 
 <br>
 
