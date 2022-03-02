@@ -1100,6 +1100,10 @@
         color: $(dark.text.color);
       }
 
+      body.article-view #Blog1 .post-header .cover-item.transparent-text-color ~ .title-item {
+        color: transparent;
+      }
+
       #Blog1 .post-header .title-item a {
         color: inherit;
       }
