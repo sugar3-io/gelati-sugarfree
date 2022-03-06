@@ -4892,6 +4892,7 @@
 
         body.article-view .post-body .content-item aside.custom-content-block[style*="width"] {
           width: auto !important;
+          max-width: inherit !important;
         }
 
 
