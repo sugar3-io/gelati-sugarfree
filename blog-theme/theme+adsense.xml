@@ -721,6 +721,25 @@
         margin-right: 0.5em;
       }
 
+      body.list-view #blog-banner-2 {
+        margin-top: 3em;
+        margin-bottom: 1em;
+      }
+      
+      body.article-view #blog-banner-2 {
+        display: none;
+      }
+
+      body.list-view #blog-banner-2 [id$="_ninja-slider"] {
+        width: 35%;
+        max-width: 250px;
+      }
+
+      body.list-view #blog-banner-2 [id$="_ninja-slider"] .caption {
+        background-color: rgba(0, 0, 0, 0.5);
+        color: #ffffff;
+      }
+
 
       body .column-left-outer, body .column-right-outer {
         box-sizing: border-box;
@@ -1914,6 +1933,11 @@
         #blog-status-2 .body-item {
           padding: 12px;
           font-size: 1.25em;
+        }
+
+
+        body.list-view #blog-banner-2 [id$="_ninja-slider"] {
+          width: 250px;
         }
 
 
