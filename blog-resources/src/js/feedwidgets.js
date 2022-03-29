@@ -211,7 +211,7 @@ function FeedSlider(
       TT = ListUpdate.substring(11, 16);
       MM = ListMonth[parseInt(mm - 1)];
       // Thumbnail Check
-      if (json.feed.entry[i].media$thumbnail && json.feed.entry[i].media$thumbnail.url.indexOf(".googleusercontent.com/") != -1) {
+      if (json.feed.entry[i].media$thumbnail && json.feed.entry[i].media$thumbnail.url.indexOf("blogger.googleusercontent.com/img/b/") == -1 && json.feed.entry[i].media$thumbnail.url.indexOf(".googleusercontent.com/") != -1) {
         thumbUrl = json.feed.entry[i].media$thumbnail.url;
         if (thumbUrl.indexOf("=s72-w800-h400-c-k-no-nu") != -1) {
           sk = thumbUrl.replace("=s72-w800-h400-c-k-no-nu", "=w" + ImageW + "-h" + ImageH + "-c");
@@ -607,7 +607,7 @@ function FeedRecent(
       }
       else if (json.feed.entry[i].media$thumbnail) 
       */
-      if (json.feed.entry[i].media$thumbnail && json.feed.entry[i].media$thumbnail.url.indexOf(".googleusercontent.com/") != -1) {
+      if (json.feed.entry[i].media$thumbnail && json.feed.entry[i].media$thumbnail.url.indexOf("blogger.googleusercontent.com/img/b/") == -1 && json.feed.entry[i].media$thumbnail.url.indexOf(".googleusercontent.com/") != -1) {
         thumbUrl = json.feed.entry[i].media$thumbnail.url;
         if (thumbUrl.indexOf("=s72-w800-h400-c-k-no-nu") != -1) {
           sk = thumbUrl.replace("=s72-w800-h400-c-k-no-nu", "=w" + ImageW + "-h" + ImageH + "-c");
@@ -1010,7 +1010,7 @@ function FeedRandom(
     }
     else if (json.feed.entry[i].media$thumbnail) 
     */
-    if (json.feed.entry[i].media$thumbnail && json.feed.entry[i].media$thumbnail.url.indexOf(".googleusercontent.com/") != -1) {
+    if (json.feed.entry[i].media$thumbnail && json.feed.entry[i].media$thumbnail.url.indexOf("blogger.googleusercontent.com/img/b/") == -1 && json.feed.entry[i].media$thumbnail.url.indexOf(".googleusercontent.com/") != -1) {
       thumbUrl = json.feed.entry[i].media$thumbnail.url;
       if (thumbUrl.indexOf("=s72-w800-h400-c-k-no-nu") != -1) {
         sk = thumbUrl.replace("=s72-w800-h400-c-k-no-nu", "=w" + ImageW + "-h" + ImageH + "-c");
