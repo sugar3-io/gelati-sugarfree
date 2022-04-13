@@ -4737,6 +4737,10 @@
       }
 
 
+      body.article-view #mcTooltipWrapper #mcTooltip.publisher-link.blog-item {
+        height: 4.5em !important;
+      }
+
       body.article-view #mcTooltipWrapper #mcTooltip.publisher-link.blog-item .mcTooltipInner {
         max-width: calc(250px + 12px);
         height: inherit !important;
