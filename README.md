@@ -18,17 +18,17 @@ A+ Retrofitted Blogger/Blogspot v2 Template
 
 Please consult Gelati Sugarfree's [Quick Setup Guide](https://gelati.sugar3.io/p/docs.html#quick_installation) regarding <i>Installation</i>, <i>Configuration</i> and <i>Customization</i> before Importing one of the available [Blog-Themes](blog-theme).
 
-<br>
-
 ## Features and Usage
 * Although optional, you might consider to import the provided [Demo-Content](demo-content) which provides representational examples regarding Gelati Sugarfree's [Features and Usage](https://gelati.sugar3.io/p/about.html).
 * Feel free to delete or unplublish unnecessary Posts, Pages and Labels after you got a grasp on its internals and mechanics.
-> ### Demo-Content Preperation
-> Some of the Posts contain <i>Jump-Breaks</i>, a feature of Blogger/Blogpost represented by the following expression: <pre><i>&lt;!--more--&gt;</i></pre> 
-> Unfortunately, whenever exporting content in Blogger/Blogspot these expressions get converted to plain &lt;a&gt;-Tags: <pre><i>&lt;a name='more'&gt;</i> resp. <i>&amp;lt;a name='more'&amp;gt;</i></pre>
-> So afterwards you have to manual replace all occurences of "ill-converted" <i>Jump-Breaks</i> to their correct expression with the help of Post-Editor.
 
-<br>
+### Demo-Content Preperation
+* For a correct functionality of NumberedPagination: Some of the provided Demo-Content Posts contain <i>Jump-Break</i> directives, an optional feature Blogger/Blogpost utilizes to - among other non-performance related usecases - ease performance impacts when generating IndexType Blog-Views with Post-content exceeding a certain amount of textual data. 
+> The Blogger/Blogpost Post-Editor allows to insert a <i>Jump-Break</i> directive which will be represented by the following inline-expression: <pre><i>&lt;!--more--&gt;</i></pre> 
+> Unfortunately, whenever exporting content in Blogger/Blogspot these expressions get converted to plain &lt;a&gt;-Tags: <pre><i>&lt;a name='more'&gt;</i> resp. <i>&amp;lt;a name='more'&amp;gt;</i></pre>
+> So, afterwards after you have imported such content in Blogger/Blogspot you have to manual replace all occurences of "ill-converted" <i>Jump-Breaks</i> to their correct inline-expression with the help of Post-Editor.
+
+* For a correct presentation of the PopularPosts widget your current published Posts need to have a certain amount of views. Especially in case of starting from scratch, please do ensure you have actually viewed at least <i>numItemsToShow</i> of your favorite Posts a certain amount of times to generate actual views.
 
 ## Final Notes
 
@@ -42,6 +42,8 @@ If you followed these steps and everything worked well you might already have a 
 <hr>
 <br>
 
+## Optional Stuff
+
 Just in case you want to re-build Blog-Resources on your own, e.g.
 
 * check local built-code against Gelati Sugarfree's provided or hosted Blog-Resources
@@ -49,9 +51,7 @@ Just in case you want to re-build Blog-Resources on your own, e.g.
 
 see the following <i>cPanel</i> based examples.
 
-<br>
-
-## Get Gelati Sugarfree 
+### Get Gelati Sugarfree 
 > Terminal
 ```
 $ cd ~/workspace
@@ -59,9 +59,7 @@ $ git clone... (or git pull)
 $ cd gelati-sugarfree
 ```
 
-<br>
-
-## Build Blog-Resources
+### Build Blog-Resources
 > Start Node.js App
 * Example settings:<br>
 example.com/blogresources /home/examplecom/workspace/gelati-sugarfree/blog-resources
@@ -79,9 +77,7 @@ $ deactivate
 ```
 > Stop Node.js App
 
-<br>
-
-## Build Blogpost-Style 
+### Build Blogpost-Style 
 > Start Node.js App
 * Example settings:<br>
 example.com/blogpoststyle /home/examplecom/workspace/gelati-sugarfree/blogpost-style
@@ -97,9 +93,7 @@ $ deactivate
 ```
 > Stop Node.js App
 
-<br>
-
-## Check local-built /dist/ against cloned /dist/
+### Check local-built /dist/ against cloned /dist/
 > Terminal
 ```
 $ cd ~/workspace/gelati-sugarfree
