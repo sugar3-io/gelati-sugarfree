@@ -4620,8 +4620,8 @@
 
         #mbtslider1_ninja-slider .teaser-header a {
           padding-top: inherit;
-          width: 100%;
-          margin-left: 0px;
+          width: calc(100% + 12em);
+          margin-left: -6em;
           height: calc(100% - 3em);
         }
 
@@ -5240,7 +5240,7 @@
           }
           &lt;/script&gt;
           &lt;div id=&quot;navbar-iframe-container&quot;&gt;&lt;/div&gt;
-          &lt;script type=&quot;text/javascript&quot; src=&quot;https://apis.google.com/js/plusone.js&quot;&gt;&lt;/script&gt;
+          &lt;script type=&quot;text/javascript&quot; src=&quot;https://apis.google.com/js/platform.js&quot;&gt;&lt;/script&gt;
           &lt;script type=&quot;text/javascript&quot;&gt;
             gapi.load(&quot;gapi.iframes:gapi.iframes.style.bubble&quot;, function() {
               if (gapi.iframes &amp;&amp; gapi.iframes.getContext) {
@@ -6129,7 +6129,6 @@
                   <b:widget id='Blog1' locked='false' title='Blog Posts' type='Blog' version='1'>
                     <b:widget-settings>
                       <b:widget-setting name='showShareButtons'>true</b:widget-setting>
-                      <b:widget-setting name='disableGooglePlusShare'>true</b:widget-setting>
                       <b:widget-setting name='style.unittype'>TextAndImage</b:widget-setting>
                       <b:widget-setting name='reactionsLabel'/>
                       <b:widget-setting name='showAuthorProfile'>false</b:widget-setting>
