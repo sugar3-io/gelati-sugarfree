@@ -4605,8 +4605,8 @@
 
         #mbtslider1_ninja-slider .teaser-header a {
           padding-top: inherit;
-          width: calc(100% + 12em);
-          margin-left: -6em;
+          width: calc(100% + 9em);
+          margin-left: -4.5em;
           height: calc(100% - 3em);
         }
 
