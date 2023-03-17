@@ -6821,7 +6821,7 @@
                               <b:if cond='data:post.thumbnailUrl or data:post.firstImageUrl'>
                                 <b:with value='data:post.thumbnailUrl ? resizeImage(data:post.firstImageUrl, 400, &quot;1:1&quot;) : data:post.firstImageUrl' var='image'>
                                   <div expr:class='&quot;separator cover-item&quot; + (data:post.thumbnailUrl ? &quot; ratio-square&quot; : &quot; ratio-none&quot;)'>
-                                    <b:class cond='data:image contains &quot;googleusercontent.com/proxy/&quot;' name='ratio-youtube'/>
+                                    <b:class cond='data:image contains &quot;googleusercontent.com/blogger_img_proxy/&quot;' name='ratio-youtube'/>
                                     <b:if cond='data:postBodySnippet.size == 0'>
                                       <b:class name='full-cover'/>
                                     <b:else/>
