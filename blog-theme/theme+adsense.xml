@@ -3541,6 +3541,12 @@
 
       /*---*/
 
+      body .widget.ads-item ins.adsbygoogle[data-ad-status="filled"] {
+          background-color: $(shade2.solid.background.color);
+      }
+
+      /*---*/
+
       #mcTooltipWrapper {
         z-index: 306 !important;
       }
