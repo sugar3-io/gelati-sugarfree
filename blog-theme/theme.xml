@@ -6382,6 +6382,15 @@
                                 var jumpbackUrlElm = document.getElementById(&#39;jumpback-url&#39;);
                                 var jumpbackTextElm = document.getElementById(&#39;jumpback-text&#39;);
 
+                                // history.back() also steps through iframe entries (ads, embeds); navigation.back() only the top frame
+                                function historyBack() {
+                                  if (window.navigation &amp;&amp; window.navigation.canGoBack) {
+                                    window.navigation.back();
+                                  } else {
+                                    window.history.back();
+                                  }
+                                }
+
                                 <b:if cond='data:blog.pageType == &quot;item&quot;'>
                                   if (!window.sessionStorage.getItem(&quot;referrer-url&quot;)) {
                                     window.sessionStorage.setItem(&quot;referrer-url&quot;, JSON.stringify([window.location.href, null, &#39;/&#39;]));
@@ -6422,10 +6431,10 @@
                                     if (referrerType) {
                                       window.location.href = referrerType;
                                     } else {
-                                      window.history.back();
+                                      historyBack();
                                     }
                                   } else {
-                                    window.history.back();
+                                    historyBack();
                                   }
                                 });
                                 historyElm.style.visibility = &quot;visible&quot;;
@@ -6441,10 +6450,10 @@
                                       if (referrerType) {
                                         window.location.href = referrerType;
                                       } else {
-                                        window.history.back();
+                                        historyBack();
                                       }
                                     } else {
-                                      window.history.back();
+                                      historyBack();
                                     }
                                   });
                                   if (window.location.href == referrerUrl) {
